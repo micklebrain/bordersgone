@@ -11,6 +11,7 @@ import nycattractions from '../images/nycattractions.jpeg';
 import nycboroughs from '../images/boroughs.png'
 import nycneighborhoods from '../images/neighborhoods.jpeg';
 import nycsubway from '../images/nyc-subway.jpeg';
+import rooftopbar from '../images/rooftopbar.jpeg';
 
 import { Link } from "react-router-dom";
 
@@ -52,6 +53,7 @@ class NewYorkCity extends React.Component {
                 <Link to="/NYCTopAttractionsArticle" class="articlePreview"> <img class="articleImage" src={nycattractions} alt="Top attractions" /> </Link> <div> <div class="articleTitle"> Top attractions </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCOmakaseArticle" class="articlePreview"> <img class="articleImage" src={omakase} alt="NYC Omakase" /> </Link> <div> <div class="articleTitle"> NYC Omakase </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/NYCRooftopBarsArticle" class="articlePreview"> <img class="articleImage" src={rooftopbar} alt="NYC Rooftops Guide" /> </Link> <div> <div class="articleTitle"> NYC Rooftops Guide </div> <div> Jan 27, 2022 </div> </div>
             </div>
         </div>)
     }

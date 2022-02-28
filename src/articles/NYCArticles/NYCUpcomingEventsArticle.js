@@ -20,11 +20,7 @@ class NYCUpcomingEventsArticle extends React.Component {
                     <li> ongoing | Free Friday admissions @6-10pm | @The Rubin Museum of Art </li>
                     <li> ongoing | Free Friday admissions | @The Morgan library and museum </li>
                     <li> until May 1st | Orchid show | @New York Botanical Garden </li>
-
-                    <h2> Febuary </h2>                                    
-                    <li> 27th | New York Knicks vs Philadelphia 76ers | @Madison Square Garden </li>
-                    <li> until the 27th | Broadway 2 for 1 |</li>
-                    <li> until the 27th | First Impressions | West Chelsea Contemporary </li>                    
+                    <li> March 5 - April 9 | New York on Paper Exhibit | @West Chelsea Contemporary </li>
 
                     <h2> March </h2>
                     <li> 3rd from 2-9pm| NYC Winter Wine and Food Festival | @Webster Hall </li>
@@ -54,9 +50,10 @@ class NYCUpcomingEventsArticle extends React.Component {
                     <li> 31st - September 18 | Bric's Celebrates Brooklyn! Festival </li>
                     
                     <h2> August </h2>
+                    
                     <li> 1st | Pixar-themed mini-golf course </li>
-                    <li> 21st - 19th | Zero G Experience </li>
-                    <li> 28th | Le Poisson Rouge </li>
+                    <a href="https://www.gozerog.com/the-astronaut-experience-new-york-ny/"> 21st - 19th | Zero G Experience </a>
+                    <li> 28th | Le Poisson Rouge </li>                    
 
                     <h2> September </h2>
                     <li> 30th - September 12 | US Open </li>
@@ -69,6 +66,10 @@ class NYCUpcomingEventsArticle extends React.Component {
 
                     <h2> December </h2>
                     <li> 26th from 4-5pm | Arts Festival | 5th Ave</li>
+
+                    <h2> January 2022 </h2> 
+
+                    <h2> Febuary 2022 </h2>
                 </ul>
             </div>)
     }
