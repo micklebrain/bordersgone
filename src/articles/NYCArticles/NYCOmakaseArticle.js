@@ -21,8 +21,9 @@ class NYCArticle extends React.Component {
                     <li> Nakaji | $265</li>
                     <li> Omakase Room by Tatsu | $180 </li>
                     <li> Noda </li>
+                    <li> Sugarfish | $27 - $67 </li>
                     <li> Sushi by Bou </li>
-                    <li> Sushi Nakazawa NY </li>
+                    <li> Sushi Nakazawa NY | $150 </li>
                     <li> Sushi Noz </li>
                     <li> Sushi Zo </li>
                     <li> Shuko </li>

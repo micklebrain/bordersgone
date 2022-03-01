@@ -15,23 +15,27 @@ class NYCUpcomingEventsArticle extends React.Component {
                 <h1> Upcoming Events </h1>
                 <ul>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
-                    <h2> All year </h2>
-                    <li> ongoing @ 6-10pm | Free Thursdays admissions | @Brooklyn Muesuem </li> 
-                    <li> ongoing | Free Friday admissions @6-10pm | @The Rubin Museum of Art </li>
-                    <li> ongoing | Free Friday admissions | @The Morgan library and museum </li>
-                    <li> until May 1st | Orchid show | @New York Botanical Garden </li>
-                    <li> March 5 - April 9 | New York on Paper Exhibit | @West Chelsea Contemporary </li>
 
-                    <h2> March </h2>
-                    <li> 3rd from 2-9pm| NYC Winter Wine and Food Festival | @Webster Hall </li>
-                    <li> 4th | Rezz | @Terminal 5 </li>                    
-                    <li> 10th | Amine | @Terminal5</li>
-                    <li> 17th | St Patrick's Day Parade </li>
-                    <li> 18th | Reliant K | @Irving plaza </li>
-                    <li> 26th | JoJo | @Terminal5 </li>
-                    <li> 27th | New York Rangers vs Buffalo Sabres | @The Madison Square Garden </li>
-                    <li> 28th | New York Knicks vs Chicago Bull | @The Madison Square Garden </li>
-                    
+                    <div class='focused'> 
+                        <h2> All year </h2>
+                        <li> ongoing @ 6-10pm | Free Thursdays admissions | @Brooklyn Muesuem </li> 
+                        <li> ongoing | Free Friday admissions @6-10pm | @The Rubin Museum of Art </li>
+                        <li> ongoing | Free Friday admissions | @The Morgan library and museum </li>
+                        <li> until May 1st | Orchid show | @New York Botanical Garden </li>
+                        <li> March 5 - April 9 | New York on Paper Exhibit | @West Chelsea Contemporary </li>
+
+                        <h2> March </h2>
+                        <li> 2nd - 6th | Nitehawk Shorts Festival | Various locations </li>
+                        <li> 3rd from 2-9pm| NYC Winter Wine and Food Festival | @Webster Hall </li>
+                        <li> 4th | Rezz | @Terminal 5 </li>                    
+                        <li> 10th | Amine | @Terminal5</li>
+                        <li> 17th | St Patrick's Day Parade </li>
+                        <li> 18th | Reliant K | @Irving plaza </li>
+                        <li> 26th | JoJo | @Terminal5 </li>
+                        <li> 27th | New York Rangers vs Buffalo Sabres | @The Madison Square Garden </li>
+                        <li> 28th | New York Knicks vs Chicago Bull | @The Madison Square Garden </li>                    
+                    </div>
+
                     <h2> April </h2>
                     <li> 8th | Lil Tecca | @Terminal 5 </li>
 
@@ -67,9 +71,9 @@ class NYCUpcomingEventsArticle extends React.Component {
                     <h2> December </h2>
                     <li> 26th from 4-5pm | Arts Festival | 5th Ave</li>
 
-                    <h2> January 2022 </h2> 
+                    <h2> January 2023 </h2> 
 
-                    <h2> Febuary 2022 </h2>
+                    <h2> Febuary 2023 </h2>
                 </ul>
             </div>)
     }
