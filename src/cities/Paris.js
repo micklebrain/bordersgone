@@ -6,13 +6,11 @@ import {
 class City extends React.Component {
 
     init() {
-        cityName: String
-        articles: []
     }
 
     render() {
         return (<div>
-            <h1> {cityName} travel guide </h1>
+            <h1> Paris travel guide </h1>
         </div>)
     }
 }
