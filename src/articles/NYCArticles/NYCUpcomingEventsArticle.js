@@ -17,20 +17,25 @@ class NYCUpcomingEventsArticle extends React.Component {
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
 
                     <div class='focused'> 
-                        <h2> All year </h2>
-                        <li> ongoing @ 6-10pm | Free Thursdays admissions | @Brooklyn Muesuem </li> 
-                        <li> ongoing | Free Friday admissions @6-10pm | @The Rubin Museum of Art </li>
-                        <li> ongoing | Free Friday admissions | @The Morgan library and museum </li>
-                        <li> until May 1st | Orchid show | @New York Botanical Garden </li>
-                        <li> March 5 - April 9 | New York on Paper Exhibit | @West Chelsea Contemporary </li>
-
+                        <h2> Ongoing </h2>                        
+                        <li> March 5 - April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
+                        <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
+                        <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
+                        <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
+                        <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
+                        <li> ongoing @ 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li> 
+                        <li> ongoing | Free Friday admissions @6-10pm | @ The Rubin Museum of Art </li>
+                        <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
+                        
                         <h2> March </h2>
                         <li> 2nd - 6th | Nitehawk Shorts Festival | Various locations </li>
                         <li> 3rd from 2-9pm| NYC Winter Wine and Food Festival | @Webster Hall </li>
                         <li> 4th | Rezz | @Terminal 5 </li>                    
                         <li> 10th | Amine | @Terminal5</li>
+                        <li> 13th - 14th | Tyler, The Creator | @ Madison Sqaure Garden </li>
                         <li> 17th | St Patrick's Day Parade </li>
-                        <li> 18th | Reliant K | @Irving plaza </li>
+                        <li> 18th | Reliant K | @ Irving plaza </li>
+                        <li> 18th - 19th | Bad Bunny | @ Barclay Center </li>
                         <li> 26th | JoJo | @Terminal5 </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @The Madison Square Garden </li>
                         <li> 28th | New York Knicks vs Chicago Bull | @The Madison Square Garden </li>                    
