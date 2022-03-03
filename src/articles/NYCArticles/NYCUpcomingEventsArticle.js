@@ -27,9 +27,9 @@ class NYCUpcomingEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions @6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
                         
-                        <h2> March </h2>
-                        <li> 2nd - 6th | Nitehawk Shorts Festival | Various locations </li>                        
+                        <h2> March </h2>                        
                         <li> 4th | Rezz | @ Terminal 5 </li>
+                        <li> 2nd - 6th | Nitehawk Shorts Festival | Nitehawk Cinema Prospect Park and Williamsburg </li>
                         <li> 10th | Amine | @ Terminal5</li>
                         <li> 13th - 14th | Tyler, The Creator | @ Madison Sqaure Garden </li>
                         <li> 17th | St Patrick's Day Parade </li>
