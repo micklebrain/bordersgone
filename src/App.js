@@ -29,6 +29,7 @@ import ChicagoArticle from './articles/ChicagoArticles/ChicagoArticle';
 import ChicagoArticle2 from './articles/ChicagoArticles/ChicagoArticle2';
 import DenverArticle from './articles/DenverArticles/DenverArticle';
 import LasVegasArticle from './articles/LasVegasArticles/LasVegasArticle';
+import ParisThingsToDoArticle from './articles/ParisArticles/ParisThingsToDoArticle';
 import PhiladelphiaArticle from './articles/PhiladelphiaArticles/PhiladelphiaArticle';
 import PhiladelphiaNeighborhoodRestaurantsArticle from './articles/PhiladelphiaArticles/PhiladelphiaNeighborhoodRestaurantsArticle';
 
@@ -36,16 +37,16 @@ import NYCArtGalleriesArticle from './articles/NYCArticles/NYCArtGalleriesArticl
 import NYCAYCEBBQArticle from './articles/NYCArticles/NYCAYCEBBQArticle'
 import NYCBroadwaysArticle from './articles/NYCArticles/NYCBroadwaysArticle';
 import NYCBrunch from './articles/NYCArticles/NYCBrunch';
+import NYCEventsArticle from './articles/NYCArticles/NYCEventsArticle';
 import NYCLunarNewYearsArticle from './articles/NYCArticles/NYCLunarNewYearsArticle';
-import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopNeighborhoodRestaurantsArticle';
 import NYCOmakaseArticle from './articles/NYCArticles/NYCOmakaseArticle';
-import NYCTopAttractionsArticle from './articles/NYCArticles/NYCTopAttractionsArticle';
-import NYCUpcomingEventsArticle from './articles/NYCArticles/NYCUpcomingEventsArticle';
-import NYCTrainStopRestaurantsArticle from './articles/NYCArticles/NYCTrainStopRestaurantsArticle';
-import NewYorkCityArticle3 from './articles/NYCArticles/NewYorkCityArticle3';
-import NYCTopBoroughRestaurantsArticle from './articles/NYCArticles/NYCTopBoroughRestaurantsArticle';
 import NYCPlusPoolArticle from './articles/NYCArticles/NYCPlusPoolArticle';
 import NYCRooftopBarsArticle from './articles/NYCArticles/NYCRooftopBarsArticle';
+import NYCTopAttractionsArticle from './articles/NYCArticles/NYCTopAttractionsArticle';
+import NYCTopBoroughRestaurantsArticle from './articles/NYCArticles/NYCTopBoroughRestaurantsArticle';
+import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopNeighborhoodRestaurantsArticle';
+import NYCTrainStopRestaurantsArticle from './articles/NYCArticles/NYCTrainStopRestaurantsArticle';
+import NewYorkCityArticle3 from './articles/NYCArticles/NewYorkCityArticle3';
 
 import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArticle';
 
@@ -86,6 +87,7 @@ class App extends React.Component {
             <Route exact path="/DenverArticle" component={DenverArticle} />            
             <Route exact path="/LasVegasArticle" component={LasVegasArticle} />
 
+            <Route exact path="/ParisThingsToDoArticle" component={ParisThingsToDoArticle} />
             <Route exact path="/PhiladelphiaArticle" component={PhiladelphiaArticle} />
             <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" component={PhiladelphiaNeighborhoodRestaurantsArticle} />
             
@@ -101,7 +103,7 @@ class App extends React.Component {
             <Route exact path="/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
             <Route exact path="/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            
             <Route exact path="/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
-            <Route exact path="/NYCUpcomingEventsArticle" component={NYCUpcomingEventsArticle} />
+            <Route exact path="/NYCEventsArticle" component={NYCEventsArticle} />
 
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
 

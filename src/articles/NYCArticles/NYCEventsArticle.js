@@ -1,6 +1,6 @@
 import React from "react";
 
-class NYCUpcomingEventsArticle extends React.Component {
+class NYCEventsArticle extends React.Component {
 
     constructor(props) {
         super(props);
@@ -12,7 +12,7 @@ class NYCUpcomingEventsArticle extends React.Component {
     render() {
         return (
             <div>
-                <h1> Upcoming Events </h1>
+                <h1> Events </h1>
                 <ul>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
 
@@ -20,6 +20,7 @@ class NYCUpcomingEventsArticle extends React.Component {
                         <h2> Ongoing </h2>                        
                         <li> March 5 - April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
+                        <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
                         <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
                         <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
                         <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
@@ -86,4 +87,4 @@ class NYCUpcomingEventsArticle extends React.Component {
     }
 }
 
-export default NYCUpcomingEventsArticle
+export default NYCEventsArticle

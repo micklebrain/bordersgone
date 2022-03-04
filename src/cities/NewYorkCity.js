@@ -41,7 +41,7 @@ class NewYorkCity extends React.Component {
             <h1> New York City guide </h1>
             <div class="column-main">
                 {/* <Link to="/NYCarticle3" class="articlePreview"> <img class="article" src={pie} alt="Find a place to eat through survey" /> Stuck on where to eat? </Link> */}
-                <Link to="/NYCUpcomingEventsArticle" class="articlePreview"> <img class="articleImage" src={nyc} alt="Upcoming events" /> </Link> <div> <div class="articleTitle"> Upcoming events </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/NYCEventsArticle" class="articlePreview"> <img class="articleImage" src={nyc} alt="Events" /> </Link> <div> <div class="articleTitle"> Events </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCTopBoroughRestaurantsArticle" class="articlePreview"> <img class="articleImage" src={nycboroughs} alt="Italian Trulli" /> </Link> <div> <div class="articleTitle"> Best Restaurant in All Five NYC Boroughs </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCBroadwaysArticle" class="articlePreview"> <img class="articleImage" src={broadway} alt="Every broadway show" /> </Link> <div> <div class="articleTitle"> Every broadway show currently showing </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCPlusPoolArticle" class="articlePreview"> <img class="articleImage" src={pluspool} alt="New pool coming to Manhattan river" /> </Link> <div> <div class="articleTitle"> New pool coming to Manhattan river </div> <div> Jan 27, 2022 </div> </div>
