@@ -19,7 +19,6 @@ class NYCEventsArticle extends React.Component {
                 <h1> Events </h1>
                 <ul>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
-
                     <div class='focused'>
                         <h2> Ongoing </h2>
                         <li> March 5 - April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
@@ -32,10 +31,8 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions @6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>
-                        <li> 4th | Rezz | @ Terminal 5 </li>
-                        <li> 2nd - 6th | Nitehawk Shorts Festival | Nitehawk Cinema Prospect Park and Williamsburg </li>
-                        <li> 10th | Amine | @ Terminal5</li>
+                        <h2> March </h2>                        
+                        <li> 10th | Amine | @ Terminal5 </li>
                         <li> 13th - 14th | Tyler, The Creator | @ Madison Sqaure Garden </li>
                         <li> 17th | St Patrick's Day Parade </li>
                         <li> 18th | Reliant K | @ Irving plaza </li>
