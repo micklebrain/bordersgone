@@ -3,6 +3,7 @@ import React from "react";
 import artgallery from '../images/artgallery.jpeg';
 import broadway from '../images/broadway.jpeg';
 import brunch from '../images/brunch.jpeg'
+import cafe from '../images/cafe.jpeg'
 import koreanBBQ from '../images/KoreanBBQ.jpeg'
 import lunarNewYears from '../images/lunarNewYears.jpeg'
 import omakase from '../images/omakase.jpg';
@@ -56,6 +57,7 @@ class NewYorkCity extends React.Component {
                 <Link to="/NYCOmakaseArticle" class="articlePreview"> <img class="articleImage" src={omakase} alt="NYC Omakase" /> </Link> <div> <div class="articleTitle"> NYC Omakase </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCRooftopBarsArticle" class="articlePreview"> <img class="articleImage" src={rooftopbar} alt="NYC Rooftops Guide" /> </Link> <div> <div class="articleTitle"> NYC Rooftops Guide </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/NYCCafes" class="articlePreview"> <img class="articleImage" src={cafe} alt="NYC most unique cafes" /> </Link> <div> <div class="articleTitle"> NYC most unique cafes </div> <div> Jan 27, 2022 </div> </div>
             </div>
         </div>)
     }

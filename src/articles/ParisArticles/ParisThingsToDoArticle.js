@@ -23,13 +23,13 @@ class ParisThingsToDoArticle extends React.Component {
 
                 <h2> Monuments </h2>
                 <li> Arc de Triomphe </li>
-                <li> Eiffel Tower </li>                
-                <li> Musee d’Orsay </li>
+                <li> Eiffel Tower </li>                                
                 <li> Palais Garnier </li>
                 <li> Pantheon </li>
 
                 <h2> Musuems </h2>
                 <li> Louvre </li>
+                <li> Musee d’Orsay </li>
 
                 <h2> Seine River boat / cruise tour </h2>                
                 <li> Bateaux Mouches seina cruise </li>

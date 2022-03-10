@@ -51,12 +51,13 @@ class NYCEventsArticle extends React.Component {
                     </div>
 
                     <h2> April </h2>
-                    <li> 8th | Lil Tecca | @Terminal 5 | music</li>
+                    <li> 8th | Lil Tecca | @ Terminal 5 | music</li>
                     <li> April 6 - April 13  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
+                    <li> April 15 | Said The Sky | @ Webster Hall | music</li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
-                    <li> 1st | Japan Day Festival | @Central Park </li>
+                    <li> 1st | Japan Day Festival | @ Central Park </li>
                     <li> 22nd | Keshi | @Webster Hall </li>
                     <li> 9th | Japan Day Festival | @Central Park </li>
 
