@@ -27,6 +27,10 @@ class ParisThingsToDoArticle extends React.Component {
                     <li> Seine River boat / cruise tour </li>
                     <li> Wine tasting </li>
                 </ul>
+                <h2> Seine River boat / cruise tour </h2>                
+                <li> Bateaux Mouches seina cruise </li>
+                <li> Bateaux Parisiens seina cruise </li>
+                <li> BatoBus hop on hop off cruise </li>
             </div>)
     }
 }

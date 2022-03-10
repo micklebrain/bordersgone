@@ -31,21 +31,26 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions @6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>                        
+                        <h2> March </h2>
                         <li> 10th | Amine | @ Terminal5 </li>
                         <li> 13th - 14th | Tyler, The Creator | @ Madison Sqaure Garden </li>
+                        <li> until March 15 | Luna X Moya: What the Pier Gave Us (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 17th | St Patrick's Day Parade </li>
                         <li> 18th | Reliant K | @ Irving plaza </li>
                         <li> 18th - 19th | Bad Bunny | @ Barclay Center </li>
                         <li> 4th - 20th | Eataly Fest | @ Eataly Restaurant </li>
+                        <li> March 16 - March 23 | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 26th | JoJo | @ Terminal5 </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
                         <li> 28th | New York Knicks vs Chicago Bull | @ The Madison Square Garden </li>
+                        <li> March 25 - March 30 | Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> until 31st | Tomas Saraceno Patircular Matter(s) | @ The Shed </li>
+                        <li> March 31 - April 5  | Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016) | @ Plaza at 300 Ashland Drive in Theater </li>
                     </div>
 
                     <h2> April </h2>
                     <li> 8th | Lil Tecca | @Terminal 5 </li>
+                    <li> April 6 - April 13  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
