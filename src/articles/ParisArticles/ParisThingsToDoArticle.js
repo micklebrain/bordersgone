@@ -31,6 +31,10 @@ class ParisThingsToDoArticle extends React.Component {
                 <li> Bateaux Mouches seina cruise </li>
                 <li> Bateaux Parisiens seina cruise </li>
                 <li> BatoBus hop on hop off cruise </li>
+
+                <h2> Musuems </h2>
+
+                <iframe src="https://www.google.com/maps/d/embed?mid=1MGy4jfdB2-kJmiaFrmzqt44T3fnTcu1n&ehbc=2E312F" width="640" height="480"></iframe>
             </div>)
     }
 }
