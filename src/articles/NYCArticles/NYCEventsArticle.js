@@ -25,6 +25,7 @@ class NYCEventsArticle extends React.Component {
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
                         <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
                         <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
+                        <li> until June 30th | The Fans Strke Back Star Wars Exhibit | @ 526 6th Avenue </li>
                         <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
                         <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
                         <li> ongoing @ 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
@@ -33,14 +34,14 @@ class NYCEventsArticle extends React.Component {
 
                         <h2> March </h2>
                         <li> 10th | Amine | @ Terminal5 </li>
-                        <li> 13th - 14th | Tyler, The Creator | @ Madison Sqaure Garden </li>
-                        <li> until March 15 | Luna X Moya: What the Pier Gave Us (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
+                        <li> 13th - 14th | Tyler, The Creator Concert | @ Madison Sqaure Garden </li>
+                        <li> until March 15 | Luna X Moya: What the Pier Gave Us (2021) movie | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 17th | St Patrick's Day Parade </li>
-                        <li> 18th | Reliant K | @ Irving plaza </li>
-                        <li> 18th - 19th | Bad Bunny | @ Barclay Center </li>
+                        <li> 18th | Reliant K Concert | @ Irving plaza </li>
+                        <li> 18th - 19th | Bad Bunny Concert | @ Barclay Center </li>
                         <li> 4th - 20th | Eataly Fest | @ Eataly Restaurant </li>
                         <li> March 16 - March 23 | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
-                        <li> 26th | JoJo | @ Terminal5 </li>
+                        <li> 26th | JoJo Concert | @ Terminal5 </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
                         <li> 28th | New York Knicks vs Chicago Bull | @ The Madison Square Garden </li>
                         <li> March 25 - March 30 | Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
