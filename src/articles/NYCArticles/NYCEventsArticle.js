@@ -39,6 +39,7 @@ class NYCEventsArticle extends React.Component {
                         <li> 17th | St Patrick's Day Parade </li>
                         <li> 18th | Reliant K Concert | @ Irving plaza | music </li>
                         <li> 18th - 19th | Bad Bunny Concert | @ Barclay Center | music </li>
+                        <li> 10th - 19th | Art Exhibition: Group Show Boundaries of CANON | @ 43A W 13th St, New York, NY 10011 </li>
                         <li> 4th - 20th | Eataly Fest | @ Eataly Restaurant </li>
                         <li> March 16 - March 23 | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 26th | JoJo Concert | @ Terminal5 | music </li>
