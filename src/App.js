@@ -43,6 +43,8 @@ import NYCLunarNewYearsArticle from './articles/NYCArticles/NYCLunarNewYearsArti
 import NYCOmakaseArticle from './articles/NYCArticles/NYCOmakaseArticle';
 import NYCPlusPoolArticle from './articles/NYCArticles/NYCPlusPoolArticle';
 import NYCRooftopBarsArticle from './articles/NYCArticles/NYCRooftopBarsArticle';
+import NYCSpasArticle from './articles/NYCArticles/NYCSpasArticle';
+import NYCSpeakeasiesArticle from './articles/NYCArticles/NYCSpeakeasiesArticle';
 import NYCTopAttractionsArticle from './articles/NYCArticles/NYCTopAttractionsArticle';
 import NYCTopBoroughRestaurantsArticle from './articles/NYCArticles/NYCTopBoroughRestaurantsArticle';
 import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopNeighborhoodRestaurantsArticle';
@@ -100,7 +102,9 @@ class App extends React.Component {
             <Route exact path="/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
             <Route exact path="/NYCOmakaseArticle" component={NYCOmakaseArticle} />
             <Route exact path="/NYCPlusPoolArticle" component={NYCPlusPoolArticle} />
-            <Route exact path="/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />                        
+            <Route exact path="/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />                  
+            <Route exact path="/NYCSpasArticle" component={NYCSpasArticle} />
+            <Route exact path="/NYCSpeakeasiesArticle" component={NYCSpeakeasiesArticle} />
             <Route exact path="/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
             <Route exact path="/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
             <Route exact path="/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            

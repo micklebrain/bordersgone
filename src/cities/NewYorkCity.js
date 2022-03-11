@@ -14,6 +14,8 @@ import nycboroughs from '../images/boroughs.png'
 import nycneighborhoods from '../images/neighborhoods.jpeg';
 import nycsubway from '../images/nyc-subway.jpeg';
 import rooftopbar from '../images/rooftopbar.jpeg';
+import spa from '../images/spa.jpeg';
+import speakeasy from '../images/speakeasy.jpeg';
 
 import { Link } from "react-router-dom";
 
@@ -49,15 +51,17 @@ class NewYorkCity extends React.Component {
                 <Link to="/NYCBrunch" class="articlePreview"> <img class="articleImage" src={brunch} alt="NYC best brunch spots" /> </Link> <div> <div class="articleTitle"> NYC brunch </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCAYCEBBQArticle" class="articlePreview"> <img class="articleImage" src={koreanBBQ} alt="NYC All you can eat BBQ guide" /> </Link> <div> <div class="articleTitle"> NYC All you can eat BBQ guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCArtGalleriesArticle" class="articlePreview"> <img class="articleImage" src={artgallery} alt="NYC Art Galleries guide" /> </Link> <div> <div class="articleTitle"> NYC art gallery guide </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/NYCSpeakeasiesArticle" class="articlePreview"> <img class="articleImage" src={speakeasy} alt="NYC spa guide" /> </Link> <div> <div class="articleTitle"> NYC speakeasies guide </div> <div> Jan 27, 2022 </div> </div>
             </div>
             <div class="column-main">
                 <Link to="/NYCTopNeighborhoodRestaurantsArticle" class="articlePreview"> <img class="articleImage" src={nycneighborhoods} alt="Best restaurant in every NYC neighborhood " /> </Link> <div> <div class="articleTitle"> Best Restaurant in Every NYC Neighborhood </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCTrainStopRestaurantsArticle" class="articlePreview"> <img class="articleImage" src={nycsubway} alt="Best restaurant by every subway stop" /> </Link> <div> <div class="articleTitle"> Best Restaurant by Every Subway Stop </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCTopAttractionsArticle" class="articlePreview"> <img class="articleImage" src={nycattractions} alt="Top attractions" /> </Link> <div> <div class="articleTitle"> Top attractions </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCOmakaseArticle" class="articlePreview"> <img class="articleImage" src={omakase} alt="NYC Omakase" /> </Link> <div> <div class="articleTitle"> NYC Omakase </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div>
+                {/* <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div> */}
                 <Link to="/NYCRooftopBarsArticle" class="articlePreview"> <img class="articleImage" src={rooftopbar} alt="NYC Rooftops Guide" /> </Link> <div> <div class="articleTitle"> NYC Rooftops Guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/NYCCafes" class="articlePreview"> <img class="articleImage" src={cafe} alt="NYC most unique cafes" /> </Link> <div> <div class="articleTitle"> NYC most unique cafes </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/NYCSpasArticle" class="articlePreview"> <img class="articleImage" src={spa} alt="NYC spas" /> </Link> <div> <div class="articleTitle"> NYC spa guide </div> <div> Jan 27, 2022 </div> </div>
             </div>
         </div>)
     }

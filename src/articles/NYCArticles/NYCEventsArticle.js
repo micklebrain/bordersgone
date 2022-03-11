@@ -58,7 +58,7 @@ class NYCEventsArticle extends React.Component {
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
                     <li> 1st | Japan Day Festival | @ Central Park </li>
-                    <li> 22nd | Keshi | @Webster Hall </li>
+                    <li> 22nd | Keshi | @ Webster Hall </li>
                     <li> 9th | Japan Day Festival | @Central Park </li>
 
                     <h2> June </h2>
@@ -84,7 +84,7 @@ class NYCEventsArticle extends React.Component {
                     <li> 24th - 10th | New York Film Festival </li>
 
                     <h2> November </h2>
-                    <li> 5th | Eskimo Callboy | @The Brooklyn Monarch </li>
+                    <li> 5th | Eskimo Callboy | @ The Brooklyn Monarch </li>
 
                     <h2> December </h2>
                     <li> 26th from 4-5pm | Arts Festival | 5th Ave</li>
