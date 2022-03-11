@@ -28,12 +28,11 @@ class NYCEventsArticle extends React.Component {
                         <li> until June 30th | The Fans Strke Back Star Wars Exhibit | @ 526 6th Avenue </li>
                         <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
                         <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
-                        <li> ongoing @ 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
-                        <li> ongoing | Free Friday admissions @6-10pm | @ The Rubin Museum of Art </li>
+                        <li> ongoing from 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
+                        <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
                         <h2> March </h2>
-                        <li> 10th | Amine | @ Terminal5 </li>
                         <li> 12th | Steve Aoki | @ Madison Sqaure Garden | music </li>
                         <li> 13th - 14th | Tyler, The Creator Concert | @ Madison Sqaure Garden | music </li>
                         <li> until March 15 | Luna X Moya: What the Pier Gave Us (2021) movie | @ Plaza at 300 Ashland Drive in Theater </li>
