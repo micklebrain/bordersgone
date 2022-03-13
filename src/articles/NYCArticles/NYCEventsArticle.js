@@ -21,7 +21,7 @@ class NYCEventsArticle extends React.Component {
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
-                        <li> March 5 - April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
+                        <li> until April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
                         <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
                         <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
@@ -32,8 +32,7 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>
-                        <li> 12th | Steve Aoki | @ Madison Sqaure Garden | music </li>
+                        <h2> March </h2>                        
                         <li> 13th - 14th | Tyler, The Creator Concert | @ Madison Sqaure Garden | music </li>
                         <li> until March 15 | Luna X Moya: What the Pier Gave Us (2021) movie | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 17th | St Patrick's Day Parade </li>
