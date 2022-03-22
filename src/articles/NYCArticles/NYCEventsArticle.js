@@ -17,7 +17,8 @@ class NYCEventsArticle extends React.Component {
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
-                        <li> until April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>                        
+                        <li> until April 9th | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
+                        <li> March 27th to April 10th | Macy's Flower Show | @ Macy's Herald Square </li>
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
                         <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
                         <li> until May 15th | Deepfake: Unstable Evidence on Screen | @ Changing Exhibitions Gallery </li>
@@ -31,7 +32,7 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
                         <h2> March </h2>                                           
-                        <li> 16th - 23rd | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
+                        <li> until 23rd | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 24th | Mitski | @ Radio City Hall | music </li>
                         <li> 26th | JoJo Concert | @ Terminal5 | music </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
