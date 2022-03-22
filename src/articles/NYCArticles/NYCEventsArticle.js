@@ -29,7 +29,8 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>                          
+                        <h2> March </h2>                   
+                        <li> 24th | Mitski | @ Radio City Hall | music </li>
                         <li> March 16 - March 23 | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 26th | JoJo Concert | @ Terminal5 | music </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
