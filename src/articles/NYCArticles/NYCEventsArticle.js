@@ -9,10 +9,6 @@ class NYCEventsArticle extends React.Component {
         }
     }
 
-    addEvents() {
-
-    }
-
     render() {
         return (
             <div>
@@ -21,18 +17,19 @@ class NYCEventsArticle extends React.Component {
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
-                        <li> until April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
+                        <li> until April 9 | New York on Paper Exhibit | @ West Chelsea Contemporary </li>                        
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
                         <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
                         <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
                         <li> until June 30th | The Fans Strke Back Star Wars Exhibit | @ 526 6th Avenue </li>
                         <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
                         <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
+                        <li> April 9 - ongoing | King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT | @ STARRETT LEHIGH </li>
                         <li> ongoing from 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
                         <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>                                                
+                        <h2> March </h2>                          
                         <li> March 16 - March 23 | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 26th | JoJo Concert | @ Terminal5 | music </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
@@ -43,9 +40,13 @@ class NYCEventsArticle extends React.Component {
                     </div>
 
                     <h2> April </h2>
+                    <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>
                     <li> 8th | Lil Tecca | @ Terminal 5 | music</li>
-                    <li> April 6 - April 13  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
-                    <li> April 15 | Said The Sky | @ Webster Hall | music</li>
+                    <li> 9th | Lil Tecca | @ Terminal 5 | music</li>
+                    <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
+                    <li> 15th | Said The Sky | @ Webster Hall | music</li>
+                    <li> 19th - 21st | Sundae Flower Shop Popup | 248 Mott St </li>
+                    <li> 23rd | Charli XCX | @ Hammerstein Ballroom at Manhattan Center </li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
@@ -56,6 +57,7 @@ class NYCEventsArticle extends React.Component {
                     <h2> June </h2>
                     <li> 7th | Seaport Cinema </li>
                     <li> 9th - 20th | Tribeca Film Festival </li>
+                    <li> 10th - 11th | Marshmellow | @ Brooklyn Mirgage | music </li> 
                     <li> 14th | Seaport Cinema </li>
                     <li> 19th | Queens Night market opens </li>
 
@@ -70,7 +72,7 @@ class NYCEventsArticle extends React.Component {
                     <li> 28th | Le Poisson Rouge </li>
 
                     <h2> September </h2>
-                    <li> 30th - September 12 | US Open </li>
+                    <li> 1st - 12th | US Open </li>
 
                     <h2> October </h2>
                     <li> 24th - 10th | New York Film Festival </li>
