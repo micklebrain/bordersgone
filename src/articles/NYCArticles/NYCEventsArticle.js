@@ -40,19 +40,18 @@ class NYCEventsArticle extends React.Component {
                     </div>
 
                     <h2> April </h2>
-                    <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>
-                    <li> 8th | Lil Tecca | @ Terminal 5 | music</li>
-                    <li> 9th | Lil Tecca | @ Terminal 5 | music</li>
+                    <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>                    
+                    <li> 8th - 9th | Lil Tecca | @ Terminal 5 | music</li>
                     <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
                     <li> 15th | Said The Sky | @ Webster Hall | music</li>
-                    <li> 19th - 21st | Sundae Flower Shop Popup | 248 Mott St </li>
+                    <li> 19th - 21st | Sundae Flower Shop Popup | @ 248 Mott St </li>
                     <li> 23rd | Charli XCX | @ Hammerstein Ballroom at Manhattan Center </li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
                     <li> 1st | Japan Day Festival | @ Central Park </li>
                     <li> 22nd | Keshi | @ Webster Hall </li>
-                    <li> 9th | Japan Day Festival | @Central Park </li>
+                    <li> 9th | Japan Day Festival | @ Central Park </li>
 
                     <h2> June </h2>
                     <li> 7th | Seaport Cinema </li>
