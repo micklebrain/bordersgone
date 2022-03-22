@@ -40,9 +40,11 @@ class NYCEventsArticle extends React.Component {
                     </div>
 
                     <h2> April </h2>
-                    <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>                    
+                    <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>
+                    <li> 7th | International Pillow Fight Day | @ Parks around the city </li>
                     <li> 8th - 9th | Lil Tecca | @ Terminal 5 | music</li>
                     <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
+                    <li> 14th | The Script | @ Radio City Music Hall </li>
                     <li> 15th | Said The Sky | @ Webster Hall | music</li>
                     <li> 19th - 21st | Sundae Flower Shop Popup | @ 248 Mott St </li>
                     <li> 23rd | Charli XCX | @ Hammerstein Ballroom at Manhattan Center </li>
