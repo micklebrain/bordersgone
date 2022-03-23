@@ -15,27 +15,7 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
-                        <h2> Ongoing </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day"> Until 31 </div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Tomas Saraceno Patircular Matter(s) </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> The Shed </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> Ongoing </h2>                        
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -50,6 +30,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> West Chelsea Contemporary </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day"> Until 17 </div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Tomas Saraceno Patircular Matter(s) </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location"> The Shed </div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
                                     </div>
@@ -423,6 +423,26 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
+                                            <div class="event-date-day"> 31 </div>
+                                            <div class="event-date-month">MAR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> American Utopia </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location">St. James Theatre</div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
                                             <div class="event-date-day"> 27-10</div>
                                             <div class="event-date-month">MAR-APR</div>
                                         </div>
@@ -506,6 +526,26 @@ class NYCEventsArticle extends React.Component {
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
+                                        <div class="event-date-day"> 4 </div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading"> Luna Luna, Dent May, Pearl & The Oyster </div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Knitting Factory</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
                                         <div class="event-date-day"> 1-5 </div>
                                         <div class="event-date-month">APR</div>
                                     </div>
@@ -515,14 +555,72 @@ class NYCEventsArticle extends React.Component {
                                     <div class="event-details">
                                         <div class="event-details-date"> All Day </div>
                                         <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
-                                        <div class="event-details-location-2">New York, NY </div>
+                                        <div class="event-details-location-2">New York, NY</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li> 7th | International Pillow Fight Day | @ Parks around the city </li>
-                    <li> 8th - 9th | Lil Tecca | @ Terminal 5 | music</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">6</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The Strokes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> Wed, 8 – 11 PM </div>
+                                        <div class="event-details-location">Barclays Center</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">7</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">International Pillow Fight Day</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Parks around the city</div>
+                                        <div class="event-details-location-2">NYC, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">8-9</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Lil Tecca</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Terminal 5</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
                     <li> 14th | The Script | @ Radio City Music Hall </li>
                     <li> 15th | Said The Sky | @ Webster Hall | music</li>
