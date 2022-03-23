@@ -422,3 +422,193 @@ a {
   border-style: solid;
   border-color: red;
 }
+
+/* Events List */
+
+.events-ul {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 0;
+}
+
+.event-li {  
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 0;
+  vertical-align: top;
+  border-bottom: 1px solid #3c4043;
+  cursor: pointer;
+  background-color: #303134;
+}
+
+.event-outer {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+
+.event {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 0;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: #202124;
+  min-height: 115px;
+}
+
+.event-inner {
+  color: rgb(189, 193, 198);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 115px;
+  list-style-type: disc;
+  min-height: 115px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-align: left;
+  vertical-align: top;
+  width: 398px;
+}
+
+.event-blank {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+}
+
+.event-date {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+  font-weight: 400;
+  /* position: absolute; */
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  margin: 16px;
+  width: 36px;
+  height: 64px;
+}
+
+.event-date-inner {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.event-date-day {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  color: rgba(255,255,255,.87);
+  font-size: 24px;
+  line-height: 24px;
+  margin: -2px 0 0 0;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.event-date-month {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  color: #9aa0a6;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.event-main {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  color: rgba(255,255,255,.87);
+  margin-left: 52px;
+}
+
+.event-main-title {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 13px 16px 0;
+  color: #bdc1c6;
+}
+
+.event-details {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  color: rgba(255,255,255,.87);
+  padding: 0 16px 11px;
+}
+
+.event-details-date {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9aa0a6;
+}
+
+.event-details-location {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9aa0a6;
+}
+
+.event-details-location-2 {
+  font-family: Roboto,arial,sans-serif;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9aa0a6;
+}
+
+.empty {
+  color: rgb(189, 193, 198);
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  height: 115px;
+  list-style-type: disc;
+  position: absolute;
+  right: 0px;
+  text-align: left;
+  top: 0px;
+  width: 4px;
+}
+
+/* Events List */

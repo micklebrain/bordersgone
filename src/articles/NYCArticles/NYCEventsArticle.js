@@ -13,11 +13,30 @@ class NYCEventsArticle extends React.Component {
         return (
             <div>
                 <h1> Events </h1>
-                <ul>
+                <ul class='event-ul'>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
-                        <li> until April 9th | New York on Paper Exhibit | @ West Chelsea Contemporary </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day"> until 9</div>
+                                            <div class="event-date-month">April</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> New York on Paper Exhibit </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location"> West Chelsea Contemporary </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li> March 27th to April 10th | Macy's Flower Show | @ Macy's Herald Square </li>
                         <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
                         <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
@@ -31,18 +50,77 @@ class NYCEventsArticle extends React.Component {
                         <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
                         <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
 
-                        <h2> March </h2>                                           
+                        <h2> March </h2>
                         <li> until 23rd | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
                         <li> 24th | Mitski | @ Radio City Hall | music </li>
                         <li> 26th | JoJo Concert | @ Terminal5 | music </li>
                         <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
                         <li> 28th | New York Knicks vs Chicago Bull | @ The Madison Square Garden </li>
                         <li> 25th - 30th | Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
-                        <li> until 31st | Tomas Saraceno Patircular Matter(s) | @ The Shed </li>                        
+                        <li> until 31st | Tomas Saraceno Patircular Matter(s) | @ The Shed </li>
                     </div>
 
                     <h2> April </h2>
-                    <li> 1st - 5th  | Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016) | @ Plaza at 300 Ashland Drive in Theater </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day"> 1 </div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading"> Smorgasburg WTC opening </div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location"> Fulton + Church St. </div>
+                                        <div class="event-details-location-2">New York, NY </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day"> 3 </div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading"> Smorgasburg opening </div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location"> Prospect Park </div>
+                                        <div class="event-details-location-2">New York, NY </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day"> 1-5 </div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading"> Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016) </div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
+                                        <div class="event-details-location-2">New York, NY </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 2nd | New York Knicks vs Knicks | @ The Madison Square Garden </li>
                     <li> 7th | International Pillow Fight Day | @ Parks around the city </li>
                     <li> 8th - 9th | Lil Tecca | @ Terminal 5 | music</li>
@@ -57,7 +135,7 @@ class NYCEventsArticle extends React.Component {
                     <li> 1st | Japan Day Festival | @ Central Park </li>
                     <li> 5th | ALESSO | @ Advant Gardner </li>
                     <li> 19th | DAVID GUETTA & MORTEN PRESENT FUTURE RAVE | @ Advant Gardner | music </li>
-                    <li> 20th 8 PM | DAVID GUETTA | Avant Gardner</li> 
+                    <li> 20th 8 PM | DAVID GUETTA | Avant Gardner</li>
                     <li> 22nd | Keshi | @ Webster Hall </li>
                     <li> 25th | Russ | @ Radio City Music Hall </li>
                     <li> 9th | Japan Day Festival | @ Central Park </li>
@@ -65,7 +143,7 @@ class NYCEventsArticle extends React.Component {
                     <h2> June </h2>
                     <li> 7th | Seaport Cinema </li>
                     <li> 9th - 20th | Tribeca Film Festival </li>
-                    <li> 10th - 11th | Marshmellow | @ Brooklyn Mirgage | music </li> 
+                    <li> 10th - 11th | Marshmellow | @ Brooklyn Mirgage | music </li>
                     <li> 14th | Seaport Cinema </li>
                     <li> 19th | Queens Night market opens </li>
 
