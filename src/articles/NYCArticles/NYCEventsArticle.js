@@ -1,5 +1,7 @@
 import React from "react";
 
+import './NYCEventsArticle.css';
+
 class NYCEventsArticle extends React.Component {
 
     constructor(props) {
@@ -13,7 +15,7 @@ class NYCEventsArticle extends React.Component {
         return (
             <div>
                 <h1> Events </h1>
-                <ul class='event-ul'>
+                <ul class='event-ul' style={{padding : '5px'}}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
@@ -495,6 +497,26 @@ class NYCEventsArticle extends React.Component {
                     <li> 1st | Govenors Island reopened </li>
                     <li> 1st | Japan Day Festival | @ Central Park </li>
                     <li> 5th | ALESSO | @ Advant Gardner </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day"> 7 </div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading"> Queens Night Market </div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location"> 4701 111th St</div>
+                                        <div class="event-details-location-2">Queens, NY 11368</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 19th | DAVID GUETTA & MORTEN PRESENT FUTURE RAVE | @ Advant Gardner | music </li>
                     <li> 20th 8 PM | DAVID GUETTA | Avant Gardner</li>
                     <li> 22nd | Keshi | @ Webster Hall </li>
