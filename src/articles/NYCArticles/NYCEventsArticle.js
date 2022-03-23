@@ -6,16 +6,13 @@ class NYCEventsArticle extends React.Component {
 
     constructor(props) {
         super(props);
-
-        this.state = {
-        }
     }
 
     render() {
         return (
             <div>
                 <h1> Events </h1>
-                <ul class='event-ul' style={{padding : '5px'}}>
+                <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
                         <h2> Ongoing </h2>
@@ -239,7 +236,7 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </li>
-                    
+
                         <h2> March </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
@@ -276,6 +273,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Radio City Hall </div>
                                             <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">25</div>
+                                            <div class="event-date-month">MAR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Cults (Delete) </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location">Elsewhere, 599 Johnson Ave</div>
+                                            <div class="event-details-location-2">Brooklyn, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -335,6 +352,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> The Madison Square Garden </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day"> 29 </div>
+                                            <div class="event-date-month">MAR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> The Score </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location"> Gramercy Theatre </div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
                                     </div>
@@ -483,7 +520,7 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>                    
+                    </li>
                     <li> 7th | International Pillow Fight Day | @ Parks around the city </li>
                     <li> 8th - 9th | Lil Tecca | @ Terminal 5 | music</li>
                     <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
