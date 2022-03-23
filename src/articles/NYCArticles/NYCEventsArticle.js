@@ -268,7 +268,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) </div>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Olalekan Jeyifous, The Frozen Neighborhoods (Fly-through) (2021) </div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
@@ -388,7 +388,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) </div>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Tanika I. Williams, (construct) (Clearing (2021) and Sanctuary (2021) </div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
@@ -526,8 +526,8 @@ class NYCEventsArticle extends React.Component {
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
-                                        <div class="event-date-day"> 1-5 </div>
-                                        <div class="event-date-month">APR</div>
+                                        <div class="event-date-day"> 31-5 </div>
+                                        <div class="event-date-month">MAR-APR</div>
                                     </div>
                                 </div>
                                 <div class='event-main'>
@@ -601,12 +601,126 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
-                    <li> 6th - 13th  | Aisha Amin: Choir (2020) and Friday (2019) | @ Plaza at 300 Ashland Drive in Theater </li>
-                    <li> 14th | The Script | @ Radio City Music Hall </li>
-                    <li> 15th | Said The Sky | @ Webster Hall | music</li>
-                    <li> 19th - 21st | Sundae Flower Shop Popup | @ 248 Mott St </li>
-                    <li> 23rd | Charli XCX | @ Hammerstein Ballroom at Manhattan Center </li>
-                    <li> April 9 - ongoing | King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT | @ STARRETT LEHIGH </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">6-13</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Aisha Amin: Choir (2020) and Friday (2019)</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">14</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The Script</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Radio City Music Hall</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">15</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Said The Sky</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Webster Hall</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">19-21</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Sundae Flower Shop Popup</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">248 Mott St</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">23</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Charli XCX</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">Hammerstein Ballroom at Manhattan Center</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>    
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">9 - ongoing</div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date"> All Day </div>
+                                        <div class="event-details-location">STARRETT LEHIGH</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
