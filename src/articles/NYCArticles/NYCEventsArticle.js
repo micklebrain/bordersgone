@@ -42,6 +42,63 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
+                                            <div class="event-date-day"> until 1</div>
+                                            <div class="event-date-month">May</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Orchid show </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location"> New York Botanical Garden </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day"> until 15</div>
+                                            <div class="event-date-month">May</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading"> Deepfake: Unstable Evidence on Screen </div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location"> Changing Exhibitions Gallery </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
+                        <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
+                        <li> until June 30th | The Fans Strke Back Star Wars Exhibit | @ 526 6th Avenue </li>
+                        <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
+                        <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>                        
+                        <li> ongoing from 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
+                        <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
+                        <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
+
+                        <h2> March </h2>
+                        <li> until 23rd | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
+                        <li> 24th | Mitski | @ Radio City Hall | music </li>
+                        <li> 26th | JoJo Concert | @ Terminal5 | music </li>
+                        <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
+                        <li> 28th | New York Knicks vs Chicago Bull | @ The Madison Square Garden </li>
+                        <li> 25th - 30th | Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
+                        <li> until 31st | Tomas Saraceno Patircular Matter(s) | @ The Shed </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
                                             <div class="event-date-day"> 27-10</div>
                                             <div class="event-date-month">MAR-APR</div>
                                         </div>
@@ -57,26 +114,6 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </li>
-                        <li> until May 1st | Orchid show | @ New York Botanical Garden </li>
-                        <li> every Saturday until May 28 | MoonRise: A Nouveau Circus Immersive Performance | 1329 Willoughby Ave, Brooklyn 11237</li>
-                        <li> until May 15th | Deepfake: Unstable Evidence on Screen | @ Changing Exhibitions Gallery </li>
-                        <li> until May 30th | The Butterfly Conservatory exhibit | @ American Museum of Natural History </li>
-                        <li> until June 30th | The Fans Strke Back Star Wars Exhibit | @ 526 6th Avenue </li>
-                        <li> until August 14th | Sharks exhibit | @ American Museum of Natural History </li>
-                        <li> until September 5 | Vasily Kandinsky: Around the Circle | @ Solomon R. Guggenheim Museum </li>
-                        <li> April 9 - ongoing | King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT | @ STARRETT LEHIGH </li>
-                        <li> ongoing from 6-10pm | Free Thursdays admissions | @ Brooklyn Muesuem </li>
-                        <li> ongoing | Free Friday admissions from 6-10pm | @ The Rubin Museum of Art </li>
-                        <li> ongoing | Free Friday admissions | @ The Morgan library and museum </li>
-
-                        <h2> March </h2>
-                        <li> until 23rd | Olalekan Jeyifous: The Frozen Neighborhoods (Fly-through) (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
-                        <li> 24th | Mitski | @ Radio City Hall | music </li>
-                        <li> 26th | JoJo Concert | @ Terminal5 | music </li>
-                        <li> 27th | New York Rangers vs Buffalo Sabres | @ The Madison Square Garden </li>
-                        <li> 28th | New York Knicks vs Chicago Bull | @ The Madison Square Garden </li>
-                        <li> 25th - 30th | Tanika I. Williams: (construct)Clearing (2021) and Sanctuary (2021) | @ Plaza at 300 Ashland Drive in Theater </li>
-                        <li> until 31st | Tomas Saraceno Patircular Matter(s) | @ The Shed </li>
                     </div>
 
                     <h2> April </h2>
@@ -167,6 +204,7 @@ class NYCEventsArticle extends React.Component {
                     <li> 15th | Said The Sky | @ Webster Hall | music</li>
                     <li> 19th - 21st | Sundae Flower Shop Popup | @ 248 Mott St </li>
                     <li> 23rd | Charli XCX | @ Hammerstein Ballroom at Manhattan Center </li>
+                    <li> April 9 - ongoing | King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT | @ STARRETT LEHIGH </li>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
