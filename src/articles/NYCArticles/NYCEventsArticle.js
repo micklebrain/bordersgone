@@ -263,26 +263,6 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">23</div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Olalekan Jeyifous, The Frozen Neighborhoods (Fly-through) (2021) </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day">25</div>
                                             <div class="event-date-month">MAR</div>
                                         </div>
