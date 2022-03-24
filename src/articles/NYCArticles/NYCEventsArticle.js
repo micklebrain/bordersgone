@@ -8,6 +8,10 @@ class NYCEventsArticle extends React.Component {
         super(props);
     }
 
+    createEvent () {
+        
+    }
+
     render() {
         return (
             <div>
@@ -50,6 +54,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> The Shed </div>
+                                            <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day"> until 1</div>
+                                            <div class="event-date-month">May</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Nude Exhibition</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-location">Fotografiska Museum</div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
                                     </div>
@@ -258,6 +282,26 @@ class NYCEventsArticle extends React.Component {
                         </li>
 
                         <h2> March </h2>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">24</div>
+                                            <div class="event-date-month">MAR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Heart Sounds Abby Ahmad in Concert</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">7-9pm</div>
+                                            <div class="event-details-location">Fotografiska Museum</div>
+                                            <div class="event-details-location-2">Brooklyn, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -487,6 +531,26 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event-date'>
                                     <div>
                                         <div class="event-date-day"> 3 </div>
+                                        <div class="event-date-month">APR</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Stoke The Fire podcast</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sunday, 4pm</div>
+                                        <div class="event-details-location">Heave Can Wait</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">3</div>
                                         <div class="event-date-month">APR</div>
                                     </div>
                                 </div>
@@ -749,6 +813,26 @@ class NYCEventsArticle extends React.Component {
                     <li> 19th | DAVID GUETTA & MORTEN PRESENT FUTURE RAVE | @ Advant Gardner | music </li>
                     <li> 20th 8 PM | DAVID GUETTA | Avant Gardner</li>
                     <li> 22nd | Keshi | @ Webster Hall </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">18-22</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">FRIEZE NEW YORK</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">The Shed</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 25th | Russ | @ Radio City Music Hall </li>
                     <li> 9th | Japan Day Festival | @ Central Park </li>
 
