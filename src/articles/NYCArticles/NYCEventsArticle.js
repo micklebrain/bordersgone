@@ -281,47 +281,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>
 
-                        <h2> March </h2>                        
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day"> 27 </div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> New York Rangers vs Buffalo Sabres </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> The Madison Square Garden </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">27</div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Wet Ink Ensemble with Katherine Young</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Sunday, 7:30pm</div>
-                                            <div class="event-details-location">Tenri Cultural Institute of New York</div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> March </h2>       
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
