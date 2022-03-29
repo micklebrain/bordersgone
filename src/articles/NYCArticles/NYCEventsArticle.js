@@ -321,27 +321,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>
 
-                        <h2> March </h2>       
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day"> 28 </div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> New York Knicks vs Chicago Bulls </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> The Madison Square Garden </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> March </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -367,7 +347,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> 25-30 </div>
+                                            <div class="event-date-day">until 30</div>
                                             <div class="event-date-month">MAR</div>
                                         </div>
                                     </div>
@@ -1071,6 +1051,26 @@ class NYCEventsArticle extends React.Component {
                     <a href="https://www.gozerog.com/the-astronaut-experience-new-york-ny/"> 21st - 19th | Zero G Experience </a>
                     <li> 12th | The Kid Laroi | Manhattan Center Hammerstein Ballroom </li>
                     <li> 25th | Russ | Radio City Music Hall </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">26</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Odeza Last Goodbye Tour</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Forest Hills Stadium</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 28th | Le Poisson Rouge </li>
 
                     <h2> September </h2>
