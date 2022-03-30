@@ -1,21 +1,72 @@
 import React from "react";
 
+import Event from '../../Event'
 import './NYCEventsArticle.css';
 
 class NYCEventsArticle extends React.Component {
-
     constructor(props) {
         super(props);
+
+        this.state = {
+            events: []
+        }
     }
 
-    createEvent() {
+    getEvents() {
+        var requestOptions = {
+            method: 'GET',
+        };
 
+        fetch(
+            "https://lostmindsbackend.vercel.app/events/newyorkcity", requestOptions)
+            // "http://localhost:3000/boroughresturants", requestOptions)
+            .then(response => response.text())
+            .then(response => {
+                var resyJson = JSON.parse(response);
+                resyJson['doc'].forEach(event => {
+                    const res = {
+                        name: event['name'],
+                        location: event['location'],
+                        location2: event['location2'],
+                        day: event['day'],
+                        month: event['month'],
+                        time: event['time'],
+                        city: event['city']
+                    }
+                    let events = this.state.events;
+                    events.push(res);
+                    this.setState({ events: events });
+                    console.log(this.state.events);
+                });
+            })
+            .catch(error => console.log('error', error));
+    }
+
+    async componentDidMount() {
+        this.getEvents();
     }
 
     render() {
+        const events = this.state.events
+        const eventsList = events.map((event) =>
+            <Event
+                name={event.name}
+                location={event.location}
+                location2={event.location2}
+                day={event.day}
+                month={event.month}
+                time={event.time}
+                city={event.city}
+                >
+            </Event>
+        );
+
         return (
             <div>
                 <h1> Events </h1>
+
+                {/* {eventsList} */}
+
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
@@ -25,7 +76,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> until 9</div>
+                                            <div class="event-date-day">until 9</div>
                                             <div class="event-date-month">April</div>
                                         </div>
                                     </div>
@@ -50,7 +101,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Macy's Flower Show </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Macy's Flower Show</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Macy's Herald Square </div>
@@ -70,11 +121,11 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Tomas Saraceno Patircular Matter(s) </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Tomas Saraceno Particular Matter(s)</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> The Shed </div>
-                                            <div class="event-details-location-2">New York, NY </div>
+                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-location">The Shed</div>
+                                            <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +156,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> until 1</div>
+                                            <div class="event-date-day">until 1</div>
                                             <div class="event-date-month">May</div>
                                         </div>
                                     </div>
@@ -126,7 +177,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-date'>
                                         <div>
                                             <div class="event-date-day">8-4</div>
-                                            <div class="event-date-month">APR-May</div>
+                                            <div class="event-date-month">APR-MAY</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
@@ -146,7 +197,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-date'>
                                         <div>
                                             <div class="event-date-day"> until 15</div>
-                                            <div class="event-date-month">May</div>
+                                            <div class="event-date-month">MAY</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
@@ -165,8 +216,8 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> until 28 </div>
-                                            <div class="event-date-month">May</div>
+                                            <div class="event-date-day">until 28</div>
+                                            <div class="event-date-month">MAY</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
@@ -347,26 +398,6 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> 29 </div>
-                                            <div class="event-date-month">MAR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> The Score </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> Gramercy Theatre </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day">until 30</div>
                                             <div class="event-date-month">MAR</div>
                                         </div>
@@ -374,7 +405,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading"> Tanika I. Williams, (construct) (Clearing (2021) and Sanctuary (2021) </div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-date">All Day</div>
                                             <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
@@ -387,21 +418,21 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> 31 </div>
+                                            <div class="event-date-day">31</div>
                                             <div class="event-date-month">MAR</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> American Utopia </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">American Utopia</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-date">All Day</div>
                                             <div class="event-details-location">St. James Theatre</div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>                
+                        </li>
                     </div>
 
                     <h2> April </h2>
@@ -410,7 +441,7 @@ class NYCEventsArticle extends React.Component {
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
-                                        <div class="event-date-day"> 1 </div>
+                                        <div class="event-date-day">1</div>
                                         <div class="event-date-month">APR</div>
                                     </div>
                                 </div>
@@ -1096,18 +1127,20 @@ class NYCEventsArticle extends React.Component {
                     <h2> September </h2>
                     <li> 1st - 12th | US Open </li>
 
-                    <h2> October </h2>
+                    <h2> October</h2>
                     <li> 24th - 10th | New York Film Festival </li>
 
-                    <h2> November </h2>
+                    <h2> November</h2>
                     <li> 5th | Eskimo Callboy | @ The Brooklyn Monarch </li>
 
-                    <h2> December </h2>
+                    <h2> December</h2>
                     <li> 26th from 4-5pm | Arts Festival | 5th Ave</li>
 
-                    <h2> January 2023 </h2>
+                    <h2> January 2023</h2>
 
-                    <h2> Febuary 2023 </h2>
+                    <h2> Febuary 2023</h2>
+
+                    <h2> March 2023</h2>
                 </ul>
             </div>)
     }

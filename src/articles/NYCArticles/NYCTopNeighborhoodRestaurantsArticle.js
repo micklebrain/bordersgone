@@ -2,7 +2,6 @@ import React from "react";
 import Restaurant from "../../Restaurant";
 
 class NYCTopNeighborhoodRestaurantsArticle extends React.Component {
-
     constructor(props) {
         super(props);
 
