@@ -426,11 +426,11 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                                 <div class='event-main'>
-                                    <div class="event-main-title" aria-level="3" role="heading"> Smorgasburg WTC opening </div>
+                                    <div class="event-main-title" aria-level="3" role="heading">Smorgasburg WTC opening</div>
                                     <div class="event-details">
-                                        <div class="event-details-date"> All Day </div>
-                                        <div class="event-details-location"> Fulton + Church St. </div>
-                                        <div class="event-details-location-2">New York, NY </div>
+                                        <div class="event-details-date">11am-7pm</div>
+                                        <div class="event-details-location">Fulton + Church St.</div>
+                                        <div class="event-details-location-2">New York, NY</div>
                                     </div>
                                 </div>
                             </div>
@@ -461,7 +461,7 @@ class NYCEventsArticle extends React.Component {
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
-                                        <div class="event-date-day"> 3 </div>
+                                        <div class="event-date-day">3</div>
                                         <div class="event-date-month">APR</div>
                                     </div>
                                 </div>
@@ -486,11 +486,11 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                                 <div class='event-main'>
-                                    <div class="event-main-title" aria-level="3" role="heading"> Smorgasburg opening </div>
+                                    <div class="event-main-title" aria-level="3" role="heading">Smorgasburg opening</div>
                                     <div class="event-details">
-                                        <div class="event-details-date"> All Day </div>
-                                        <div class="event-details-location"> Prospect Park </div>
-                                        <div class="event-details-location-2">New York, NY </div>
+                                        <div class="event-details-date">11am-6pm</div>
+                                        <div class="event-details-location">Breeze Hill, enter at Lincoln.</div>
+                                        <div class="event-details-location-2">Prospect Park , NY</div>
                                     </div>
                                 </div>
                             </div>
@@ -1068,6 +1068,26 @@ class NYCEventsArticle extends React.Component {
                     <li> 9th | Japan Day Festival | @ Central Park </li>
 
                     <h2> June </h2>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">1</div>
+                                        <div class="event-date-month">JUN</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Smorgasburg opening</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">11am-6pm</div>
+                                        <div class="event-details-location">Marsha P. Johnson State Park</div>
+                                        <div class="event-details-location-2">Williamsburg, Brooklyn</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li> 7th | Seaport Cinema </li>
                     <li> 9th - 20th | Tribeca Film Festival </li>
                     <li> 10th - 11th | Marshmellow | @ Brooklyn Mirgage | music </li>
