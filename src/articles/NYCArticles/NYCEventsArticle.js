@@ -413,7 +413,7 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </li>
-                    </div>
+                    
 
                     <h2> April </h2>
                     <li class='event-li'>
@@ -1016,6 +1016,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
+                    </div>
 
                     <h2> May </h2>
                     <li> 1st | Govenors Island reopened </li>
