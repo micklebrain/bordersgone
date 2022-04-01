@@ -5,6 +5,7 @@ import chicago from './images/chicago.jpeg';
 import denver from './images/denver.jpeg';
 import lasvegas from './images/lasvegas.jpeg';
 import paris from './images/paris.jpeg';
+import providence from './images/providence.jpeg';
 import philadelphia from './images/philadelphia.jpeg';
 import sanfrancisco from './images/sanfrancisco.jpeg';
 import seattle from './images/seattle.jpeg';
@@ -31,6 +32,7 @@ function Home() {
         <Link to="/chicago" class="articlePreview"> <img class="articleImage" src={chicago} alt="Chicago" /> </Link> <div> <div class="articleTitle"> Chicago </div> </div>
         <Link to="/lasvegas" class="articlePreview"> <img class="articleImage" src={lasvegas} alt="Las Vegas" /> </Link> <div> <div class="articleTitle"> Las Vegas </div> </div>
         <Link to="/paris" class="articlePreview"> <img class="articleImage" src={paris} alt="New York City" /> </Link> <div> <div class="articleTitle"> Paris </div> </div>
+        <Link to="/providence" class="articlePreview"> <img class="articleImage" src={providence} alt="Providence" /> </Link> <div> <div class="articleTitle"> Providence </div> </div>
         <Link to="/sanfrancisco" class="articlePreview"> <img class="articleImage" src={sanfrancisco} alt="San Francisco" /> </Link> <div> <div class="articleTitle"> San Francisco </div> </div>
         <Link to="/toronto" class="articlePreview"> <img class="articleImage" src={toronto} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Toronto </div> </div>        
       </div>
