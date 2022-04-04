@@ -11,7 +11,7 @@ class Providence extends React.Component {
             <h1>Providence travel guide</h1>
             <h2>Things to do</h2>
             <li>WaterFire</li>
-            <li>Canal Boat</li>
+            <li>La Gondala</li>
 
             <h2>Food</h2>
             <li>coffee cabinets (coffee milk)</li>

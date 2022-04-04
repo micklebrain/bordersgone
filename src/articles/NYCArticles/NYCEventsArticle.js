@@ -70,6 +70,26 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">until 5</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016)</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <h2> Ongoing </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
@@ -438,76 +458,16 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">3</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Stoke The Fire podcast</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Sunday, 4pm</div>
-                                            <div class="event-details-location">Heave Can Wait</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">3</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Smorgasburg opening</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">11am-6pm</div>
-                                            <div class="event-details-location">Breeze Hill, enter at Lincoln.</div>
-                                            <div class="event-details-location-2">Prospect Park, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day"> 4 </div>
                                             <div class="event-date-month">APR</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Luna Luna, Dent May, Pearl & The Oyster </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Luna Luna, Dent May, Pearl & The Oyster</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-date">8pm</div>
                                             <div class="event-details-location">Knitting Factory</div>
                                             <div class="event-details-location-2">Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day"> 31-5 </div>
-                                            <div class="event-date-month">MAR-APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016) </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> Plaza at 300 Ashland Drive in Theater </div>
-                                            <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -788,6 +748,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location">248 Mott St</div>
                                             <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">21</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">LAVEDA, YEAH BABY, THE ONLYS</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">7pm</div>
+                                            <div class="event-details-location">KNITTING FACTORY</div>
+                                            <div class="event-details-location-2">Brooklyn, NY</div>
                                         </div>
                                     </div>
                                 </div>
