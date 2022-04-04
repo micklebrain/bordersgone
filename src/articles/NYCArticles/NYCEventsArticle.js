@@ -70,6 +70,7 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
+                        <h2> Ongoing </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -90,7 +91,6 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </li>
-                        <h2> Ongoing </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
