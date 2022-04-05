@@ -12,7 +12,7 @@ class NYCArticle extends React.Component {
     render() {            
         return (            
             <div>
-                <h1> NYC $1 Oysters guide </h1>
+                <h1> NYC Oysters guide </h1>
                 <li> Bar Belly daily from 5-7pm ($1) </li>
                 <li> Black Crescent daily from 5-7pm ($2 each) </li>
                 <li> Flex Mussels daily ($1.5 each) </li>
