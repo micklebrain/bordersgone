@@ -98,24 +98,24 @@ class App extends React.Component {
             <Route exact path="/PhiladelphiaArticle" component={PhiladelphiaArticle} />
             <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" component={PhiladelphiaNeighborhoodRestaurantsArticle} />
             
-            <Route exact path="/NYCArtGalleriesArticle" component={NYCArtGalleriesArticle} />
-            <Route exact path="/NYCAYCEBBQArticle" component={NYCAYCEBBQArticle} />
-            <Route exact path="/NYCBroadwaysArticle" component={NYCBroadwaysArticle} />
-            <Route exact path="/NYCBrunch" component={NYCBrunch} />
-            <Route exact path="/NYCCafes" component={NYCCafes} />
-            <Route exact path="/NYCHotpotArticle" component={NYCHotpotArticle} />
-            <Route exact path="/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
-            <Route exact path="/NYCOmakaseArticle" component={NYCOmakaseArticle} />
-            <Route exact path="/NYCOystersArticle" component={NYCOystersArticle} />
-            <Route exact path="/NYCPlusPoolArticle" component={NYCPlusPoolArticle} />
-            <Route exact path="/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />                  
-            <Route exact path="/NYCSpasArticle" component={NYCSpasArticle} />
-            <Route exact path="/NYCSpeakeasiesArticle" component={NYCSpeakeasiesArticle} />
-            <Route exact path="/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
-            <Route exact path="/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
-            <Route exact path="/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            
-            <Route exact path="/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
-            <Route exact path="/NYCEventsArticle" component={NYCEventsArticle} />
+            <Route exact path="/newyorkcity/NYCArtGalleriesArticle" component={NYCArtGalleriesArticle} />
+            <Route exact path="/newyorkcity/NYCAYCEBBQArticle" component={NYCAYCEBBQArticle} />
+            <Route exact path="/newyorkcity/NYCBroadwaysArticle" component={NYCBroadwaysArticle} />
+            <Route exact path="/newyorkcity/NYCBrunch" component={NYCBrunch} />
+            <Route exact path="/newyorkcity/NYCCafes" component={NYCCafes} />
+            <Route exact path="/newyorkcity/NYCHotpotArticle" component={NYCHotpotArticle} />
+            <Route exact path="/newyorkcity/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
+            <Route exact path="/newyorkcity/NYCOmakaseArticle" component={NYCOmakaseArticle} />
+            <Route exact path="/newyorkcity/NYCOystersArticle" component={NYCOystersArticle} />
+            <Route exact path="/newyorkcity/NYCPlusPoolArticle" component={NYCPlusPoolArticle} />
+            <Route exact path="/newyorkcity/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />                  
+            <Route exact path="/newyorkcity/NYCSpasArticle" component={NYCSpasArticle} />
+            <Route exact path="/newyorkcity/NYCSpeakeasiesArticle" component={NYCSpeakeasiesArticle} />
+            <Route exact path="/newyorkcity/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
+            <Route exact path="/newyorkcity/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
+            <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            
+            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
+            <Route exact path="/newyorkcity/NYCEventsArticle" component={NYCEventsArticle} />
 
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
 

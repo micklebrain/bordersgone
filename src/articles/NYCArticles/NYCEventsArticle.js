@@ -156,6 +156,26 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
+                                            <div class="event-date-day">until 23</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Beyond the Alley, There... art exhibit</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-location">Lehmann Maupin</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
                                             <div class="event-date-day"> until 1</div>
                                             <div class="event-date-month">May</div>
                                         </div>
@@ -458,16 +478,16 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> 4 </div>
+                                            <div class="event-date-day">5</div>
                                             <div class="event-date-month">APR</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Luna Luna, Dent May, Pearl & The Oyster</div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Jerry Cantrell</div>
                                         <div class="event-details">
-                                            <div class="event-details-date">8pm</div>
-                                            <div class="event-details-location">Knitting Factory</div>
-                                            <div class="event-details-location-2">Brooklyn, NY</div>
+                                            <div class="event-details-date">Tue, Apr 5, 7 – 11 PM</div>
+                                            <div class="event-details-location">Irving Plaza</div>
+                                            <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -485,7 +505,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">The Strokes</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> Wed, 8 – 11 PM </div>
+                                            <div class="event-details-date">Wed, Apr 6, 8 – 11 PM</div>
                                             <div class="event-details-location">Barclays Center</div>
                                             <div class="event-details-location-2">Brooklyn, NY</div>
                                         </div>
@@ -508,6 +528,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location">Parks around the city</div>
                                             <div class="event-details-location-2">NYC, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">8</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Trevor Hall</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Fri, 4 – 8 PM</div>
+                                            <div class="event-details-location">Irving Plaza</div>
+                                            <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -663,6 +703,26 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">ALISON WONDERLAND - THE LONER TOUR</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Fri, 10 PM – 3 AM</div>
+                                            <div class="event-details-location">Avant Gardner</div>
+                                            <div class="event-details-location-2">140 Stewart Ave, Brooklyn, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">15</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Said The Sky</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
@@ -788,6 +848,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date">9-11pm</div>
                                             <div class="event-details-location">Music Hall of Williamsburg</div>
                                             <div class="event-details-location-2">Brooklyn, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">22</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Snow Tha Product</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Fri, 7:30 – 9:30 PM</div>
+                                            <div class="event-details-location">Webster Hall</div>
+                                            <div class="event-details-location-2">125 E 11th St, New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -928,6 +1008,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location">Webster Hall</div>
                                             <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">30</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Krewella</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Sat, 11:30 PM – 2:00 AM</div>
+                                            <div class="event-details-location">Webster Hall</div>
+                                            <div class="event-details-location-2">125 E 11th St, New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
