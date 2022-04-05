@@ -83,7 +83,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Series of shorts by Ezra Wube: Flatbushtopia (2017), Bridge Street (2015), At the Same Moment (2013), Words of Wisdom (2016)</div>
                                         <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-date">beginning from dusk</div>
                                             <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
@@ -104,7 +104,7 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-main-title" aria-level="3" role="heading"> New York on Paper Exhibit </div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> West Chelsea Contemporary </div>
+                                            <div class="event-details-location">West Chelsea Contemporary</div>
                                             <div class="event-details-location-2">New York, NY </div>
                                         </div>
                                     </div>
@@ -126,6 +126,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Macy's Herald Square </div>
                                             <div class="event-details-location-2">New York, NY </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">until 13</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Aisha Amin: Choir (2020) and Friday (2019)</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">beginning from dusk</div>
+                                            <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
+                                            <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -652,27 +672,7 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">6-13</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Aisha Amin: Choir (2020) and Friday (2019)</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        </li>                        
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
