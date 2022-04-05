@@ -170,7 +170,7 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>                        
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -967,6 +967,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details">
                                             <div class="event-details-date">8-11pm</div>
                                             <div class="event-details-location">Webster Hall</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">until 28</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Oyster Festival</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">2-5pm</div>
+                                            <div class="event-details-location">Brooklyn Crab</div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
