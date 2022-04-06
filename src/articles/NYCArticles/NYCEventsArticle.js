@@ -363,7 +363,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Date Nights</div>
                                         <div class="event-details">
-                                            <div class="event-details-date">5-9pm</div>
+                                            <div class="event-details-date">Friday & Saturday, 5-9pm</div>
                                             <div class="event-details-location">The MET</div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
@@ -416,26 +416,6 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">3</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Smorgasburg</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Sundays, 11am-6pm</div>
-                                            <div class="event-details-location">Breeze Hill, enter at Lincoln.</div>
-                                            <div class="event-details-location-2">Prospect Park , NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day">Ongoing</div>
                                             <div class="event-date-month">Forever</div>
                                         </div>
@@ -443,8 +423,8 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading"> Free admissions </div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> Thursdays, 6-10pm </div>
-                                            <div class="event-details-location"> Brooklyn Muesuem </div>
+                                            <div class="event-details-date">Fridays</div>
+                                            <div class="event-details-location"> The Morgan library and Musueum </div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
@@ -463,9 +443,29 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading"> Free admissions </div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> Fridays, 6-10pm </div>
-                                            <div class="event-details-location"> The Rubin Museum of Art </div>
+                                            <div class="event-details-date">Fridays, 6-10pm</div>
+                                            <div class="event-details-location">The Rubin Museum of Art</div>
                                             <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">Ongoing</div>
+                                            <div class="event-date-month">Forever except January and September</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Free admissions</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">First Saturdays of month, 5-11pm</div>
+                                            <div class="event-details-location">Brooklyn Muesuem</div>
+                                            <div class="event-details-location-2">Brooklyn, NY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -481,16 +481,16 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Free admissions </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Smorgasburg</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> Fridays </div>
-                                            <div class="event-details-location"> The Morgan library and Musueum </div>
-                                            <div class="event-details-location-2">New York, NY</div>
+                                            <div class="event-details-date">Sundays, 11am-6pm</div>
+                                            <div class="event-details-location">Breeze Hill, enter at Lincoln.</div>
+                                            <div class="event-details-location-2">Prospect Park , NY</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>                        
 
                         <h2> April </h2>           
                         <li class='event-li'>
