@@ -48,18 +48,18 @@ const Navbarmenu = () => {
                                 <li className="menu-item" > <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Borders gone </NavLink> </li>
                                 <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> CITIES <FiChevronDown /> </Link>
                                     <ul className={boxClassSubMenu.join(' ')} >
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/atlanta`}> Atlanta </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/chicago`}> Chicago </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/denver`}> Denver </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/lasvegas`}> Las Vegas </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/paris`}> Paris </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/philadelphia`}> Philadelphia </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/providence`}> Providence </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/newyorkcity`}> New York City </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/sanfrancisco`}> San Francisco </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/seattle`}> Seattle </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/toronto`}> Toronto </NavLink> </li>
-                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/washingtonDC`}> Washington DC </NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/atlanta`}>Atlanta</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/chicago`}>Chicago</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/denver`}>Denver</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/lasvegas`}>Las Vegas</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/paris`}>Paris</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/philadelphia`}>Philadelphia</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/providence`}>Providence</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/newyorkcity`}>New York City</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/sanfrancisco`}>San Francisco</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/seattle`}>Seattle</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/toronto`}>Toronto</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/washingtonDC`}>Washington DC</NavLink> </li>
                                     </ul>
                                 </li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ticketMarketplace`}> TICKET MARKETPLACE </NavLink> </li>
