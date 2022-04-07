@@ -13,12 +13,12 @@ class NYCBrunch extends React.Component {
         return (            
             <div>
                 <h1> NYC Brunch </h1>
-                <ul>
-                    <li> Sidney's Fibe </li>
-                    <li> Leland Eating and Drinking House </li>
-                    <li> Jack's Wife Freda </li>
-                    <li> Tre </li>
+                <ul>                                        
                     <li> Golden Diner </li>
+                    <li> Jack's Wife Freda </li>
+                    <li> Leland Eating and Drinking House </li>
+                    <li> Sidney's Fibe </li>
+                    <li> Tre </li>
                 </ul> 
         </div>)
     }
