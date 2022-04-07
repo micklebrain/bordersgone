@@ -743,6 +743,26 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Easter Parade and Bonnet Festival</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">10am</div>
+                                            <div class="event-details-location">Fifth Avenue from 49th Street up to 57th Street</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">17</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Kaiju Big Battel</div>
                                         <div class="event-details">
                                             <div class="event-details-date">8pm-12am</div>
@@ -887,6 +907,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location">Stephen Sondheim Theatre</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">15-24</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">New York International Auto Show</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Monday-Saturday: 10am-10pm | Sunday: 10am-7pm</div>
+                                            <div class="event-details-location">Javits Center</div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
@@ -1182,7 +1222,27 @@ class NYCEventsArticle extends React.Component {
                     </li>
                     <li>28th | Le Poisson Rouge</li>
 
-                    <h2>September </h2>
+                    <h2>September </h2>                    
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">16-26</div>
+                                        <div class="event-date-month">SEP</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The Feast of San Gennaro</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Little Italy</div>
+                                        <div class="event-details-location-2">Mulberry Street, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li>1st - 12th | US Open</li>
 
                     <h2>October</h2>
