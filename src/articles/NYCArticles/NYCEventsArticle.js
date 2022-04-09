@@ -1175,13 +1175,53 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>                
+                    </li>
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
-                                        <div class="event-date-day"> 7 </div>
+                                        <div class="event-date-day">5</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Michelle</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">7pm-12am</div>
+                                        <div class="event-details-location">The Bowery Ballroom</div>
+                                        <div class="event-details-location-2">6 Delancey St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">6</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Alesso & Acraze</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Fri 10 PM – Sat 4 AM</div>
+                                        <div class="event-details-location">Avant Gardner</div>
+                                        <div class="event-details-location-2">140 Stewart Ave, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">7</div>
                                         <div class="event-date-month">MAY</div>
                                     </div>
                                 </div>
@@ -1231,6 +1271,26 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details-date">8pm</div>
                                         <div class="event-details-location">Avant Gardner</div>
                                         <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">21</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">AJR</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">6:30 – 8:30 PM</div>
+                                        <div class="event-details-location">Forest Hills Stadium</div>
+                                        <div class="event-details-location-2">1 Tennis Pl, Forest Hills, NY</div>
                                     </div>
                                 </div>
                             </div>
@@ -1397,27 +1457,7 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class='event-li'>
-                        <div class='event-outer'>
-                            <div class='event'>
-                                <div class='event-date'>
-                                    <div>
-                                        <div class="event-date-day">19</div>
-                                        <div class="event-date-month">Jun</div>
-                                    </div>
-                                </div>
-                                <div class='event-main'>
-                                    <div class="event-main-title" aria-level="3" role="heading">Queens Night market opens</div>
-                                    <div class="event-details">
-                                        <div class="event-details-date">All Day</div>
-                                        <div class="event-details-location">Queens</div>
-                                        <div class="event-details-location-2">Queens, NY</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    </li>                    
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
