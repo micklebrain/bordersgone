@@ -376,7 +376,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">ongoing</div>
+                                            <div class="event-date-day">Ongoing</div>
                                             <div class="event-date-month">APR</div>
                                         </div>
                                     </div>
@@ -545,9 +545,9 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Japan Fest</div>
                                         <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-date">10am-6pm</div>
                                             <div class="event-details-location">Chelsea</div>
-                                            <div class="event-details-location-2">Manhattan, NY</div>
+                                            <div class="event-details-location-2">6 Ave 24-26th Street Manhattan, NY</div>
                                         </div>
                                     </div>
                                 </div>
