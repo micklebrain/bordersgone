@@ -1063,6 +1063,26 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Noode Fes</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-location">Chelsea</div>
+                                            <div class="event-details-location-2">Manhattan, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">30</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Lola Kirke</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
@@ -1075,10 +1095,87 @@ class NYCEventsArticle extends React.Component {
                         </li>                        
                     </div>
 
-                    <h2> May </h2>
-                    <li> 1st | Govenors Island reopened </li>
-                    <li> 1st | Japan Day Festival | @ Central Park </li>
-                    <li> 5th | ALESSO | @ Advant Gardner </li>
+                    <h2> May </h2>                    
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">1</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Govenors Island opens</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Govenors Island</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">1</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Noodle Fest</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Astoria</div>
+                                        <div class="event-details-location-2">Steinway, Broadway-34 Ave Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">1</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Japan Day Festival</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Central Park</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">5</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">ALESSO</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Central Park</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
@@ -1099,9 +1196,86 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
-                    <li> 19th | DAVID GUETTA & MORTEN PRESENT FUTURE RAVE | @ Advant Gardner | music </li>
-                    <li> 20th 8 PM | DAVID GUETTA | Avant Gardner</li>
-                    <li> 22nd | Keshi | @ Webster Hall </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">19</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">DAVID GUETTA & MORTEN PRESENT FUTURE RAVE</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">8pm</div>
+                                        <div class="event-details-location">Avant Gardner</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">20</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">DAVID GUETTA</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">8pm</div>
+                                        <div class="event-details-location">Avant Gardner</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">22</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Keshi</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Webster Hall</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">22</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Japan Fes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Upper West Side</div>
+                                        <div class="event-details-location-2">Broadway 73-74st New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
@@ -1121,9 +1295,27 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li> 25th | Russ | @ Radio City Music Hall </li>
-                    <li> 9th | Japan Day Festival | @ Central Park </li>
+                    </li>     
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">25</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Russ</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Radio City Music Hall</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>               
 
                     <h2> June </h2>
                     <li class='event-li'>
@@ -1146,20 +1338,250 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
-                    <li> 7th | Seaport Cinema </li>
-                    <li> 9th - 20th | Tribeca Film Festival </li>
-                    <li> 10th - 11th | Marshmellow | @ Brooklyn Mirgage | music </li>
-                    <li> 14th | Seaport Cinema </li>
-                    <li> 19th | Queens Night market opens </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">7</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Seaport Cinema</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">?</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">10-11</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Marshmellow</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Brooklyn Mirgage</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">14</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Seaport Cinema</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Queens</div>
+                                        <div class="event-details-location-2">Queens, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">19</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Queens Night market opens</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Queens</div>
+                                        <div class="event-details-location-2">Queens, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">19</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Japan Fes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">7th Avenue Parkslope</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">9-20</div>
+                                        <div class="event-date-month">Jun</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Tribeca Film Festival</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Brooklyn Mirgage</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2> July </h2>
-                    <li> 31st - September 18 | Bric's Celebrates Brooklyn! Festival </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">16</div>
+                                        <div class="event-date-month">JUL</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Japan Fes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Chelsea</div>
+                                        <div class="event-details-location-2">6 Ave 15-16th street Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                    
 
-                    <h2> August </h2>
-                    <li> 1st | Pixar-themed mini-golf course </li>
-                    <a href="https://www.gozerog.com/the-astronaut-experience-new-york-ny/"> 21st - 19th | Zero G Experience </a>
-                    <li> 12th | The Kid Laroi | Manhattan Center Hammerstein Ballroom </li>
-                    <li> 25th | Russ | Radio City Music Hall </li>
+                    <h2> August </h2>  
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">1</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Pixar-themed mini-golf course</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">?</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>    
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">31-18</div>
+                                        <div class="event-date-month">JUL-AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Bric's Celebrates Brooklyn! Festival</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Brooklyn</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>         
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">21-19</div>
+                                        <div class="event-date-month">JUL-AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Zero G Experience</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">?</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">12</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The Kid Laroi</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Manhattan Center Hammerstein Ballroom</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">25</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Russ</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Radio City Music Hall</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
@@ -1180,7 +1602,46 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
-                    <li>28th | Le Poisson Rouge</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">28</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Le Poisson Rouge</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">?</div>
+                                        <div class="event-details-location-2">New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                    
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">28</div>
+                                        <div class="event-date-month">AUG</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Summer Fest</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">East Village</div>
+                                        <div class="event-details-location-2">4th Ave 9-10th Street Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2>September </h2>                    
                     <li class='event-li'>
@@ -1203,16 +1664,173 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">17</div>
+                                        <div class="event-date-month">SEP</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Konamon Fes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Chelsea</div>
+                                        <div class="event-details-location-2">8 Ave 15-16 street Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">18</div>
+                                        <div class="event-date-month">SEP</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Konamon Fes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Chelsea</div>
+                                        <div class="event-details-location-2">6 Ave 24-25 street Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li>1st - 12th | US Open</li>
 
                     <h2>October</h2>
-                    <li>24th - 10th | New York Film Festival</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">8</div>
+                                        <div class="event-date-month">OCT</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Ramen Contest</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">East Village</div>
+                                        <div class="event-details-location-2">4th Ave 9-10th Street Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">9</div>
+                                        <div class="event-date-month">OCT</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Ramen Contest</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Upper East Side</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">23</div>
+                                        <div class="event-date-month">OCT</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Japan Fest</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Upper West Side</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">30-16</div>
+                                        <div class="event-date-month">SEP-OCT</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">New York Film Festival</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Lincoln Center</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2>November</h2>
-                    <li>5th | Eskimo Callboy | @ The Brooklyn Monarch</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">5</div>
+                                        <div class="event-date-month">NOV</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Eskimo Callboy</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">The Brooklyn Monarch</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2>December</h2>
-                    <li>26th from 4-5pm | Arts Festival | 5th Ave</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">26</div>
+                                        <div class="event-date-month">DEC</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Arts Festival</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">4 - 5pm</div>
+                                        <div class="event-details-location">5th Ave</div>
+                                        <div class="event-details-location-2">Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     <h2>January 2023</h2>
 
