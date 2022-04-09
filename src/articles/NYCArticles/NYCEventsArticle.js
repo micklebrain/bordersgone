@@ -1315,7 +1315,7 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>               
+                    </li>
 
                     <h2> June </h2>
                     <li class='event-li'>
@@ -1643,22 +1643,22 @@ class NYCEventsArticle extends React.Component {
                         </div>
                     </li>
 
-                    <h2>September </h2>                    
+                    <h2>September</h2>                    
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
-                                        <div class="event-date-day">16-26</div>
+                                        <div class="event-date-day">1-12</div>
                                         <div class="event-date-month">SEP</div>
                                     </div>
                                 </div>
                                 <div class='event-main'>
-                                    <div class="event-main-title" aria-level="3" role="heading">The Feast of San Gennaro</div>
+                                    <div class="event-main-title" aria-level="3" role="heading">US Open</div>
                                     <div class="event-details">
                                         <div class="event-details-date">All Day</div>
-                                        <div class="event-details-location">Little Italy</div>
-                                        <div class="event-details-location-2">Mulberry Street, NY</div>
+                                        <div class="event-details-location">?</div>
+                                        <div class="event-details-location-2">Manhattan, NY</div>
                                     </div>
                                 </div>
                             </div>
@@ -1704,7 +1704,26 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </div>
                     </li>
-                    <li>1st - 12th | US Open</li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">16-26</div>
+                                        <div class="event-date-month">SEP</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The Feast of San Gennaro</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">All Day</div>
+                                        <div class="event-details-location">Little Italy</div>
+                                        <div class="event-details-location-2">Mulberry Street, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>            
 
                     <h2>October</h2>
                     <li class='event-li'>
