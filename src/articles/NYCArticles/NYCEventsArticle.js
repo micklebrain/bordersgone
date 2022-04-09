@@ -376,6 +376,26 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
+                                            <div class="event-date-day">ongoing</div>
+                                            <div class="event-date-month">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-location">STARRETT LEHIGH</div>
+                                            <div class="event-details-location-2">New York, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
                                             <div class="event-date-day">Ongoing</div>
                                             <div class="event-date-month">Forever</div>
                                         </div>
@@ -492,33 +512,13 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>                        
 
-                        <h2> April </h2>                                                
+                        <h2> April </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">8</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Trevor Hall</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Fri, 4 – 8 PM</div>
-                                            <div class="event-details-location">Irving Plaza</div>
-                                            <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">8 - 9</div>
+                                            <div class="event-date-day">9</div>
                                             <div class="event-date-month">APR</div>
                                         </div>
                                     </div>
@@ -1072,27 +1072,7 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">9 - ongoing</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">King Pleasure PRESENTED BY THE FAMILY OF JEAN-MICHEL BASQUIAT</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location">STARRETT LEHIGH</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        </li>                        
                     </div>
 
                     <h2> May </h2>
