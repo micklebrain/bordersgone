@@ -70,27 +70,7 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
-                        <h2> Ongoing </h2>                        
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">until 9</div>
-                                            <div class="event-date-month">April</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> New York on Paper Exhibit </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
-                                            <div class="event-details-location">West Chelsea Contemporary</div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> Ongoing </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -532,27 +512,7 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">9</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Japan Fest</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">10am-6pm</div>
-                                            <div class="event-details-location">Chelsea</div>
-                                            <div class="event-details-location-2">6 Ave 24-26th Street Manhattan, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        </li>                    
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
