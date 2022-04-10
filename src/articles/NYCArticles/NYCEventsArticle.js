@@ -156,7 +156,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> until 1</div>
+                                            <div class="event-date-day">until 1</div>
                                             <div class="event-date-month">May</div>
                                         </div>
                                     </div>
@@ -357,7 +357,7 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-date'>
                                         <div>
                                             <div class="event-date-day">Ongoing</div>
-                                            <div class="event-date-month">APR</div>
+                                            <div class="event-date-month">Forever</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
@@ -492,27 +492,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>                        
 
-                        <h2> April </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">9</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Lil Tecca</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location">Terminal 5</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>                    
+                        <h2> April </h2>    
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -523,9 +503,9 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Zero Point Energy</div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Dummy</div>
                                         <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
+                                            <div class="event-details-date">All Day</div>
                                             <div class="event-details-location">Baby's All Right</div>
                                             <div class="event-details-location-2">Brooklyn, NY</div>
                                         </div>
@@ -1121,6 +1101,66 @@ class NYCEventsArticle extends React.Component {
                             <div class='event'>
                                 <div class='event-date'>
                                     <div>
+                                        <div class="event-date-day">2</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">tai verdes</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Mon, 7 – 11 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">3</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">New York City Ballet</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Tue, 7:30 PM – Wed, 12:30 AM</div>
+                                        <div class="event-details-location">David H Koch Theater</div>
+                                        <div class="event-details-location-2">20 Lincoln Center Plaza, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">4</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">The KVB</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Wed, 7 – 11 PM</div>
+                                        <div class="event-details-location">Brooklyn Made</div>
+                                        <div class="event-details-location-2">428 Troutman St, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
                                         <div class="event-date-day">5</div>
                                         <div class="event-date-month">MAY</div>
                                     </div>
@@ -1191,6 +1231,226 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details-date"> All Day </div>
                                         <div class="event-details-location"> 4701 111th St</div>
                                         <div class="event-details-location-2">Queens, NY 11368</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">8</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Rina Sawayama</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sun, 8 PM – Mon, 1 AM</div>
+                                        <div class="event-details-location">Brooklyn Steel</div>
+                                        <div class="event-details-location-2">319 Frost St, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">9</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Giant Rooks</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Mon, 7 PM – Tue, 12 AM</div>
+                                        <div class="event-details-location">The Bowery Ballroom</div>
+                                        <div class="event-details-location-2">6 Delancey St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">10</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Symphony X</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Tue, 7:30 – 11:30 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">11</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Mannequin Pussy</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Wed, May 11, 7 – 11 PM</div>
+                                        <div class="event-details-location">Saint Vitus Bar</div>
+                                        <div class="event-details-location-2">1120 Manhattan Ave, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">12</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Rels B</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Thu, May 12, 7 – 10 PM</div>
+                                        <div class="event-details-location">Gramercy Theatre</div>
+                                        <div class="event-details-location-2">127 E 23rd St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">13</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Limp Bizkit</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Fri, May 13, 7:30 – 9:30 PM</div>
+                                        <div class="event-details-location">Madison Square Garden</div>
+                                        <div class="event-details-location-2">4 Pennsylvania Plaza, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">14</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Rex Orange County</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sat, 6:45 – 8:45 PM</div>
+                                        <div class="event-details-location">Forest Hills Stadium</div>
+                                        <div class="event-details-location-2">1 Tennis Pl, Forest Hills, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">15</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Interpol</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sun, 7:30 – 11:30 PM</div>
+                                        <div class="event-details-location">Kings Theatre</div>
+                                        <div class="event-details-location-2">1027 Flatbush Ave, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">16</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Booba</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Mon, 8 – 10 PM</div>
+                                        <div class="event-details-location">Webster Hall</div>
+                                        <div class="event-details-location-2">125 E 11th St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">17</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">HAIM: One More HAIM Tour</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Tue, 7:30 – 11:30 PM</div>
+                                        <div class="event-details-location">The Madison Square Garden Company</div>
+                                        <div class="event-details-location-2">2 Pennsylvania Plaza, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">18</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Sleaford Mods</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Wed, 7 – 11 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
                                     </div>
                                 </div>
                             </div>
@@ -1315,7 +1575,47 @@ class NYCEventsArticle extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </li>     
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">23</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Turnstile</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Mon, 7 – 9 PM</div>
+                                        <div class="event-details-location">Brooklyn Steel</div>
+                                        <div class="event-details-location-2">319 Frost St, Brooklyn, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">24</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Vincint</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Tue, 7 – 10 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class='event-li'>
                         <div class='event-outer'>
                             <div class='event'>
@@ -1331,6 +1631,126 @@ class NYCEventsArticle extends React.Component {
                                         <div class="event-details-date">All Day</div>
                                         <div class="event-details-location">Radio City Music Hall</div>
                                         <div class="event-details-location-2">Manhattan, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">26</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Vio-lence</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Thu, May 26, 6 – 11 PM</div>
+                                        <div class="event-details-location">LPR</div>
+                                        <div class="event-details-location-2">158 Bleecker St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">27</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Yael Naïm</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Fri, 6 – 9 PM</div>
+                                        <div class="event-details-location">City Winery New York</div>
+                                        <div class="event-details-location-2">25 11th Ave, at Hudson River Park, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">28</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Dominic Chianese</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sat, 7 – 9 PM</div>
+                                        <div class="event-details-location">The Cutting Room</div>
+                                        <div class="event-details-location-2">44 E 32nd St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">29</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Post Animal</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Sat, 7 – 9 PM</div>
+                                        <div class="event-details-location">The Bowery Ballroom</div>
+                                        <div class="event-details-location-2">6 Delancey St, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">30</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">Dadju - Poa Tour</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Mon, 7 – 11 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='event-li'>
+                        <div class='event-outer'>
+                            <div class='event'>
+                                <div class='event-date'>
+                                    <div>
+                                        <div class="event-date-day">31</div>
+                                        <div class="event-date-month">MAY</div>
+                                    </div>
+                                </div>
+                                <div class='event-main'>
+                                    <div class="event-main-title" aria-level="3" role="heading">T-Pain</div>
+                                    <div class="event-details">
+                                        <div class="event-details-date">Tue, 7 – 11 PM</div>
+                                        <div class="event-details-location">Irving Plaza</div>
+                                        <div class="event-details-location-2">17 Irving Pl, New York, NY</div>
                                     </div>
                                 </div>
                             </div>

@@ -17,6 +17,7 @@ import nycsubway from '../images/nyc-subway.jpeg';
 import rooftopbar from '../images/rooftopbar.jpeg';
 import spa from '../images/spa.jpeg';
 import speakeasy from '../images/speakeasy.jpeg';
+import winebar from '../images/winebar.jpeg';
 import lunarNewYears from '../images/lunarNewYears.jpeg'
 
 import { Link } from "react-router-dom";
@@ -64,6 +65,7 @@ class NewYorkCity extends React.Component {
                 <Link to="/newyorkcity/NYCTopBoroughRestaurantsArticle" class="articlePreview"> <img class="articleImage" src={nycboroughs} alt="Italian Trulli" /> </Link> <div> <div class="articleTitle"> Best Restaurant in All Five NYC Boroughs </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/newyorkcity/NYCRooftopBarsArticle" class="articlePreview"> <img class="articleImage" src={rooftopbar} alt="NYC Rooftops Guide" /> </Link> <div> <div class="articleTitle"> NYC Rooftops Guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/newyorkcity/NYCSpeakeasiesArticle" class="articlePreview"> <img class="articleImage" src={speakeasy} alt="NYC spa guide" /> </Link> <div> <div class="articleTitle"> NYC speakeasies guide </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCWineBarArticle" class="articlePreview"> <img class="articleImage" src={winebar} alt="NYC wine bar guide" /> </Link> <div> <div class="articleTitle"> NYC wine bar guide </div> <div> Jan 27, 2022 </div> </div>
                 {/* <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div> */}
             </div>
         </div>)

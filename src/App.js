@@ -52,6 +52,8 @@ import NYCTopAttractionsArticle from './articles/NYCArticles/NYCTopAttractionsAr
 import NYCTopBoroughRestaurantsArticle from './articles/NYCArticles/NYCTopBoroughRestaurantsArticle';
 import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopNeighborhoodRestaurantsArticle';
 import NYCTrainStopRestaurantsArticle from './articles/NYCArticles/NYCTrainStopRestaurantsArticle';
+import NYCWineBarArticle from './articles/NYCArticles/NYCWineBarArticle';
+
 import NewYorkCityArticle3 from './articles/NYCArticles/NewYorkCityArticle3';
 
 import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArticle';
@@ -116,6 +118,7 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            
             <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
             <Route exact path="/newyorkcity/NYCEventsArticle" component={NYCEventsArticle} />
+            <Route exact path="/newyorkcity/NYCWineBarArticle" component={NYCWineBarArticle} />
 
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
 
