@@ -390,27 +390,7 @@ class NYCEventsArticle extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">Ongoing</div>
-                                            <div class="event-date-month">Forever</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Smorgasburg WTC</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Fridays, 11am-7pm</div>
-                                            <div class="event-details-location">Fulton + Church St.</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        </li>                        
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -466,6 +446,26 @@ class NYCEventsArticle extends React.Component {
                                             <div class="event-details-date">First Saturdays of month, 5-11pm</div>
                                             <div class="event-details-location">Brooklyn Muesuem</div>
                                             <div class="event-details-location-2">Brooklyn, NY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='event-li'>
+                            <div class='event-outer'>
+                                <div class='event'>
+                                    <div class='event-date'>
+                                        <div>
+                                            <div class="event-date-day">Ongoing</div>
+                                            <div class="event-date-month">Forever</div>
+                                        </div>
+                                    </div>
+                                    <div class='event-main'>
+                                        <div class="event-main-title" aria-level="3" role="heading">Smorgasburg WTC</div>
+                                        <div class="event-details">
+                                            <div class="event-details-date">Fridays, 11am-7pm</div>
+                                            <div class="event-details-location">Fulton + Church St.</div>
+                                            <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
                                 </div>
