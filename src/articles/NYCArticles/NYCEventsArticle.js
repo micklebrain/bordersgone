@@ -70,27 +70,7 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
-                        <h2> Ongoing </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">until 10</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Macy's Flower Show</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> Macy's Herald Square </div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> Ongoing </h2>                        
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
@@ -181,7 +161,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Orchid show </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Orchid show</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> New York Botanical Garden </div>
@@ -221,7 +201,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Deepfake: Unstable Evidence on Screen </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">Deepfake: Unstable Evidence on Screen</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> Changing Exhibitions Gallery </div>
@@ -256,15 +236,15 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day"> until 30 </div>
+                                            <div class="event-date-day">until 30</div>
                                             <div class="event-date-month">May</div>
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> The Butterfly Conservatory exhibit </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">The Butterfly Conservatory exhibit</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> American Museum of Natural History </div>
+                                            <div class="event-details-location">American Museum of Natural History</div>
                                             <div class="event-details-location-2">New York, NY</div>
                                         </div>
                                     </div>
@@ -436,7 +416,7 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">Forever</div>
+                                            <div class="event-date-day">Ongoing</div>
                                             <div class="event-date-month">except January and September</div>
                                         </div>
                                     </div>
@@ -492,27 +472,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>                        
 
-                        <h2> April </h2>    
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">10</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Dummy</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
-                                            <div class="event-details-location">Baby's All Right</div>
-                                            <div class="event-details-location-2">Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> April </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
