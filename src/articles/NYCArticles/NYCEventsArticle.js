@@ -176,26 +176,6 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">8-4</div>
-                                            <div class="event-date-month">APR-MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">The Poem Mural</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
-                                            <div class="event-details-location">The Poem</div>
-                                            <div class="event-details-location-2">New York, NY </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day"> until 15</div>
                                             <div class="event-date-month">MAY</div>
                                         </div>
@@ -473,26 +453,6 @@ class NYCEventsArticle extends React.Component {
                         </li>                        
 
                         <h2> April </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">11</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">New York Yankees vs. Toronto Blue Jays</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">7:05-11:05pm</div>
-                                            <div class="event-details-location">Yankee Stadium</div>
-                                            <div class="event-details-location-2">Bronx, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
