@@ -452,47 +452,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>                        
 
-                        <h2> April </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">12</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">The Minutes</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">7pm-12am</div>
-                                            <div class="event-details-location">Studio 54</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">12</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Yumi Zouma</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">8-11pm</div>
-                                            <div class="event-details-location">Music Hall of Williamsburg</div>
-                                            <div class="event-details-location-2">Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>                        
+                        <h2> April </h2>                     
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
