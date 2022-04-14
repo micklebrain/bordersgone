@@ -70,27 +70,7 @@ class NYCEventsArticle extends React.Component {
                 <ul class='event-ul' style={{ padding: '5px' }}>
                     {/* <button onClick={this.addToItinerary.bind(this)}> Add to itinerary </button> */}
                     <div class='focused'>
-                        <h2> Ongoing </h2>                        
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">until 13</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Aisha Amin: Choir (2020) and Friday (2019)</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">beginning from dusk</div>
-                                            <div class="event-details-location">Plaza at 300 Ashland Drive in Theater</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2>Ongoing</h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
