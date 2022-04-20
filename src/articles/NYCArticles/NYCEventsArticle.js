@@ -412,27 +412,7 @@ class NYCEventsArticle extends React.Component {
                             </div>
                         </li>                        
 
-                        <h2> April </h2>                     
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">18</div>
-                                            <div class="event-date-month">APR</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Passenger</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">8pm-12am</div>
-                                            <div class="event-details-location">Town Hall</div>
-                                            <div class="event-details-location-2">New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <h2> April </h2>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>
