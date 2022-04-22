@@ -23,12 +23,12 @@ class Restaurant extends React.Component {
     }
 
     render() {
-        return (<div>
-            <img class="restaurantImage" src={`../../restaurants/${this.state.name}.jpeg`}></img>
+        return (<div>            
             <h2 class="resturantTitle"> {this.state.name} </h2>
             <i class='fas fa-map-marker-alt'></i> {this.state.neighborhood} <span>&#183;</span> Recommened dish - {this.state.recommendedDish}
             {/* <div class="tag"> {this.state.neighborhood} </div> */}
             <p> {this.state.description} </p>
+            <img class="restaurantImage" src={`../../restaurants/${this.state.name}.jpeg`}></img>
             <h4 class="foodDeliveryDetails"> Available for Delivery/Takeout </h4>
             <div class="row">
                 <div class="column">

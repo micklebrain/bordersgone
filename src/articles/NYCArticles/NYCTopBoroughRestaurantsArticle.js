@@ -1,6 +1,7 @@
 import React from "react";
 
 import Restaurant from "../../Restaurant"
+import locationPin from "../../images/locationPin.jpeg"
 
 class NYCTopBoroughRestaurantsArticle extends React.Component {
     constructor(props) {
@@ -115,7 +116,7 @@ class NYCTopBoroughRestaurantsArticle extends React.Component {
             <div class="container">                
                 {/* <h1> January, 2022 </h1> */}                
                 <div class="column-main">
-                    <h1> Top Restaurants in each New York borough </h1>             
+                    <h1>Top Restaurants in each New York borough</h1>             
                     {restaurantsList}
                 </div>
 

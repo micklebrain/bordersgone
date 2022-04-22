@@ -13,6 +13,8 @@ import {
 import TicketMarketplace from './TicketMarketplace';
 
 import Atlanta from './cities/Atlanta';
+import Bogota from './cities/Bogota';
+import Boston from './cities/Boston';
 import Chicago from './cities/Chicago';
 import Denver from './cities/Denver';
 import LasVegas from './cities/LasVegas';
@@ -76,6 +78,8 @@ class App extends React.Component {
             <Route exact path="/"> <Home /> </Route>
 
             <Route exact path="/atlanta" component={Atlanta} />
+            <Route exact path="/bogota" component={Bogota} />
+            <Route exact path="/boston" component={Boston} />
             <Route exact path="/chicago" component={Chicago} />
             <Route exact path="/denver" component={Denver} />                      
             <Route exact path="/lasvegas" component={LasVegas} />
@@ -87,8 +91,7 @@ class App extends React.Component {
             <Route exact path="/seattle" component={Seattle} />
             <Route exact path="/toronto" component={Toronto} />
             <Route exact path="/washingtonDC" component={WashingtonDC} />
-
-            <Route exact path="/article" component={Article} />
+            
             <Route exact path="/hotels" component={Hotels} />
             <Route exact path="/speakeasies" component={Speakeasy} />
             <Route exact path="/ticketMarketplace" component={TicketMarketplace} />
@@ -103,6 +106,8 @@ class App extends React.Component {
             <Route exact path="/ParisThingsToDoArticle" component={ParisThingsToDoArticle} />
             <Route exact path="/PhiladelphiaArticle" component={PhiladelphiaArticle} />
             <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" component={PhiladelphiaNeighborhoodRestaurantsArticle} />
+
+            <Route exact path="/bogota/bogotarestaurants" component={Hotels} />
             
             <Route exact path="/newyorkcity/NYCArtGalleriesArticle" component={NYCArtGalleriesArticle} />
             <Route exact path="/newyorkcity/NYCAYCEBBQArticle" component={NYCAYCEBBQArticle} />
