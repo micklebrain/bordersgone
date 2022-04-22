@@ -114,12 +114,12 @@ class NYCTopBoroughRestaurantsArticle extends React.Component {
         return (
             <div class="container">
                 <h1> Top Restaurants in each New York borough </h1>
-                <h1> January, 2022 </h1>
+                {/* <h1> January, 2022 </h1> */}
                 <div class="column-main">
                     {restaurantsList}
                 </div>
 
-                <div class="column-main">
+                <div class="column-main-right">
                     <div id="map"></div>
                 </div>
             </div>)

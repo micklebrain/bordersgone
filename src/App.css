@@ -57,8 +57,14 @@ h3 {
 }
 
 #map {
-  height: 400px;
-  width: 100%;  
+  /* height: 400px;
+  width: 100%;   */
+  height: 100vh;
+  position: fixed;
+  float: left;
+  right: 0;
+  width: 100%;
+  padding: 10px;
 }
 
 table, th, td {
@@ -124,6 +130,7 @@ body {
   font-family: 'Inter', sans-serif;
   display: grid;
 }
+
 .container {
   width: 100%;
 	padding-right: 25px;
@@ -132,6 +139,7 @@ body {
 	margin-right: auto;
 	margin-left: auto
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -367,6 +375,14 @@ a {
     float: left;
     width: 50%;
     padding: 10px;
+  }
+
+  .column-main-right {    
+    float: left;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    width: 50%;    
   }
 
   /* Clear floats after the columns */

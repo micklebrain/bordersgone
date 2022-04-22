@@ -54,6 +54,7 @@ import NYCSpeakeasiesArticle from './articles/NYCArticles/NYCSpeakeasiesArticle'
 import NYCTopAttractionsArticle from './articles/NYCArticles/NYCTopAttractionsArticle';
 import NYCTopBoroughRestaurantsArticle from './articles/NYCArticles/NYCTopBoroughRestaurantsArticle';
 import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopNeighborhoodRestaurantsArticle';
+import NYCTour from './articles/NYCArticles/NYCTour';
 import NYCTrainStopRestaurantsArticle from './articles/NYCArticles/NYCTrainStopRestaurantsArticle';
 import NYCWineBarArticle from './articles/NYCArticles/NYCWineBarArticle';
 
@@ -109,6 +110,7 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCBroadwaysArticle" component={NYCBroadwaysArticle} />
             <Route exact path="/newyorkcity/NYCBrunch" component={NYCBrunch} />
             <Route exact path="/newyorkcity/NYCCafes" component={NYCCafes} />
+            <Route exact path="/newyorkcity/NYCEventsArticle" component={NYCEventsArticle} />
             <Route exact path="/newyorkcity/NYCHotpotArticle" component={NYCHotpotArticle} />
             <Route exact path="/newyorkcity/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
             <Route exact path="/newyorkcity/NYCOmakaseArticle" component={NYCOmakaseArticle} />
@@ -119,11 +121,11 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />
             <Route exact path="/newyorkcity/NYCSpasArticle" component={NYCSpasArticle} />
             <Route exact path="/newyorkcity/NYCSpeakeasiesArticle" component={NYCSpeakeasiesArticle} />
+            <Route exact path="/newyorkcity/NYCTour" component={NYCTour} />
             <Route exact path="/newyorkcity/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
             <Route exact path="/newyorkcity/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />            
-            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCEventsArticle" component={NYCEventsArticle} />
+            <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />
+            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />            
             <Route exact path="/newyorkcity/NYCWineBarArticle" component={NYCWineBarArticle} />
 
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
