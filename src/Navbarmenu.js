@@ -49,6 +49,8 @@ const Navbarmenu = () => {
                                 <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> CITIES <FiChevronDown /> </Link>
                                     <ul className={boxClassSubMenu.join(' ')} >
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/atlanta`}>Atlanta</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/bogota`}>Bogota</NavLink> </li>
+                                        <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/boston`}>Boston</NavLink> </li>            
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/chicago`}>Chicago</NavLink> </li>
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/denver`}>Denver</NavLink> </li>
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/lasvegas`}>Las Vegas</NavLink> </li>
