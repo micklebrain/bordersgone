@@ -74,6 +74,7 @@ class NewYorkCity extends React.Component {
                 <Link to="/newyorkcity/NYCWineBarArticle" class="articlePreview"> <img class="articleImage" src={winebar} alt="NYC wine bar guide" /> </Link> <div> <div class="articleTitle"> NYC wine bar guide </div> <div> Jan 27, 2022 </div> </div>
                 {/* <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div> */}
             </div>
+            <button> Buy itinerary </button>
         </div>)
     }
 }
