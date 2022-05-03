@@ -68,6 +68,9 @@ import Article from './Article'
 
 import Navbarmenu from './Navbarmenu';
 
+import Goodies from './goodies';
+import CustomItinerary from './customItinerary';
+
 class App extends React.Component {
   render() {
     return (
@@ -136,6 +139,9 @@ class App extends React.Component {
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
 
             <Route exact path="/SanFranciscoArticle" component={SanFranciscoArticle} />
+
+            <Route exact path="/goodies" component={Goodies} />
+            <Route exact path="/customItinerary" component={CustomItinerary} />
           </Switch>
         </Router>
       </div>)

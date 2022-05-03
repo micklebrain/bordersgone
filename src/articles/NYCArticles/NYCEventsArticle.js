@@ -445,29 +445,9 @@ class NYCEventsArticle extends React.Component {
                                     <div class='event-main'>
                                         <div class="event-main-title" aria-level="3" role="heading">Noodle Fest</div>
                                         <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
+                                            <div class="event-details-date">12-6pm</div>
                                             <div class="event-details-location">Astoria</div>
-                                            <div class="event-details-location-2">Steinway, Broadway-34 Ave Manhattan, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">1</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Japan Day Festival</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
-                                            <div class="event-details-location">Central Park</div>
-                                            <div class="event-details-location-2">Manhattan, NY</div>
+                                            <div class="event-details-location-2">Steinway, Broadway-34 St</div>
                                         </div>
                                     </div>
                                 </div>

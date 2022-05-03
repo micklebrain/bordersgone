@@ -15,6 +15,8 @@ import toronto from './images/toronto.jpeg';
 import newyorkcity from './images/newyorkcity.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
 
+import goodies from './images/goodies.jpeg';
+
 function Home() {
   return (
     <div className="App">
@@ -35,7 +37,8 @@ function Home() {
         <Link to="/paris" class="articlePreview"> <img class="articleImage" src={paris} alt="New York City" /> </Link> <div> <div class="articleTitle"> Paris </div> </div>
         <Link to="/providence" class="articlePreview"> <img class="articleImage" src={providence} alt="Providence" /> </Link> <div> <div class="articleTitle"> Providence </div> </div>
         <Link to="/sanfrancisco" class="articlePreview"> <img class="articleImage" src={sanfrancisco} alt="San Francisco" /> </Link> <div> <div class="articleTitle"> San Francisco </div> </div>
-        <Link to="/toronto" class="articlePreview"> <img class="articleImage" src={toronto} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Toronto </div> </div>        
+        <Link to="/toronto" class="articlePreview"> <img class="articleImage" src={toronto} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Toronto </div> </div>
+        <Link to="/goodies" class="articlePreview"> <img class="articleImage" src={goodies} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Buy itinerary </div> </div>
       </div>
 
       {/* <h2> Food delivery promo codes </h2>
