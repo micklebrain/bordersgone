@@ -9,11 +9,11 @@ import "./App.css";
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
 // const stripePromise = loadStripe("pk_test_51Kr8zwCrXyNi8bG68Az1KpmLo8NDbgspFSPNztIrOnVfQ9dQhgXKJXYhqYwlpvfXpO3ddv4PXfRh2eliaID06bHg00Ghl8Uy5P");
-const stripePublishableKey = process.env.STRIPE_PK
+const stripePublishableKey = process.env.REACT_APP_STRIPE_PK;
 const stripePromise = loadStripe(stripePublishableKey);
-// const stripePromise = loadStripe("pk_test_51Kr8zwCrXyNi8bG68Az1KpmLo8NDbgspFSPNztIrOnVfQ9dQhgXKJXYhqYwlpvfXpO3ddv4PXfRh2eliaID06bHg00Ghl8Uy5P");
 
 export default function Goodies() {
+
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
