@@ -59,7 +59,7 @@ export default function CheckoutForm() {
       confirmParams: {
         // Make sure to change this to your payment completion page
         // return_url: "https://bordersgone.com/customItinerary",
-        return_url: "http://localhost.com:3006/customItinerary",
+        return_url: "http://bordersgone:3006/customItinerary",
       },
     });
 

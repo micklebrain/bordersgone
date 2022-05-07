@@ -21,7 +21,7 @@ export default function Goodies() {
     fetch("https://lostmindsbackend.vercel.app/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
+      body: JSON.stringify({ items: [{ id: "itinerary" }] }),
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
