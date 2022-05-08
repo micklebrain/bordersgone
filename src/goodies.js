@@ -4,6 +4,7 @@ import { Elements } from "@stripe/react-stripe-js";
 
 import CheckoutForm from "./CheckoutForm";
 import "./App.css";
+import "./goodies.css";
 
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
@@ -40,7 +41,7 @@ export default function Goodies() {
     <div className="App">
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
-          <div> Buy a custom itinerary for New York City </div> 
+          <div class='sell'>Get a custom itinerary for New York City</div>
           <CheckoutForm />
         </Elements>
       )}
