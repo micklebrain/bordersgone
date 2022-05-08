@@ -141,7 +141,7 @@ class App extends React.Component {
             <Route exact path="/SanFranciscoArticle" component={SanFranciscoArticle} />
 
             <Route exact path="/goodies" component={Goodies} />
-            <Route path="/customItinerary" component={CustomItinerary} />
+            <Route exact path="/customItinerary" component={CustomItinerary} />
             {/* <Route exact path="/customItinerary/:payment_intent/:payment_intent_client_secret/:redirect_status" component={CustomItinerary} /> */}
           </Switch>
         </Router>
