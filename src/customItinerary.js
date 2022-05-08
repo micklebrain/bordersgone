@@ -13,7 +13,6 @@ async function Payment(payment, setPayment, paymentIntent) {
     var paymentUrl = "https://lostmindsbackend.vercel.app/payment/" + paymentIntent;
 
     var test = await fetch(paymentUrl, requestOptions)
-        // var test = await fetch("https://lostmindsbackend.vercel.app/payment/pi_3KwgpaCrXyNi8bG61egfjNLU", requestOptions)
         .then(response => response.text())
         // .then(result => console.log(result))
         .catch(error => console.log('error', error));
@@ -33,7 +32,6 @@ export default function CustomItinerary() {
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
     if (payment_intent == null) {
-        console.log('Failed here');
         return (<div>
             <h1> Payment must be made </h1>
         </div>)

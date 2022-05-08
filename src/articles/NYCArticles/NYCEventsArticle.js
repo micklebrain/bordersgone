@@ -101,7 +101,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> MoonRise: A Nouveau Circus Immersive Performance </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">MoonRise: A Nouveau Circus Immersive Performance</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> Saturdays </div>
                                             <div class="event-details-location"> 1329 Willoughby Ave </div>
@@ -141,7 +141,7 @@ class NYCEventsArticle extends React.Component {
                                         </div>
                                     </div>
                                     <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> The Fans Strke Back Star Wars Exhibit </div>
+                                        <div class="event-main-title" aria-level="3" role="heading">The Fans Strke Back Star Wars Exhibit</div>
                                         <div class="event-details">
                                             <div class="event-details-date"> All Day </div>
                                             <div class="event-details-location"> 526 6th Avenue </div>
@@ -353,106 +353,6 @@ class NYCEventsArticle extends React.Component {
                         </li>
 
                         <h2> May </h2>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">4</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">The KVB</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Wed, 7 – 11 PM</div>
-                                            <div class="event-details-location">Brooklyn Made</div>
-                                            <div class="event-details-location-2">428 Troutman St, Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">5</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">ALESSO</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">All Day</div>
-                                            <div class="event-details-location">Central Park</div>
-                                            <div class="event-details-location-2">Manhattan, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">5</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Michelle</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">7pm-12am</div>
-                                            <div class="event-details-location">The Bowery Ballroom</div>
-                                            <div class="event-details-location-2">6 Delancey St, New York, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">6</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Alesso & Acraze</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Fri 10 PM – Sat 4 AM</div>
-                                            <div class="event-details-location">Avant Gardner</div>
-                                            <div class="event-details-location-2">140 Stewart Ave, Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
-                                            <div class="event-date-day">7</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading"> Queens Night Market </div>
-                                        <div class="event-details">
-                                            <div class="event-details-date"> All Day </div>
-                                            <div class="event-details-location"> 4701 111th St</div>
-                                            <div class="event-details-location-2">Queens, NY 11368</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                         <li class='event-li'>
                             <div class='event-outer'>
                                 <div class='event'>

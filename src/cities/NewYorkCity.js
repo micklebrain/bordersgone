@@ -21,7 +21,7 @@ import rooftopbar from '../images/rooftopbar.jpeg';
 import spa from '../images/spa.jpeg';
 import speakeasy from '../images/speakeasy.jpeg';
 import winebar from '../images/winebar.jpeg';
-import lunarNewYears from '../images/lunarNewYears.jpeg'
+import goodies from '../images/goodies.jpeg';
 
 import { Link } from "react-router-dom";
 
@@ -58,6 +58,7 @@ class NewYorkCity extends React.Component {
                 <Link to="/newyorkcity/NYCArtGalleriesArticle" class="articlePreview"> <img class="articleImage" src={artgallery} alt="NYC Art Galleries guide" /> </Link> <div> <div class="articleTitle"> NYC art gallery guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/newyorkcity/NYCTopAttractionsArticle" class="articlePreview"> <img class="articleImage" src={nycattractions} alt="Top attractions" /> </Link> <div> <div class="articleTitle"> Top attractions </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/newyorkcity/NYCSpasArticle" class="articlePreview"> <img class="articleImage" src={spa} alt="NYC spas" /> </Link> <div> <div class="articleTitle"> NYC spa guide </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/goodies" class="articlePreview"> <img class="articleImage" src={goodies} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Buy itinerary </div> </div>
             </div>
             <h1> Food \ Drinks </h1>
             <div class="column-main">
