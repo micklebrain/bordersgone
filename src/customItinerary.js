@@ -31,27 +31,30 @@ export default function CustomItinerary() {
     var payment_intent = queryParams.get("payment_intent");
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
-    if (payment_intent == null) {
-        return (<div>
-            <h1> Payment must be made </h1>
-        </div>)
-    }
+    // if (payment_intent == null) {
+    //     return (<div>
+    //         <h1> Payment must be made </h1>
+    //     </div>)
+    // }
 
-    if (payment == null || payment != 'succeeded') {
-        Payment(payment, setPayment, payment_intent);
-        return (<div>
-            <h1> Payment must be made </h1>
-        </div>)
-    } else {
+    // if (payment == null || payment != 'succeeded') {
+    //     Payment(payment, setPayment, payment_intent);
+    //     return (<div>
+    //         <h1> Payment must be made </h1>
+    //     </div>)
+    // } else {
         return (
             <div >
-                <h1> Here is your customer itinerary </h1>
+                <h1> Day trip in NYC </h1>
                 <ul>
-                    <li> Eat </li>
-                    <li> Dance </li>
-                    <li> Play </li>
+                    <h1> Eat </h1>
+                    <li> Obao </li>
+                    <h1> Dance </h1>
+                    <li> Missions nightclub </li>
+                    <h1> Play </h1>
+                    <li> Dave and Buster </li>
                 </ul>
             </div>
         );
-    }
+    // }
 }

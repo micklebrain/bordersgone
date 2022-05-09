@@ -60,7 +60,6 @@ class NewYorkCity extends React.Component {
                 <Link to="/newyorkcity/NYCSpasArticle" class="articlePreview"> <img class="articleImage" src={spa} alt="NYC spas" /> </Link> <div> <div class="articleTitle"> NYC spa guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/goodies" class="articlePreview"> <img class="articleImage" src={goodies} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Buy itinerary </div> </div>
             </div>
-            <h1> Food \ Drinks </h1>
             <div class="column-main">
             <Link to="/newyorkcity/NYCAYCEBBQArticle" class="articlePreview"> <img class="articleImage" src={koreanBBQ} alt="NYC All you can eat BBQ guide" /> </Link> <div> <div class="articleTitle"> NYC All you can eat BBQ guide </div> <div> Jan 27, 2022 </div> </div>
                 <Link to="/newyorkcity/NYCBobaTeaArticle" class="articlePreview"> <img class="articleImage" src={bobatea} alt="NYC best brunch spots" /> </Link> <div> <div class="articleTitle"> NYC Boba Tea Guide </div> <div> Jan 27, 2022 </div> </div>
