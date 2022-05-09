@@ -79,8 +79,6 @@ table, th, td {
   text-decoration: none;
   display: flex;
   align-items: center;
-  border-top: solid red;
-  border-width: 1px;
   font-family: Paralucent;
 }
 
@@ -97,8 +95,7 @@ table, th, td {
 
 .articleTitle { 
   font-size: 20px;
-  font-weight: 900;
-  margin: 10px;
+  font-weight: 900;  
 }
 
 /**** Article links ******/

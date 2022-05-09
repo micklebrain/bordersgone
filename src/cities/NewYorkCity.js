@@ -52,12 +52,12 @@ class NewYorkCity extends React.Component {
             <h1> New York City guide </h1>
             <div class="column-main">
                 {/* <Link to="/NYCarticle3" class="articlePreview"> <img class="article" src={pie} alt="Find a place to eat through survey" /> Stuck on where to eat? </Link> */}
-                <Link to="/newyorkcity/NYCEventsArticle" class="articlePreview"> <img class="articleImage" src={nyc} alt="Events" /> </Link> <div> <div class="articleTitle"> Events </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/newyorkcity/NYCBroadwaysArticle" class="articlePreview"> <img class="articleImage" src={broadway} alt="Every broadway show" /> </Link> <div> <div class="articleTitle"> Every broadway show currently showing </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/newyorkcity/NYCPlusPoolArticle" class="articlePreview"> <img class="articleImage" src={pluspool} alt="New pool coming to Manhattan river" /> </Link> <div> <div class="articleTitle"> New pool coming to Manhattan river </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/newyorkcity/NYCArtGalleriesArticle" class="articlePreview"> <img class="articleImage" src={artgallery} alt="NYC Art Galleries guide" /> </Link> <div> <div class="articleTitle"> NYC art gallery guide </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/newyorkcity/NYCTopAttractionsArticle" class="articlePreview"> <img class="articleImage" src={nycattractions} alt="Top attractions" /> </Link> <div> <div class="articleTitle"> Top attractions </div> <div> Jan 27, 2022 </div> </div>
-                <Link to="/newyorkcity/NYCSpasArticle" class="articlePreview"> <img class="articleImage" src={spa} alt="NYC spas" /> </Link> <div> <div class="articleTitle"> NYC spa guide </div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCEventsArticle" class="articlePreview"> <img class="articleImage" src={nyc} alt="Events" /> </Link> <div> <div class="articleTitle"> Events </div> <div>Jan 27, 2022</div> </div>
+                <Link to="/newyorkcity/NYCBroadwaysArticle" class="articlePreview"> <img class="articleImage" src={broadway} alt="Every broadway show" /> </Link> <div> <div class="articleTitle">Broadway shows currently playing</div> <div>Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCPlusPoolArticle" class="articlePreview"> <img class="articleImage" src={pluspool} alt="New pool coming to Manhattan river" /> </Link> <div> <div class="articleTitle">New pool coming to Manhattan river</div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCArtGalleriesArticle" class="articlePreview"> <img class="articleImage" src={artgallery} alt="NYC Art Galleries guide" /> </Link> <div> <div class="articleTitle">NYC art gallery guide</div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCTopAttractionsArticle" class="articlePreview"> <img class="articleImage" src={nycattractions} alt="Top attractions" /> </Link> <div> <div class="articleTitle">Top attractions</div> <div> Jan 27, 2022 </div> </div>
+                <Link to="/newyorkcity/NYCSpasArticle" class="articlePreview"> <img class="articleImage" src={spa} alt="NYC spas" /> </Link> <div> <div class="articleTitle"> NYC spa guide </div> <div>Jan 27, 2022</div> </div>
                 <Link to="/goodies" class="articlePreview"> <img class="articleImage" src={goodies} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Buy itinerary </div> </div>
             </div>
             <div class="column-main">
