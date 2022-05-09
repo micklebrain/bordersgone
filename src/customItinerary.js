@@ -16,7 +16,7 @@ async function Payment(payment, setPayment, paymentIntent) {
         .then(response => response.text())
         // .then(result => console.log(result))
         .catch(error => console.log('error', error));
-    
+
     var paymentStatus = JSON.parse(test)['status'];
 
     console.log('Payment Status: ' + paymentStatus);
@@ -31,30 +31,43 @@ export default function CustomItinerary() {
     var payment_intent = queryParams.get("payment_intent");
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
-    // if (payment_intent == null) {
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // }
+    if (payment_intent == null) {
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    }
 
-    // if (payment == null || payment != 'succeeded') {
-    //     Payment(payment, setPayment, payment_intent);
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // } else {
+    if (payment == null || payment != 'succeeded') {
+        Payment(payment, setPayment, payment_intent);
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    } else {
         return (
             <div >
                 <h1> Day trip in NYC </h1>
                 <ul>
-                    <h1> Eat </h1>
+                    <h1> Morning </h1>
+                    <h2> Breakfast </h2>
+                    <li> Friedman's Hells Kitchen </li>
+
+                    <li> Walk highline </li>
+
+                    <h1> Afternoon </h1>
+                    <h2> Lunch </h2>
                     <li> Obao </li>
-                    <h1> Dance </h1>
+
+                    <h1> Nightlife </h1>
+                    <h2> Dinner </h2>
+                    <li> Barn Joo NoMad </li>
+
+                    <h2> Dance </h2>
                     <li> Missions nightclub </li>
-                    <h1> Play </h1>
+
+                    <h2> Play </h2>
                     <li> Dave and Buster </li>
                 </ul>
             </div>
         );
-    // }
+    }
 }

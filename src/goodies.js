@@ -41,7 +41,7 @@ export default function Goodies() {
     <div className="App">
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
-          <div class='sell'>Get a custom itinerary for New York City</div>
+          <div class='sell'>Get a day trip itinerary of New York City for $1</div>
           <CheckoutForm />
         </Elements>
       )}
