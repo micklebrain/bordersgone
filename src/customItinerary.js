@@ -3,14 +3,13 @@
 import React, { useState, useEffect } from "react";
 
 async function Payment(payment, setPayment, paymentIntent) {
-
     var requestOptions = {
         method: 'GET',
         redirect: 'follow'
     };
 
-    // var paymentUrl = "http://localhost:3000/payment/" + paymentIntent;
     var paymentUrl = "https://lostmindsbackend.vercel.app/payment/" + paymentIntent;
+    // var paymentUrl = "http://localhost:3000/payment/" + paymentIntent;
 
     var test = await fetch(paymentUrl, requestOptions)
         .then(response => response.text())
@@ -31,18 +30,18 @@ export default function CustomItinerary() {
     var payment_intent = queryParams.get("payment_intent");
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
-    // if (payment_intent == null) {
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // }
+    if (payment_intent == null) {
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    }
 
-    // if (payment == null || payment != 'succeeded') {
-    //     Payment(payment, setPayment, payment_intent);
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // } else {
+    if (payment == null || payment != 'succeeded') {
+        Payment(payment, setPayment, payment_intent);
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    } else {
         return (
             <div >
                 <h1> Day trip in NYC </h1>
@@ -76,5 +75,5 @@ export default function CustomItinerary() {
                 </ul>
             </div>
         );
-    // }
+    }
 }
