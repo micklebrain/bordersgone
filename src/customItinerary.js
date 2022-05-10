@@ -45,18 +45,18 @@ export default function CustomItinerary() {
 
     sendEmail();
 
-    // if (payment_intent == null) {
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // }
+    if (payment_intent == null) {
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    }
 
-    // if (payment == null || payment != 'succeeded') {
-    //     Payment(payment, setPayment, payment_intent);
-    //     return (<div>
-    //         <h1> Payment must be made </h1>
-    //     </div>)
-    // } else {
+    if (payment == null || payment != 'succeeded') {
+        Payment(payment, setPayment, payment_intent);
+        return (<div>
+            <h1> Payment must be made </h1>
+        </div>)
+    } else {
         return (
             <div >
                 <h1> Day trip in NYC </h1>
@@ -90,5 +90,5 @@ export default function CustomItinerary() {
                 </ul>
             </div>
         );
-    // }
+    }
 }
