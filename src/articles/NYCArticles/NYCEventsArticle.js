@@ -358,26 +358,6 @@ class NYCEventsArticle extends React.Component {
                                 <div class='event'>
                                     <div class='event-date'>
                                         <div>
-                                            <div class="event-date-day">8</div>
-                                            <div class="event-date-month">MAY</div>
-                                        </div>
-                                    </div>
-                                    <div class='event-main'>
-                                        <div class="event-main-title" aria-level="3" role="heading">Rina Sawayama</div>
-                                        <div class="event-details">
-                                            <div class="event-details-date">Sun, 8 PM – Mon, 1 AM</div>
-                                            <div class="event-details-location">Brooklyn Steel</div>
-                                            <div class="event-details-location-2">319 Frost St, Brooklyn, NY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='event-li'>
-                            <div class='event-outer'>
-                                <div class='event'>
-                                    <div class='event-date'>
-                                        <div>
                                             <div class="event-date-day">9</div>
                                             <div class="event-date-month">MAY</div>
                                         </div>
