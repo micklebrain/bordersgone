@@ -7,6 +7,7 @@ import chicago from './images/chicago.jpeg';
 import denver from './images/denver.jpeg';
 import lasvegas from './images/lasvegas.jpeg';
 import malaysia from './images/malaysia.jpeg';
+import newyorkcity from './images/newyorkcity.jpeg';
 import paris from './images/paris.jpeg';
 import providence from './images/providence.jpeg';
 import philadelphia from './images/philadelphia.jpeg';
@@ -15,7 +16,6 @@ import seattle from './images/seattle.jpeg';
 import singapore from './images/singapore.jpeg';
 import thailand from './images/thailand.jpeg';
 import toronto from './images/toronto.jpeg';
-import newyorkcity from './images/newyorkcity.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
 
 function Home() {

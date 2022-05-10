@@ -31,43 +31,50 @@ export default function CustomItinerary() {
     var payment_intent = queryParams.get("payment_intent");
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
-    if (payment_intent == null) {
-        return (<div>
-            <h1> Payment must be made </h1>
-        </div>)
-    }
+    // if (payment_intent == null) {
+    //     return (<div>
+    //         <h1> Payment must be made </h1>
+    //     </div>)
+    // }
 
-    if (payment == null || payment != 'succeeded') {
-        Payment(payment, setPayment, payment_intent);
-        return (<div>
-            <h1> Payment must be made </h1>
-        </div>)
-    } else {
+    // if (payment == null || payment != 'succeeded') {
+    //     Payment(payment, setPayment, payment_intent);
+    //     return (<div>
+    //         <h1> Payment must be made </h1>
+    //     </div>)
+    // } else {
         return (
             <div >
                 <h1> Day trip in NYC </h1>
                 <ul>
-                    <h1> Morning </h1>
-                    <h2> Breakfast </h2>
-                    <li> Friedman's Hells Kitchen </li>
+                    <h1>Morning</h1>
+                    <h2>Breakfast</h2>
+                    <li>7:00 am - Le Pain Quotidien</li>
+                    <li>9:00 am - Walk highline</li>
+                    <li>11:00 am - Chelsea Market</li>
 
-                    <li> Walk highline </li>
+                    <h1>Afternoon </h1>
+                    <h2>Lunch </h2>
+                    <li>12:00 pm - Obao</li>
+                    <li>2:00 pm - Vessel</li>
+                    <li>4:00 pm - Empire State Building</li>
 
-                    <h1> Afternoon </h1>
-                    <h2> Lunch </h2>
-                    <li> Obao </li>
+                    <h1>Nightlife</h1>
+                    <h2>Dinner </h2>
+                    <li>6:00 pm - Barn Joo NoMad</li>
 
-                    <h1> Nightlife </h1>
-                    <h2> Dinner </h2>
-                    <li> Barn Joo NoMad </li>
+                    <h2>Dessert </h2>
+                    <li>8:00 pm - Venchi</li>
 
-                    <h2> Dance </h2>
-                    <li> Missions nightclub </li>
+                    <h2>Play </h2>
+                    <li>9:00 pm Dave and Buster</li>
 
-                    <h2> Play </h2>
-                    <li> Dave and Buster </li>
+                    <h2>Drinks - Speakeasy</h2>
+                    <li>10:00 pm Dear Irving Gramercy</li>
+                    <h2>Dance</h2>
+                    <li>12:00 pm Mission nightclub</li>
                 </ul>
             </div>
         );
-    }
+    // }
 }
