@@ -8,7 +8,7 @@ class Thailand extends React.Component {
 
     render() {
         return (<div class='container'>
-            <h1> Thailand travel guide </h1>
+            <h1> Thailand the land of smiles guide </h1>
         </div>)
     }
 }

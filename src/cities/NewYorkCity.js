@@ -49,7 +49,7 @@ class NewYorkCity extends React.Component {
 
     render() {
         return (<div class="articleContainer">
-            <h1> New York City guide </h1>
+            <h1> New York City the City that Never Sleeps guide </h1>
             <h1> Ambassador - Nathan Nguyen </h1>
             <div class="column-main">
                 {/* <Link to="/NYCarticle3" class="articlePreview"> <img class="article" src={pie} alt="Find a place to eat through survey" /> Stuck on where to eat? </Link> */}
