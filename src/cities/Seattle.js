@@ -8,7 +8,7 @@ class Seattle extends React.Component {
 
     render() {
         return (<div class='container'>
-            <h1> Seattle travel guide </h1>
+            <h1> Seattle the Emerald City guide </h1>
         </div>)
     }
 }
