@@ -46,6 +46,11 @@ export default function CheckoutForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (e.target.email.value == '') {
+      window.alert('Email needed');
+      return;
+    }
+
     if (!stripe || !elements) {
       // Stripe.js has not yet loaded.
       // Make sure to disable form submission until Stripe.js has loaded.
@@ -58,8 +63,8 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "https://bordersgone.com/customItinerary",
-        // return_url: "http://localhost:3006/customItinerary",
+        return_url: "https://bordersgone.com/customItinerary?email=" + e.target.email.value,
+        // return_url: "http://localhost:3006/customItinerary?email=" + e.target.email.value,
       },
     });
 
@@ -79,6 +84,8 @@ export default function CheckoutForm() {
 
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"></input>
       <PaymentElement id="payment-element" />
       <button disabled={isLoading || !stripe || !elements} id="submit">
         <span id="button-text">

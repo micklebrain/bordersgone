@@ -1,5 +1,3 @@
-// import React from "react";
-
 import React, { useState, useEffect } from "react";
 
 async function Payment(payment, setPayment, paymentIntent) {
@@ -17,20 +15,45 @@ async function Payment(payment, setPayment, paymentIntent) {
         .catch(error => console.log('error', error));
 
     var paymentStatus = JSON.parse(test)['status'];
-
-    console.log('Payment Status: ' + paymentStatus);
-
     setPayment([...payment, paymentStatus]);
+}
+
+async function attachCustomer() {
+
+    var queryParams = new URLSearchParams(window.location.search);
+    var email = queryParams.get("email");
+
+    var requestOptions = {
+        method: 'POST',
+        redirect: 'follow'
+    };
+
+    var customerURL = "http://lostmindsbackend.vercel.app/createCustomer/" + email
+    // var customerURL = "http://localhost:3000/createCustomer/" + email
+
+    var customer = await fetch(customerURL, requestOptions)
+        .then(response => response.text())
+        // .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+
+    var customerId = JSON.parse(customer)['id'];
+    var payment_intent = queryParams.get("payment_intent");
+
+    await fetch("https://lostmindsbackend.vercel.app/updatePayment/" + customerId + "/" + payment_intent, requestOptions)
+        // await fetch("http://localhost:3000/updatePayment/" + customerId + "/" + payment_intent, requestOptions)
+        .then(response => response.text())
+        // .then(result => console.log(result))
+        .catch(error => console.log('error', error));
 }
 
 function sendEmail() {
     var requestOptions = {
         method: 'POST',
         redirect: 'follow'
-      };
-      
-      fetch("https://lostmindsbackend.vercel.app/sendemail", requestOptions)
-    //   fetch("http://localhost:3000/sendemail", requestOptions)
+    };
+
+    fetch("https://lostmindsbackend.vercel.app/sendemail", requestOptions)
+        //   fetch("http://localhost:3000/sendemail", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
@@ -43,7 +66,10 @@ export default function CustomItinerary() {
     var payment_intent = queryParams.get("payment_intent");
     var payment_intent_client_secret = queryParams.get("payment_intent_client_secret");
 
-    sendEmail();
+    useEffect(() => {
+        attachCustomer();
+        sendEmail();
+    }, []);
 
     if (payment_intent == null) {
         return (<div>
