@@ -15,10 +15,12 @@ class NYCSpeakeasiesArticle extends React.Component {
                 <h1>NYC speakeasy Guide</h1>
                 <li>Angel Share</li>
                 <li>Attaboy</li>
+                <li>Keys & Heels</li>
                 <li>Little Branch</li>
                 <li>Nothing Really Matters</li>
                 <li>PDT</li>
                 <li>Thyme Bar</li>
+                <li>The Woo Woo NYC</li>
         </div>)
     }
 }
