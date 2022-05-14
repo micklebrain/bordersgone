@@ -6,7 +6,7 @@ import boston from './images/boston.jpeg';
 import chicago from './images/chicago.jpeg';
 import denver from './images/denver.jpeg';
 import lasvegas from './images/lasvegas.jpeg';
-import malaysia from './images/malaysia.jpeg';
+import kualalumpur from './images/malaysia.jpeg';
 import newyorkcity from './images/newyorkcity.jpeg';
 import paris from './images/paris.jpeg';
 import providence from './images/providence.jpeg';
@@ -14,7 +14,7 @@ import philadelphia from './images/philadelphia.jpeg';
 import sanfrancisco from './images/sanfrancisco.jpeg';
 import seattle from './images/seattle.jpeg';
 import singapore from './images/singapore.jpeg';
-import thailand from './images/thailand.jpeg';
+import bangkok from './images/thailand.jpeg';
 import toronto from './images/toronto.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
 
@@ -31,7 +31,7 @@ function Home() {
         <Link to="/seattle" class="articlePreview"> <img class="articleImage" src={seattle} alt="Seattle" /> </Link> <div> <div class="articleTitle"> Seattle </div> </div>
         <Link to="/washingtonDC" class="articlePreview"> <img class="articleImage" src={washingtonDC} alt="Washington DC" /> </Link> <div> <div class="articleTitle"> Washington DC </div> </div>
         <Link to="/singapore" class="articlePreview"> <img class="articleImage" src={singapore} alt="Singapore" /> </Link> <div> <div class="articleTitle">Singapore</div> </div>
-        <Link to="/thailand" class="articlePreview"> <img class="articleImage" src={thailand} alt="Malaysia" /> </Link> <div> <div class="articleTitle">Thailand</div> </div>
+        <Link to="/Bangkok" class="articlePreview"> <img class="articleImage" src={bangkok} alt="Bangkok" /> </Link> <div> <div class="articleTitle">Thailand</div> </div>
       </div>
       <div class="column-main">
         <Link to="/bogota" class="articlePreview"> <img class="articleImage" src={bogota} alt="Chicago" /> </Link> <div> <div class="articleTitle"> Bogota </div> </div>
@@ -41,7 +41,7 @@ function Home() {
         <Link to="/providence" class="articlePreview"> <img class="articleImage" src={providence} alt="Providence" /> </Link> <div> <div class="articleTitle"> Providence </div> </div>
         <Link to="/sanfrancisco" class="articlePreview"> <img class="articleImage" src={sanfrancisco} alt="San Francisco" /> </Link> <div> <div class="articleTitle"> San Francisco </div> </div>
         <Link to="/toronto" class="articlePreview"> <img class="articleImage" src={toronto} alt="Toronto" /> </Link> <div> <div class="articleTitle"> Toronto </div> </div>
-        <Link to="/malaysia" class="articlePreview"> <img class="articleImage" src={malaysia} alt="Malaysia" /> </Link> <div> <div class="articleTitle">Malaysia</div> </div>
+        <Link to="/kualalumpur" class="articlePreview"> <img class="articleImage" src={kualalumpur} alt="Kuala Lumpur" /> </Link> <div> <div class="articleTitle">Kuala Lumpur</div> </div>
       </div>
 
       {/* <h2> Food delivery promo codes </h2>

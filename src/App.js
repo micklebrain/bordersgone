@@ -18,7 +18,7 @@ import Boston from './cities/Boston';
 import Chicago from './cities/Chicago';
 import Denver from './cities/Denver';
 import LasVegas from './cities/LasVegas';
-import Malaysia from './cities/Malaysia';
+import KualaLumpur from './cities/KualaLumpur';
 import NewYorkCity from './cities/NewYorkCity';
 import Paris from './cities/Paris';
 import Providence from './cities/Providence';
@@ -26,7 +26,7 @@ import Philadelphia from './cities/Philadelphia';
 import SanFrancisco from './cities/SanFrancisco';
 import Seattle from './cities/Seattle';
 import Singapore from './cities/Singapore';
-import Thailand from './cities/Thailand';
+import Bangkok from './cities/Bangkok';
 import Toronto from './cities/Toronto';
 import WashingtonDC from './cities/WashingtonDC';
 
@@ -89,7 +89,7 @@ class App extends React.Component {
             <Route exact path="/chicago" component={Chicago} />
             <Route exact path="/denver" component={Denver} />                      
             <Route exact path="/lasvegas" component={LasVegas} />
-            <Route exact path="/malaysia" component={Malaysia} />
+            <Route exact path="/KualaLumpur" component={KualaLumpur} />
             <Route exact path="/newyorkcity" component={NewYorkCity} />
             <Route exact path="/paris" component={Paris} />            
             <Route exact path="/philadelphia" component={Philadelphia} />
@@ -97,7 +97,7 @@ class App extends React.Component {
             <Route exact path="/sanfrancisco" component={SanFrancisco} />
             <Route exact path="/seattle" component={Seattle} />
             <Route exact path="/singapore" component={Singapore} />
-            <Route exact path="/thailand" component={Thailand} />
+            <Route exact path="/bangkok" component={Bangkok} />
             <Route exact path="/toronto" component={Toronto} />
             <Route exact path="/washingtonDC" component={WashingtonDC} />
             
