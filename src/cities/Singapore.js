@@ -1,9 +1,5 @@
 import React from "react";
 
-import {
-    Link,
-} from "react-router-dom";
-
 class Singapore extends React.Component {
 
     render() {
@@ -15,6 +11,7 @@ class Singapore extends React.Component {
             <li>Gardens by the Bay</li>
             <li>MacRitchie Nature Trail</li>
             <li>Marina Bay</li>
+            <li>Prawn Fishing</li>
             <li>Sands Skypark Observation Deck</li>            
             <li>Supertree Grove</li>
         </div>)
