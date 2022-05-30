@@ -5,9 +5,11 @@ class Singapore extends React.Component {
     render() {
         return (<div class='container'>
             <h1>Singapore the Lion City guide</h1>
+            <li>Boat Quay</li>
             <li>Buddah Tooth Relic Temple</li>
             <li>Cable Car</li>
             <li>Chinatown</li>
+            <li>Clark Quay</li>
             <li>F1 track</li>
             <li>Haw Par Villa</li>
             <li>Kebun Baru Birdsinging Club</li>       
