@@ -29,10 +29,11 @@ class Singapore extends React.Component {
             <li>Marquee</li>
             <li>Sampan Rides</li>            
 
-            <h2>Food</h2>
-            <li>durian</li>               
+            <h2>Food</h2>                        
             <li>ice cream sandwich</li>
+            <li>Laksa</li>
             <li>Norwegian Salmon ATM</li>
+            <li>soursop</li>
             <li>Dragon Chamber restaurant</li>
         </div>)
     }
