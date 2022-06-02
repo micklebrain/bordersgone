@@ -22,19 +22,20 @@ class Singapore extends React.Component {
 
             <h2>Gardens by the Bay</h2>
             <li>Cloud Forest</li>
+            <li>Floral Fantasy</li>
+            <li>Flower Dome</li>
             <li>Supertree Grove</li>
 
             <h2>Marina Bay Sands</h2>
             <li>Infinity pool</li>
             <li>Marquee</li>
-            <li>Sampan Rides</li>            
+            <li>Sampan Ride</li>            
 
             <h2>Food</h2>                        
             <li>ice cream sandwich</li>
-            <li>Laksa</li>
+            <li>laksa</li>
             <li>Norwegian Salmon ATM</li>
-            <li>soursop</li>
-            <li>Dragon Chamber restaurant</li>
+            <li>soursop</li>            
         </div>)
     }
 }
