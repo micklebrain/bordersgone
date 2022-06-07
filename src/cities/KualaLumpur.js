@@ -17,7 +17,10 @@ class KualaLumpur extends React.Component {
             <li>Petronas Towers</li>
             <li>Sri Mahamariamman Temple</li>
             <li>Sunway Lagoon Theme Park</li>
-            <li>Suria KLCC</li>            
+            <li>Suria KLCC</li>
+            <h2>Food</h2>
+            <li>Mee goreng mamak</li>
+            <li>Nasi lemak (coconut rice)</li>
         </div>)
     }
 }
