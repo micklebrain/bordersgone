@@ -8,13 +8,31 @@ export const eventsSlice = createSlice({
   },
   reducers: {
     addEvent: (state, action) => {
-        var tmp = state.events
-        tmp.push(action.payload)
-        state.events = tmp
+
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      var raw = JSON.stringify(action.payload);      
+
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,        
+        redirect: 'follow'
+      };
+
+      fetch("https://lostmindsbackend.vercel.app/addevent", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+
+      var tmp = state.events
+      tmp.push(action.payload)
+      state.events = tmp
     },
-    defineEmail: (state, action) => {            
+    defineEmail: (state, action) => {
       state.email = action.payload
-  },
+    },
   },
 })
 
