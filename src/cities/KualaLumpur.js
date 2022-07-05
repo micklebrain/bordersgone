@@ -13,11 +13,14 @@ class KualaLumpur extends React.Component {
             <li>Bird Park</li>
             <li>China Town</li>
             <li>Hutong</li>
-            <li>Kuala Lumpur Tower</li>
-            <li>PETRONAS Towers</li>
+            <li>Menara Kuala Lumpur</li>
+            <li>Petronas Towers</li>
             <li>Sri Mahamariamman Temple</li>
             <li>Sunway Lagoon Theme Park</li>
-            <li>Suria KLCC</li>            
+            <li>Suria KLCC</li>
+            <h2>Food</h2>
+            <li>Mee goreng mamak</li>
+            <li>Nasi lemak (coconut rice)</li>
         </div>)
     }
 }
