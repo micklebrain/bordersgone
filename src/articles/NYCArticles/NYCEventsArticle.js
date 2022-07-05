@@ -3,6 +3,9 @@ import React from "react";
 import Event from '../../Event'
 import './NYCEventsArticle.css';
 
+import { useDispatch } from 'react-redux'
+import { addEvent } from '../../eventsSlice'
+
 class NYCEventsArticle extends React.Component {
     constructor(props) {
         super(props);
@@ -48,7 +51,7 @@ class NYCEventsArticle extends React.Component {
 
     render() {
         const events = this.state.events
-        const eventsList = events.map((event) =>
+        events.map((event) =>
             <Event
                 name={event.name}
                 location={event.location}

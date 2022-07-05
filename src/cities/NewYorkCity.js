@@ -26,28 +26,25 @@ import goodies from '../images/goodies.jpeg';
 import { Link } from "react-router-dom";
 
 import './NewYorkCity.css';
+import { Button } from "react-bootstrap";
 
-class NewYorkCity extends React.Component {
+import { useDispatch } from 'react-redux'
+import { addEvent } from '../eventsSlice'
 
-    constructor(props) {
-        super(props);
+export function NewYorkCity() {
 
-        this.state = {
-            itinerary: [],
-        }
-    }
+    const dispatch = useDispatch()
 
-    addToItinerary() {
-        let itinerary = this.state.itinerary;
-        itinerary.push("movies");
-        this.setState({ itinerary: itinerary });
-    }
+    // constructor(props) {
+    //     super(props);
 
-    test() {
-        alert('Hello world!')
-    }
+    //     this.state = {
+    //         itinerary: [],
+    //     }
+    // }
 
-    render() {
+    // render() {
+
         return (<div class="articleContainer">
             <h1> New York City the City that Never Sleeps guide </h1>
             <h1> Ambassador - Nathan N. </h1>
@@ -79,8 +76,11 @@ class NewYorkCity extends React.Component {
                 <Link to="/newyorkcity/NYCWineBarArticle" class="articlePreview"> <img class="articleImage" src={winebar} alt="NYC wine bar guide" /> </Link> <div> <div class="articleTitle"> NYC wine bar guide </div> <div> Jan 27, 2022 </div> </div>
                 {/* <Link to="/NYCLunarNewYearsArticle" class="articlePreview"> <img class="articleImage" src={lunarNewYears} alt="NYC Lunar New Years" /> </Link> <div> <div class="articleTitle"> NYC Lunar New Years </div> <div> Jan 27, 2022 </div> </div> */}
             </div>
+            <button onClick={() => dispatch(addEvent({ name: "special", date: new Date('July 2, 2022 03:24:00') }))}>Add Event</button>
+            <button onClick={() => dispatch(addEvent({ name: "special", date: new Date('July 6, 2022 03:24:00') }))}>Add Event</button>
+            <button onClick={() => dispatch(addEvent({ name: "special", date: new Date('July 8, 2022 03:24:00') }))}>Add Event</button>
         </div>)
-    }
+    // }
 }
 
 export default NewYorkCity

@@ -74,12 +74,39 @@ import Navbarmenu from './Navbarmenu';
 import Goodies from './goodies';
 import CustomItinerary from './customItinerary';
 
+import Test from './test'
+import Booking from './Booking'
+
+import Sidebar from './sidebar'
+
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleEventsChange = this.handleEventsChange.bind(this);
+    this.state = { events: [] };
+  }
+
+  handleEventsChange(events) {
+    this.setState({ events: events`` });
+  }
+
+  handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: " + response.credential);
+  }
+
   render() {
     return (
       <div>
         <Router>
           <Navbarmenu />
+          {/* <Sidebar
+            events={this.state.events}
+            onEventsChange={this.handleEventsChange}>
+          </Sidebar> */}
+          {/* <div id="g_id_onload"
+            data-client_id="1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com"
+            data-login_uri="https://bordersgone.com/newyorkcity">
+          </div> */}
           <Switch>
             <Route exact path="/"> <Home /> </Route>
 
@@ -87,11 +114,11 @@ class App extends React.Component {
             <Route exact path="/bogota" component={Bogota} />
             <Route exact path="/boston" component={Boston} />
             <Route exact path="/chicago" component={Chicago} />
-            <Route exact path="/denver" component={Denver} />                      
+            <Route exact path="/denver" component={Denver} />
             <Route exact path="/lasvegas" component={LasVegas} />
             <Route exact path="/KualaLumpur" component={KualaLumpur} />
             <Route exact path="/newyorkcity" component={NewYorkCity} />
-            <Route exact path="/paris" component={Paris} />            
+            <Route exact path="/paris" component={Paris} />
             <Route exact path="/philadelphia" component={Philadelphia} />
             <Route exact path="/providence" component={Providence} />
             <Route exact path="/sanfrancisco" component={SanFrancisco} />
@@ -100,7 +127,7 @@ class App extends React.Component {
             <Route exact path="/bangkok" component={Bangkok} />
             <Route exact path="/toronto" component={Toronto} />
             <Route exact path="/washingtonDC" component={WashingtonDC} />
-            
+
             <Route exact path="/hotels" component={Hotels} />
             <Route exact path="/speakeasies" component={Speakeasy} />
             <Route exact path="/ticketMarketplace" component={TicketMarketplace} />
@@ -109,7 +136,7 @@ class App extends React.Component {
             <Route exact path="/AtlantaArticle" component={AtlantaArticle} />
             <Route exact path="/ChicagoArticle" component={ChicagoArticle} />
             <Route exact path="/ChicagoArticle2" component={ChicagoArticle2} />
-            <Route exact path="/DenverArticle" component={DenverArticle} />            
+            <Route exact path="/DenverArticle" component={DenverArticle} />
             <Route exact path="/LasVegasArticle" component={LasVegasArticle} />
 
             <Route exact path="/ParisThingsToDoArticle" component={ParisThingsToDoArticle} />
@@ -117,7 +144,7 @@ class App extends React.Component {
             <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" component={PhiladelphiaNeighborhoodRestaurantsArticle} />
 
             <Route exact path="/bogota/bogotarestaurants" component={Hotels} />
-            
+
             <Route exact path="/newyorkcity/NYCArtGalleriesArticle" component={NYCArtGalleriesArticle} />
             <Route exact path="/newyorkcity/NYCAYCEBBQArticle" component={NYCAYCEBBQArticle} />
             <Route exact path="/newyorkcity/NYCBobaTeaArticle" component={NYCBobaTeaArticle} />
@@ -128,7 +155,7 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCHotpotArticle" component={NYCHotpotArticle} />
             <Route exact path="/newyorkcity/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
             <Route exact path="/newyorkcity/NYCOmakaseArticle" component={NYCOmakaseArticle} />
-            <Route exact path="/newyorkcity/NYCOystersArticle" component={NYCOystersArticle} />            
+            <Route exact path="/newyorkcity/NYCOystersArticle" component={NYCOystersArticle} />
             <Route exact path="/newyorkcity/NYCPhoArticle" component={NYCPhoArticle} />
             <Route exact path="/newyorkcity/NYCPlusPoolArticle" component={NYCPlusPoolArticle} />
             <Route exact path="/newyorkcity/NYCRamenArticle" component={NYCRamenArticle} />
@@ -139,7 +166,7 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
             <Route exact path="/newyorkcity/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
             <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />            
+            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
             <Route exact path="/newyorkcity/NYCWineBarArticle" component={NYCWineBarArticle} />
 
             <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
@@ -148,6 +175,9 @@ class App extends React.Component {
 
             <Route exact path="/goodies" component={Goodies} />
             <Route exact path="/customItinerary" component={CustomItinerary} />
+
+            <Route exact path="/test" component={Test} />
+            <Route exact path="/booking" component={Booking} />
           </Switch>
         </Router>
       </div>)
