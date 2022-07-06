@@ -20,14 +20,16 @@ import toronto from './images/toronto.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
 
 import Login from './Login'
+import Sidebar from './sidebar'
 
 function Home() {
 
   return (
     <div className="App">
+      {/* <Sidebar/> */}
       <h1> Borders gone </h1>
       <h1> Worlds best travel guide </h1>
-      <Login/>
+      <Login/>      
       <div class="column-main">
         <Link to="/atlanta" class="articlePreview"> <img class="articleImage" src={atlanta} alt="Atlanta" /> </Link> <div> <div class="articleTitle"> Atlanta </div> </div>
         <Link to="/boston" class="articlePreview"> <img class="articleImage" src={boston} alt="Boston" /> </Link> <div> <div class="articleTitle"> Boston </div> </div>
