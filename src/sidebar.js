@@ -3,24 +3,18 @@ import { slide as Menu } from 'react-burger-menu';
 import { useSelector, useDispatch } from 'react-redux'
 
 export default props => {
-    const [itinerary, setItinerary] = useState([]);
     const [count, setCount] = useState(1);
     const [events, setEvents] = useState([]);
-    const evts = useSelector((state) => state.events.events)
     const email = useSelector((state) => state.events.email)
 
-    const requestOptions = {
-        method: 'GET',
-    }
+    const [itinerary, setItinerary] = useState([]);
+    const evts = useSelector((state) => state.events.events)
 
     useEffect(() => {
-        console.log('Email');
-        console.log(email);
         const url = "https://lostmindsbackend.vercel.app/userEvents/" + email
         fetch(url, {
             method: 'GET'
         })
-            // "http://localhost:3000/boroughresturants", requestOptions)
             .then(response => response.text())
             .then(response => {
                 var resyJson = JSON.parse(response);
@@ -42,8 +36,14 @@ export default props => {
             events.forEach(evt => {
                 // evts.forEach(evt => {                
                 const eventDate = new Date(evt.date);
+                console.log("Hour") 
+                var time = eventDate.toLocaleTimeString('en-US', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })
                 if (eventDate.getDate() == today.getDate()) {
                     dates.push(<h2>{evt.name}</h2>);
+                    dates.push(<h2>{time}</h2>)
                 }
             })
             let newDate = today.setDate(today.getDate() + 1);
@@ -58,8 +58,7 @@ export default props => {
     };
 
     return (
-        <Menu right>
-            <h1>Hello ...</h1>
+        <Menu right>            
             <h1>Home - Ritz Carlton</h1>
             <Dates></Dates>
             <button onClick={() => addActivity({ name: "Event 2", date: new Date('July 2, 2022 03:24:00') })}>Add Event</button>
