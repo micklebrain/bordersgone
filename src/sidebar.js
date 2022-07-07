@@ -42,8 +42,8 @@ export default props => {
                     minute: '2-digit'
                 })
                 if (eventDate.getDate() == today.getDate()) {
-                    dates.push(<h2>{evt.name}</h2>);
-                    dates.push(<h2>{time}</h2>)
+                    dates.push(<h1>{evt.name}</h1>);
+                    dates.push(<h1>{time}</h1>)
                 }
             })
             let newDate = today.setDate(today.getDate() + 1);
