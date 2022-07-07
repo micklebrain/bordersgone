@@ -90,8 +90,7 @@ class App extends React.Component {
     return (
       <div>
         <Router>
-          <Navbarmenu/>
-          {/* <Sidebar/> */}
+          <Navbarmenu/>          
           {/* <div id="g_id_onload"
             data-client_id="1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com"
             data-login_uri="https://bordersgone.com/newyorkcity">

@@ -9,6 +9,7 @@ const Login = () => {
     const dispatch = useDispatch()
 
     const handleResponse = (response) => {        
+        console.log(response);
         const token = response.credential
         const decodedToken = jwtDecode(token)
         console.log(decodedToken);    
@@ -23,7 +24,8 @@ const Login = () => {
             })
             window.google.accounts.id.prompt((notification) => {                
                 if (notification.isNotDisplayed()) {
-                    throw new Error(' Try to clear the cookies or try again later ')
+                    console.log(notification);
+                    throw new Error(String(notification))
                 }
                 if (notification.isSkippedMoment() || notification.isDismissedMoment()){
                     setDisabled(false)
