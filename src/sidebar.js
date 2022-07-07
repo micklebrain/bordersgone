@@ -44,6 +44,7 @@ export default props => {
                 if (eventDate.getDate() == today.getDate()) {
                     dates.push(<h1>{evt.name}</h1>);
                     dates.push(<h1>{time}</h1>)
+                    dates.push(<h1>{evt.location}</h1>)
                 }
             })
             let newDate = today.setDate(today.getDate() + 1);
