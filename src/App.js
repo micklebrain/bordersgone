@@ -67,7 +67,7 @@ import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArt
 import Navbarmenu from './Navbarmenu';
 import Goodies from './goodies';
 import CustomItinerary from './customItinerary';
-import Test from './test'
+import itinerary from './itinerary'
 import Booking from './Booking'
 import Sidebar from './sidebar'
 
@@ -154,7 +154,7 @@ class App extends React.Component {
             <Route exact path="/SanFranciscoArticle" component={SanFranciscoArticle} />
             <Route exact path="/goodies" component={Goodies} />
             <Route exact path="/customItinerary" component={CustomItinerary} />
-            <Route exact path="/test" component={Test} />
+            <Route exact path="/itinerary" component={itinerary} />
             <Route exact path="/booking" component={Booking} />
           </Switch>
         </Router>

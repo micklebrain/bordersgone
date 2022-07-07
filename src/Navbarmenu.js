@@ -3,7 +3,6 @@ import { NavLink, Link } from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 
 const Navbarmenu = () => {
-
     const [isMenu, setisMenu] = useState(false);
     const [isResponsiveclose, setResponsiveclose] = useState(false);
     const toggleClass = () => {
@@ -66,6 +65,7 @@ const Navbarmenu = () => {
                                 </li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ticketMarketplace`}> TICKET MARKETPLACE </NavLink> </li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/donate`}> DONATE </NavLink> </li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/itinerary`}> Itinerary </NavLink> </li>
                             </ul>
                         </nav>
                     </div>
