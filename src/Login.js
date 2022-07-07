@@ -20,6 +20,7 @@ const Login = () => {
         try {
             window.google.accounts.id.initialize({
                 client_id: "1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com",
+                itp_support: true,
                 callback: handleResponse
             })
             window.google.accounts.id.prompt((notification) => {                

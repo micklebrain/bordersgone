@@ -22,7 +22,7 @@ import Login from './Login'
 
 function Home() {
   return (
-    <div className="App">      
+    <div className="App">
       <h1> Borders gone </h1>
       <h1> Worlds best travel guide </h1>
       <Login/>
