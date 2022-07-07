@@ -24,7 +24,7 @@ const Login = () => {
             })
             window.google.accounts.id.prompt((notification) => {                
                 if (notification.isNotDisplayed()) {
-                    console.log(notification);
+                    console.log(JSON.stringify(notification));
                     throw new Error(String(notification))
                 }
                 if (notification.isSkippedMoment() || notification.isDismissedMoment()){
