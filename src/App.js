@@ -62,21 +62,13 @@ import NYCTopNeighborhoodRestaurantsArticle from './articles/NYCArticles/NYCTopN
 import NYCTour from './articles/NYCArticles/NYCTour';
 import NYCTrainStopRestaurantsArticle from './articles/NYCArticles/NYCTrainStopRestaurantsArticle';
 import NYCWineBarArticle from './articles/NYCArticles/NYCWineBarArticle';
-
 import NewYorkCityArticle3 from './articles/NYCArticles/NewYorkCityArticle3';
-
 import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArticle';
-
-import Article from './Article'
-
 import Navbarmenu from './Navbarmenu';
-
 import Goodies from './goodies';
 import CustomItinerary from './customItinerary';
-
 import Test from './test'
 import Booking from './Booking'
-
 import Sidebar from './sidebar'
 
 class App extends React.Component {
@@ -99,7 +91,7 @@ class App extends React.Component {
       <div>
         <Router>
           <Navbarmenu/>
-          <Sidebar/>
+          {/* <Sidebar/> */}
           {/* <div id="g_id_onload"
             data-client_id="1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com"
             data-login_uri="https://bordersgone.com/newyorkcity">

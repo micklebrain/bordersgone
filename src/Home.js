@@ -18,18 +18,14 @@ import singapore from './images/singapore.jpeg';
 import tokyo from './images/tokyo.jpeg';
 import toronto from './images/toronto.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
-
 import Login from './Login'
-import Sidebar from './sidebar'
 
 function Home() {
-
   return (
-    <div className="App">
-      {/* <Sidebar/> */}
+    <div className="App">      
       <h1> Borders gone </h1>
       <h1> Worlds best travel guide </h1>
-      <Login/>      
+      <Login/>
       <div class="column-main">
         <Link to="/atlanta" class="articlePreview"> <img class="articleImage" src={atlanta} alt="Atlanta" /> </Link> <div> <div class="articleTitle"> Atlanta </div> </div>
         <Link to="/boston" class="articlePreview"> <img class="articleImage" src={boston} alt="Boston" /> </Link> <div> <div class="articleTitle"> Boston </div> </div>
@@ -52,16 +48,12 @@ function Home() {
         <Link to="/kualalumpur" class="articlePreview"> <img class="articleImage" src={kualalumpur} alt="Kuala Lumpur" /> </Link> <div> <div class="articleTitle">Kuala Lumpur</div> </div>
         <Link to="/tokyo" class="articlePreview"> <img class="articleImage" src={tokyo} alt="Tokyo" /> </Link> <div> <div class="articleTitle">Tokyo</div> </div>
       </div>
-
       {/* <h2> Food delivery promo codes </h2>
       <ul>
         <li> Uber eats promo code: eats-sxnvv </li>
         <li> Grubhub invite link: https://www.grubhub.com/referral/3c840580-6470-11e8-b9ea-43abd66f1334?utm_source=grubhub.com&utm_medium=content_owned&utm_campaign=growth_refer-a-friend_share-link&utm_content=promo_</li>
         <li> Seamless: https://www.seamless.com/referral/f170c1e0-4e7d-11ec-9f09-d3949d14d0dd?utm_source=seamless.com&utm_medium=content_owned&utm_campaign=growth_refer-a-friend_share-link&utm_content=promo_ </li>
       </ul> */}
-
-      {/* {itinerary.join(', ')} */}
-
     </div>
   );
 }

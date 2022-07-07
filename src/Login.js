@@ -10,7 +10,8 @@ const Login = () => {
 
     const handleResponse = (response) => {        
         const token = response.credential
-        const decodedToken = jwtDecode(token)        
+        const decodedToken = jwtDecode(token)
+        console.log(decodedToken);    
         dispatch(defineEmail(decodedToken.email))
     }
     const handleGoogleLogin = () => {
@@ -20,7 +21,7 @@ const Login = () => {
                 client_id: "1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com",
                 callback: handleResponse
             })
-            window.google.accounts.id.prompt((notification) => {
+            window.google.accounts.id.prompt((notification) => {                
                 if (notification.isNotDisplayed()) {
                     throw new Error(' Try to clear the cookies or try again later ')
                 }
@@ -29,7 +30,7 @@ const Login = () => {
                 }
             })
         } catch (error) {
-          console.log('Scary Error')
+          console.log(error);
         }
     }
     return (
