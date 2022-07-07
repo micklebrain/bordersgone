@@ -8,7 +8,7 @@ class KualaLumpur extends React.Component {
 
     render() {
         return (<div class='container'>
-            <h1>Kuala lumpur guide</h1>
+            <h1>Kuala Lumpur guide</h1>
             <li>Alor Street</li>
             <li>Bird Park</li>
             <li>China Town</li>
