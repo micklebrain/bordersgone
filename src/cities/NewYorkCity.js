@@ -68,7 +68,7 @@ export function NewYorkCity() {
         <button onClick={() => dispatch(addEvent({
             email: email,
             name: "Gabriel Lev Performance",
-            date: new Date('July 11, 2022 18:24:00'),
+            date: new Date('July 11, 2022 18:00:00'),
             location: "Culture Lab LIC"
         }))}>Gabriel Lev Performance</button>
         <button onClick={() => dispatch(addEvent({ email: email, name: "Broadway show", date: new Date('July 6, 2022 03:24:00') }))}>Add Event</button>
