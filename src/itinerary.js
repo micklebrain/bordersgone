@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Sidebar from './sidebar'
 
-function itinerary() {
+function Itinerary() {
   return (
     <div>      
         <Sidebar/>
@@ -10,4 +10,4 @@ function itinerary() {
   );
 }
 
-export default itinerary
+export default Itinerary

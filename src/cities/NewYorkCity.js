@@ -22,19 +22,23 @@ import spa from '../images/spa.jpeg';
 import speakeasy from '../images/speakeasy.jpeg';
 import winebar from '../images/winebar.jpeg';
 import goodies from '../images/goodies.jpeg';
+import './NewYorkCity.css';
 
 import { Link } from "react-router-dom";
-
-import './NewYorkCity.css';
-import { Button } from "react-bootstrap";
-
 import { useSelector, useDispatch } from 'react-redux'
 import { addEvent } from '../eventsSlice'
+import EventDetails from "../EventDetails";
 
 export function NewYorkCity() {
 
     const dispatch = useDispatch()
     const email = useSelector((state) => state.events.email)
+
+    const details = {
+        name: "Gabriel Lev Performance",
+        date: "July 11, 2022",
+        description: "Piano Performance"
+    }
 
     return (<div class="articleContainer">
         <h1> New York City the City that Never Sleeps guide </h1>
@@ -71,10 +75,10 @@ export function NewYorkCity() {
             date: new Date('July 11, 2022 18:00:00'),
             location: "Culture Lab LIC"
         }))}>Gabriel Lev Performance</button>
-        <button onClick={() => dispatch(addEvent({ email: email, name: "Broadway show", date: new Date('July 6, 2022 03:24:00') }))}>Add Event</button>
-        <button onClick={() => dispatch(addEvent({ email: email, name: "Movie", date: new Date('July 8, 2022 03:24:00') }))}>Add Event</button>
+        <Link to="/eventDetails" state= {details}>
+            Event Details
+        </Link>
     </div>)
-    // }
 }
 
 export default NewYorkCity

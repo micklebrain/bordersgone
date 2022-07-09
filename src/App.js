@@ -5,8 +5,8 @@ import Home from './Home';
 import Hotels from './Hotels';
 import Speakeasy from './Speakeasy'
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -67,9 +67,9 @@ import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArt
 import Navbarmenu from './Navbarmenu';
 import Goodies from './goodies';
 import CustomItinerary from './customItinerary';
-import itinerary from './itinerary'
+import Itinerary from './itinerary'
 import Booking from './Booking'
-import Sidebar from './sidebar'
+import EventDetails from './EventDetails';
 
 class App extends React.Component {
   constructor(props) {
@@ -89,75 +89,72 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Router>
-          <Navbarmenu/>          
-          {/* <div id="g_id_onload"
-            data-client_id="1045839805169-9vcgmva03ano3lo435i221gnd92580lh.apps.googleusercontent.com"
-            data-login_uri="https://bordersgone.com/newyorkcity">
-          </div> */}
-          <Switch>
-            <Route exact path="/"> <Home /> </Route>
-            <Route exact path="/atlanta" component={Atlanta} />
-            <Route exact path="/bogota" component={Bogota} />
-            <Route exact path="/boston" component={Boston} />
-            <Route exact path="/chicago" component={Chicago} />
-            <Route exact path="/denver" component={Denver} />
-            <Route exact path="/lasvegas" component={LasVegas} />
-            <Route exact path="/KualaLumpur" component={KualaLumpur} />
-            <Route exact path="/newyorkcity" component={NewYorkCity} />
-            <Route exact path="/paris" component={Paris} />
-            <Route exact path="/philadelphia" component={Philadelphia} />
-            <Route exact path="/providence" component={Providence} />
-            <Route exact path="/sanfrancisco" component={SanFrancisco} />
-            <Route exact path="/seattle" component={Seattle} />
-            <Route exact path="/singapore" component={Singapore} />
-            <Route exact path="/bangkok" component={Bangkok} />
-            <Route exact path="/toronto" component={Toronto} />
-            <Route exact path="/washingtonDC" component={WashingtonDC} />
-            <Route exact path="/hotels" component={Hotels} />
-            <Route exact path="/speakeasies" component={Speakeasy} />
-            <Route exact path="/ticketMarketplace" component={TicketMarketplace} />
-            <Route exact path="/donate" component={Donate} />
-            <Route exact path="/AtlantaArticle" component={AtlantaArticle} />
-            <Route exact path="/ChicagoArticle" component={ChicagoArticle} />
-            <Route exact path="/ChicagoArticle2" component={ChicagoArticle2} />
-            <Route exact path="/DenverArticle" component={DenverArticle} />
-            <Route exact path="/LasVegasArticle" component={LasVegasArticle} />
-            <Route exact path="/ParisThingsToDoArticle" component={ParisThingsToDoArticle} />
-            <Route exact path="/PhiladelphiaArticle" component={PhiladelphiaArticle} />
-            <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" component={PhiladelphiaNeighborhoodRestaurantsArticle} />
-            <Route exact path="/bogota/bogotarestaurants" component={Hotels} />
-            <Route exact path="/newyorkcity/NYCArtGalleriesArticle" component={NYCArtGalleriesArticle} />
-            <Route exact path="/newyorkcity/NYCAYCEBBQArticle" component={NYCAYCEBBQArticle} />
-            <Route exact path="/newyorkcity/NYCBobaTeaArticle" component={NYCBobaTeaArticle} />
-            <Route exact path="/newyorkcity/NYCBroadwaysArticle" component={NYCBroadwaysArticle} />
-            <Route exact path="/newyorkcity/NYCBrunch" component={NYCBrunch} />
-            <Route exact path="/newyorkcity/NYCCafes" component={NYCCafes} />
-            <Route exact path="/newyorkcity/NYCEventsArticle" component={NYCEventsArticle} />
-            <Route exact path="/newyorkcity/NYCHotpotArticle" component={NYCHotpotArticle} />
-            <Route exact path="/newyorkcity/NYCLunarNewYearsArticle" component={NYCLunarNewYearsArticle} />
-            <Route exact path="/newyorkcity/NYCOmakaseArticle" component={NYCOmakaseArticle} />
-            <Route exact path="/newyorkcity/NYCOystersArticle" component={NYCOystersArticle} />
-            <Route exact path="/newyorkcity/NYCPhoArticle" component={NYCPhoArticle} />
-            <Route exact path="/newyorkcity/NYCPlusPoolArticle" component={NYCPlusPoolArticle} />
-            <Route exact path="/newyorkcity/NYCRamenArticle" component={NYCRamenArticle} />
-            <Route exact path="/newyorkcity/NYCRooftopBarsArticle" component={NYCRooftopBarsArticle} />
-            <Route exact path="/newyorkcity/NYCSpasArticle" component={NYCSpasArticle} />
-            <Route exact path="/newyorkcity/NYCSpeakeasiesArticle" component={NYCSpeakeasiesArticle} />
-            <Route exact path="/newyorkcity/NYCTour" component={NYCTour} />
-            <Route exact path="/newyorkcity/NYCTopAttractionsArticle" component={NYCTopAttractionsArticle} />
-            <Route exact path="/newyorkcity/NYCTopBoroughRestaurantsArticle" component={NYCTopBoroughRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" component={NYCTopNeighborhoodRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" component={NYCTrainStopRestaurantsArticle} />
-            <Route exact path="/newyorkcity/NYCWineBarArticle" component={NYCWineBarArticle} />
-            <Route exact path="/NYCarticle3" component={NewYorkCityArticle3} />
-            <Route exact path="/SanFranciscoArticle" component={SanFranciscoArticle} />
-            <Route exact path="/goodies" component={Goodies} />
-            <Route exact path="/customItinerary" component={CustomItinerary} />
-            <Route exact path="/itinerary" component={itinerary} />
-            <Route exact path="/booking" component={Booking} />
-          </Switch>
-        </Router>
+        <BrowserRouter>
+          <Navbarmenu/>
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/atlanta" element={<Atlanta/>} />
+            <Route exact path="/bogota" element={<Bogota/>} />
+            <Route exact path="/boston" element={<Boston/>} />
+            <Route exact path="/chicago" element={<Chicago/>} />
+            <Route exact path="/denver" element={<Denver/>} />
+            <Route exact path="/lasvegas" element={<LasVegas/>} />
+            <Route exact path="/KualaLumpur" element={KualaLumpur} />
+            <Route exact path="/newyorkcity" element={<NewYorkCity/>} />
+            <Route exact path="/paris" element={Paris} />
+            <Route exact path="/philadelphia" element={<Philadelphia/>} />
+            <Route exact path="/providence" element={<Providence/>} />
+            <Route exact path="/sanfrancisco" element={<SanFrancisco/>} />
+            <Route exact path="/seattle" element={<Seattle/>} />
+            <Route exact path="/singapore" element={<Singapore/>} />
+            <Route exact path="/bangkok" element={<Bangkok/>} />
+            <Route exact path="/toronto" element={<Toronto/>} />
+            <Route exact path="/washingtonDC" element={<WashingtonDC/>} />
+            <Route exact path="/hotels" element={<Hotels/>} />
+            <Route exact path="/speakeasies" element={<Speakeasy/>} />
+            <Route exact path="/ticketMarketplace" element={<TicketMarketplace/>} />
+            <Route exact path="/donate" element={<Donate/>} />
+            <Route exact path="/AtlantaArticle" element={<AtlantaArticle/>} />
+            <Route exact path="/ChicagoArticle" element={<ChicagoArticle/>} />
+            <Route exact path="/ChicagoArticle2" element={<ChicagoArticle2/>} />
+            <Route exact path="/DenverArticle" element={<DenverArticle/>} />
+            <Route exact path="/LasVegasArticle" element={<LasVegasArticle/>} />
+            <Route exact path="/ParisThingsToDoArticle" element={<ParisThingsToDoArticle/>} />
+            <Route exact path="/PhiladelphiaArticle" element={<PhiladelphiaArticle/>} />
+            <Route exact path="/PhiladelphiaNeighborhoodRestaurantsArticle" element={<PhiladelphiaNeighborhoodRestaurantsArticle/>} />
+            <Route exact path="/bogota/bogotarestaurants" element={<Hotels/>} />
+            <Route exact path="/newyorkcity/NYCArtGalleriesArticle" element={<NYCArtGalleriesArticle/>} />
+            <Route exact path="/newyorkcity/NYCAYCEBBQArticle" element={<NYCAYCEBBQArticle/>} />
+            <Route exact path="/newyorkcity/NYCBobaTeaArticle" element={<NYCBobaTeaArticle/>} />
+            <Route exact path="/newyorkcity/NYCBroadwaysArticle" element={<NYCBroadwaysArticle/>} />
+            <Route exact path="/newyorkcity/NYCBrunch" element={<NYCBrunch/>} />
+            <Route exact path="/newyorkcity/NYCCafes" element={<NYCCafes/>} />
+            <Route exact path="/newyorkcity/NYCEventsArticle" element={<NYCEventsArticle/>} />
+            <Route exact path="/newyorkcity/NYCHotpotArticle" element={<NYCHotpotArticle/>} />
+            <Route exact path="/newyorkcity/NYCLunarNewYearsArticle" element={<NYCLunarNewYearsArticle/>} />
+            <Route exact path="/newyorkcity/NYCOmakaseArticle" element={<NYCOmakaseArticle/>} />
+            <Route exact path="/newyorkcity/NYCOystersArticle" element={<NYCOystersArticle/>} />
+            <Route exact path="/newyorkcity/NYCPhoArticle" element={<NYCPhoArticle/>} />
+            <Route exact path="/newyorkcity/NYCPlusPoolArticle" element={<NYCPlusPoolArticle/>} />
+            <Route exact path="/newyorkcity/NYCRamenArticle" element={<NYCRamenArticle/>} />
+            <Route exact path="/newyorkcity/NYCRooftopBarsArticle" element={<NYCRooftopBarsArticle/>} />
+            <Route exact path="/newyorkcity/NYCSpasArticle" element={<NYCSpasArticle/>} />
+            <Route exact path="/newyorkcity/NYCSpeakeasiesArticle" element={<NYCSpeakeasiesArticle/>} />
+            <Route exact path="/newyorkcity/NYCTour" element={<NYCTour/>} />
+            <Route exact path="/newyorkcity/NYCTopAttractionsArticle" element={<NYCTopAttractionsArticle/>} />
+            <Route exact path="/newyorkcity/NYCTopBoroughRestaurantsArticle" element={<NYCTopBoroughRestaurantsArticle/>} />
+            <Route exact path="/newyorkcity/NYCTopNeighborhoodRestaurantsArticle" element={<NYCTopNeighborhoodRestaurantsArticle/>} />
+            <Route exact path="/newyorkcity/NYCTrainStopRestaurantsArticle" element={<NYCTrainStopRestaurantsArticle/>} />
+            <Route exact path="/newyorkcity/NYCWineBarArticle" element={<NYCWineBarArticle/>} />
+            <Route exact path="/NYCarticle3" element={<NewYorkCityArticle3/>} />
+            <Route exact path="/SanFranciscoArticle" element={<SanFranciscoArticle/>} />
+            <Route exact path="/goodies" element={<Goodies/>} />
+            <Route exact path="/customItinerary" element={<CustomItinerary/>} />
+            <Route exact path="/itinerary" element={<Itinerary/>} />
+            <Route exact path="/booking" element={<Booking/>} />
+            <Route path="/eventDetails" element={<EventDetails/>} />
+          </Routes>
+        </BrowserRouter>
       </div>)
   }
 }

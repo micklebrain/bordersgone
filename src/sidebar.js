@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from "react-router-dom";
 
 export default props => {
     const [count, setCount] = useState(1);
     const [events, setEvents] = useState([]);
-    const email = useSelector((state) => state.events.email)
-
+    const email = useSelector((state) => state.events.email)    
     const [itinerary, setItinerary] = useState([]);
     const evts = useSelector((state) => state.events.events)
 
@@ -41,10 +41,17 @@ export default props => {
                     hour: '2-digit',
                     minute: '2-digit'
                 })
+                const details = {
+                    name: evt.name,
+                    date: eventDate.toLocaleDateString(),
+                    description: "description"
+                }
                 if (eventDate.getDate() == today.getDate()) {
-                    dates.push(<h1>{time}</h1>)
-                    dates.push(<h1>{evt.name}</h1>);                    
-                    dates.push(<h1>{evt.location}</h1>)
+                    dates.push(<h1>{time}</h1>)                    
+                    dates.push(<Link to="/eventDetails" state= {details}>
+                        {evt.name}
+                    </Link>)                 
+                    dates.push(<h1>{evt.location}</h1>)                    
                 }
             })
             let newDate = today.setDate(today.getDate() + 1);
@@ -60,7 +67,8 @@ export default props => {
 
     return (
         <Menu right>            
-            <h1>Home - Ritz Carlton</h1>
+            <h1>Home</h1>
+            <h1>Ritz Carlton</h1>
             <Dates></Dates>
             <button onClick={() => addActivity({ name: "Event 2", date: new Date('July 2, 2022 03:24:00') })}>Add Event</button>
             <button onClick={() => addActivity({ name: "Event 3", date: new Date('July 4, 2022 03:24:00') })}>Add Event 2</button>

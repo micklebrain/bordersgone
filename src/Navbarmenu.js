@@ -63,9 +63,9 @@ const Navbarmenu = () => {
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/washingtonDC`}>Washington DC</NavLink> </li>
                                     </ul>
                                 </li>
-                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ticketMarketplace`}> TICKET MARKETPLACE </NavLink> </li>
-                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/donate`}> DONATE </NavLink> </li>
-                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/itinerary`}> Itinerary </NavLink> </li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ticketMarketplace`}>TICKET MARKETPLACE</NavLink> </li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/donate`}>DONATE </NavLink></li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/itinerary`}>Itinerary</NavLink> </li>
                             </ul>
                         </nav>
                     </div>
