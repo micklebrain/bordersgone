@@ -27,7 +27,6 @@ import './NewYorkCity.css';
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { addEvent } from '../eventsSlice'
-import EventDetails from "../EventDetails";
 
 export function NewYorkCity() {
 
@@ -41,8 +40,14 @@ export function NewYorkCity() {
     }
 
     return (<div class="articleContainer">
-        <h1> New York City the City that Never Sleeps guide </h1>
-        <h1> Ambassador - Nathan N. </h1>
+        <h1>New York City the City that Never Sleeps guide</h1>
+        <h1>Ambassador - Nathan N.</h1>
+        <h1>It's morning 7-9am</h1>
+        <h1>Suggested Brunch spots</h1>
+        <Link to="/newyorkcity/NYCBrunch" class="articlePreview"> <img class="articleImage" src={brunch} alt="NYC best brunch spots" /> </Link> <div> <div class="articleTitle"> NYC brunch </div> <div> Jan 27, 2022 </div> </div>
+        <h1>It's afternoon 12:00pm</h1>
+        <h1>Suggested dinner spots</h1>
+        <h1>It's nighttime</h1>
         <div class="column-main">
             <Link to="/newyorkcity/NYCEventsArticle" class="articlePreview"> <img class="articleImage" src={nyc} alt="Events" /> </Link> <div> <div class="articleTitle"> Events </div> <div>Jan 27, 2022</div> </div>
             <Link to="/newyorkcity/NYCBroadwaysArticle" class="articlePreview"> <img class="articleImage" src={broadway} alt="Every broadway show" /> </Link> <div> <div class="articleTitle">Broadway shows currently playing</div> <div>Jan 27, 2022 </div> </div>
@@ -55,7 +60,6 @@ export function NewYorkCity() {
         <div class="column-main">
             <Link to="/newyorkcity/NYCAYCEBBQArticle" class="articlePreview"> <img class="articleImage" src={koreanBBQ} alt="NYC All you can eat BBQ guide" /> </Link> <div> <div class="articleTitle"> NYC All you can eat BBQ guide </div> <div> Jan 27, 2022 </div> </div>
             <Link to="/newyorkcity/NYCBobaTeaArticle" class="articlePreview"> <img class="articleImage" src={bobatea} alt="NYC best brunch spots" /> </Link> <div> <div class="articleTitle"> NYC Boba Tea Guide </div> <div> Jan 27, 2022 </div> </div>
-            <Link to="/newyorkcity/NYCBrunch" class="articlePreview"> <img class="articleImage" src={brunch} alt="NYC best brunch spots" /> </Link> <div> <div class="articleTitle"> NYC brunch </div> <div> Jan 27, 2022 </div> </div>
             <Link to="/newyorkcity/NYCCafes" class="articlePreview"> <img class="articleImage" src={cafe} alt="NYC most unique cafes" /> </Link> <div> <div class="articleTitle"> NYC most unique cafes </div> <div> Jan 27, 2022 </div> </div>
             <Link to="/newyorkcity/NYCHotpotArticle" class="articlePreview"> <img class="articleImage" src={hotpot} alt="NYC hotpot" /> </Link> <div> <div class="articleTitle"> NYC hot pot guide </div> <div> Jan 27, 2022 </div> </div>
             <Link to="/newyorkcity/NYCOmakaseArticle" class="articlePreview"> <img class="articleImage" src={omakase} alt="NYC Omakase" /> </Link> <div> <div class="articleTitle"> NYC Omakase </div> <div> Jan 27, 2022 </div> </div>
@@ -75,9 +79,6 @@ export function NewYorkCity() {
             date: new Date('July 11, 2022 18:00:00'),
             location: "Culture Lab LIC"
         }))}>Gabriel Lev Performance</button>
-        <Link to="/eventDetails" state= {details}>
-            Event Details
-        </Link>
     </div>)
 }
 

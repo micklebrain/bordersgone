@@ -13,6 +13,7 @@ import {
 import TicketMarketplace from './TicketMarketplace';
 
 import Atlanta from './cities/Atlanta';
+import Bangkok from './cities/Bangkok';
 import Bogota from './cities/Bogota';
 import Boston from './cities/Boston';
 import Chicago from './cities/Chicago';
@@ -25,8 +26,8 @@ import Providence from './cities/Providence';
 import Philadelphia from './cities/Philadelphia';
 import SanFrancisco from './cities/SanFrancisco';
 import Seattle from './cities/Seattle';
+import Seoul from './cities/Seoul';
 import Singapore from './cities/Singapore';
-import Bangkok from './cities/Bangkok';
 import Toronto from './cities/Toronto';
 import WashingtonDC from './cities/WashingtonDC';
 
@@ -70,6 +71,7 @@ import CustomItinerary from './customItinerary';
 import Itinerary from './itinerary'
 import Booking from './Booking'
 import EventDetails from './EventDetails';
+import Explore from './Explore';
 
 class App extends React.Component {
   constructor(props) {
@@ -109,6 +111,7 @@ class App extends React.Component {
             <Route exact path="/singapore" element={<Singapore/>} />
             <Route exact path="/bangkok" element={<Bangkok/>} />
             <Route exact path="/toronto" element={<Toronto/>} />
+            <Route exact path="/seoul" element={<Seoul/>} />
             <Route exact path="/washingtonDC" element={<WashingtonDC/>} />
             <Route exact path="/hotels" element={<Hotels/>} />
             <Route exact path="/speakeasies" element={<Speakeasy/>} />
@@ -152,6 +155,7 @@ class App extends React.Component {
             <Route exact path="/customItinerary" element={<CustomItinerary/>} />
             <Route exact path="/itinerary" element={<Itinerary/>} />
             <Route exact path="/booking" element={<Booking/>} />
+            <Route exact path="/explore" element={<Explore/>} />
             <Route path="/eventDetails" element={<EventDetails/>} />
           </Routes>
         </BrowserRouter>
