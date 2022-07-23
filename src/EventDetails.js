@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useSearchParams } from 'react';
 import { useLocation } from 'react-router-dom'
 
-// export function EventDetails() {
 const EventDetails = (props) => {
     const location = useLocation();
     const data = location.state;

@@ -57,7 +57,7 @@ function Pools() {
   // Check if summertime
   return <div>
     <h1>Pools</h1>
-    <li>Swimming pool</li>    
+    <li>Swimming pool</li>
   </div>
 }
 
@@ -65,7 +65,7 @@ function Parks() {
   return <div>
     <h1>Parks</h1>
     <li>Bryant Park</li>
-    <li>Madison Square Park</li>  
+    <li>Madison Square Park</li>
   </div>
 }
 
@@ -82,18 +82,31 @@ function Restuarants() {
 }
 
 function Movies() {
+
+  var today = new Date();
+
+  const details = {
+    name: "AMC 34th Street 14 - Nope",
+    date: today.toLocaleDateString(),
+    description: "Caretakers at a California horse ranch encounter a mysterious force that affects human and animal behaviour. Tickets will be sent to email on account"
+  }
+
   return <div>
     <h1>Theaters</h1>
-    <li>AMC 34th Street 14</li>
-    <li>AMC Empire 25</li>    
-    <li>Rooftop Cinema Club Midtown</li>    
+
+    <Link to="/eventDetails" state={details}>AMC 34th Street 14 - Nope</Link>
+    <Button>Buy Ticket - $15</Button>
+    <li>AMC Empire 25 - Nope</li>
+    <Button>Buy Ticket - $15</Button>
+    <li>Rooftop Cinema Club Midtown - Nope</li>
+    <Button>Buy Ticket - $15</Button>
   </div>
 }
 
 function Racing() {
   return <div>
     <h1>Go Karting</h1>
-    <li>Staten Island FunPark</li>     
+    <li>Staten Island FunPark</li>
   </div>
 }
 
@@ -101,7 +114,7 @@ function Casinos() {
   return <div>
     <h1>Casinos</h1>
     <li>Empire City Casino</li>
-    <li>Genting World Casino New York City</li>     
+    <li>Genting World Casino New York City</li>
   </div>
 }
 
@@ -115,16 +128,16 @@ function Home() {
       <h1>New York City - Manhattan</h1>
       <h1> {today.getHours()}:{today.getMinutes()} </h1>
 
-      <Bars/>
-      <LunchTime/>      
-      <Restuarants/>
-      <Movies/>    
-      <Pools/>
-      <DinnerSpots/>
-      <NightTime/>
-      <Racing/>
-      <Casinos/>
-      <Parks/>
+      <Bars />
+      <LunchTime />
+      <Movies />
+      <Pools />
+      <DinnerSpots />
+      <NightTime />
+      <Racing />
+      <Casinos />
+      <Parks />
+      <Restuarants />
 
       <Login />
     </div>
