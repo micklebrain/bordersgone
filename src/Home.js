@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Login from './Login'
 import Sidebar from './sidebar'
@@ -72,8 +73,11 @@ function Restuarants() {
   return <div>
     <h1>Restuarants</h1>
     <li>Arno</li>
+    <Button>Book Reservation</Button>
     <li>L'Amico</li>
-    <li>Trademark Bar + Kitchen</li>    
+    <Button>Book Reservation</Button>
+    <li>Trademark Bar + Kitchen</li>
+    <Button>Book Reservation</Button>
   </div>
 }
 
@@ -86,6 +90,21 @@ function Movies() {
   </div>
 }
 
+function Racing() {
+  return <div>
+    <h1>Go Karting</h1>
+    <li>Staten Island FunPark</li>     
+  </div>
+}
+
+function Casinos() {
+  return <div>
+    <h1>Casinos</h1>
+    <li>Empire City Casino</li>
+    <li>Genting World Casino New York City</li>     
+  </div>
+}
+
 function Home() {
 
   var today = new Date();
@@ -93,16 +112,19 @@ function Home() {
   return (
     <div className="App">
       <Sidebar />
-      <h1> Location: New York City - Manhattan</h1>
+      <h1>New York City - Manhattan</h1>
       <h1> {today.getHours()}:{today.getMinutes()} </h1>
 
       <Bars/>
       <LunchTime/>      
       <Restuarants/>
-      <Movies/>
+      <Movies/>    
+      <Pools/>
+      <DinnerSpots/>
+      <NightTime/>
+      <Racing/>
+      <Casinos/>
       <Parks/>
-      <DinnerSpots />
-      <NightTime />      
 
       <Login />
     </div>
