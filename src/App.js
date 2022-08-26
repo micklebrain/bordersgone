@@ -72,6 +72,8 @@ import Itinerary from './itinerary'
 import Booking from './Booking'
 import EventDetails from './EventDetails';
 import Explore from './Explore';
+import SimCards from './SimCards';
+import Laundry from './Laundry';
 
 class App extends React.Component {
   constructor(props) {
@@ -151,11 +153,13 @@ class App extends React.Component {
             <Route exact path="/newyorkcity/NYCWineBarArticle" element={<NYCWineBarArticle/>} />
             <Route exact path="/NYCarticle3" element={<NewYorkCityArticle3/>} />
             <Route exact path="/SanFranciscoArticle" element={<SanFranciscoArticle/>} />
-            <Route exact path="/goodies" element={<Goodies/>} />
-            <Route exact path="/customItinerary" element={<CustomItinerary/>} />
-            <Route exact path="/itinerary" element={<Itinerary/>} />
-            <Route exact path="/booking" element={<Booking/>} />
-            <Route exact path="/explore" element={<Explore/>} />
+            <Route exact path="/goodies" element={<Goodies/>}/>
+            <Route exact path="/customItinerary" element={<CustomItinerary/>}/>
+            <Route exact path="/itinerary" element={<Itinerary/>}/>
+            <Route exact path="/booking" element={<Booking/>}/>
+            <Route exact path="/explore" element={<Explore/>}/>
+            <Route exact path="/simCards" element={<SimCards/>}/>
+            <Route exact path="/laundry" element={<Laundry/>}/>
             <Route path="/eventDetails" element={<EventDetails/>} />
           </Routes>
         </BrowserRouter>

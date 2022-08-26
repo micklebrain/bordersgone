@@ -35,6 +35,10 @@ export function Seoul() {
 
     return (<div class="articleContainer">
         <h1>Seoul guide</h1>
+        <h2>Laundry</h2>
+        <h2>Navigation Apps</h2>
+        <li>Naver Maps</li>
+        <li>Kakao Maps</li>
         <button onClick={() => dispatch(addEvent({
             email: email,
             name: "Hip Hop Playa",
