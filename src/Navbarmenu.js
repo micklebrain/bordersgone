@@ -67,6 +67,7 @@ const Navbarmenu = () => {
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/donate`}>DONATE </NavLink></li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/itinerary`}>Itinerary</NavLink> </li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/explore`}>Explore</NavLink> </li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/account`}>Account</NavLink> </li>
                             </ul>
                         </nav>
                     </div>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default props => {
     const [count, setCount] = useState(1);
     const [events, setEvents] = useState([]);
-    const email = useSelector((state) => state.events.email)    
+    const email = useSelector((state) => state.events.email)
     const [itinerary, setItinerary] = useState([]);
     const evts = useSelector((state) => state.events.events)
 

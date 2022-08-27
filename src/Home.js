@@ -106,7 +106,6 @@ function Restuarants() {
 // }
 
 function Movies() {
-
   var today = new Date();
   const [buttonText, setButtonText] = useState('Buy ticket - $15');
 
@@ -149,22 +148,41 @@ function Casinos() {
   </div>
 }
 
+function Areas(area) {
+  if (area == "New York City") {
+    return <div>
+      <h1> Areas </h1>
+      <li>Brooklyn</li>
+      <li>Long Island</li>
+      <li>Manhattan</li>      
+      <li>Queens</li>      
+    </div>
+  } else {
+    return <div>
+    <h1> Areas </h1>
+    <li>Hongdae</li>
+    <li>Gangnam</li>
+    <li>Itaewon</li>
+  </div>
+  }
+}
+
 function Home() {
-
   var today = new Date();
-
   var city = "new york city"
 
   return (
     <div className="App">
       <Sidebar />
 
+      <Login />
       <label for="cars">What city are you in:</label>
 
       <select name="cars" id="cars">
         <option value="audi">New York City</option>
         <option value="volvo">Atlanta</option>
         <option value="saab">San Francisco</option>
+        <option value="mercedes">Seoul</option>
         <option value="mercedes">Tokyo</option>
       </select>
 
@@ -177,6 +195,8 @@ function Home() {
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Taxi</h3> </div>
       </div>
+
+      <Areas area="New York City"/>
 
       <h1>Fun</h1>
       <Bars />
@@ -193,8 +213,6 @@ function Home() {
       <h3>Currency Exchange</h3>
       <h3>Love hotels</h3>
       <h3>Apps</h3>
-
-      <Login />
     </div>
   );
 }

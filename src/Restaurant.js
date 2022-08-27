@@ -9,7 +9,6 @@ import uberEatsIcon from './images/Uber-Eats-Icon.png'
 import './Restaurant.css'
 
 class Restaurant extends React.Component {
-
     constructor(props) {
         super(props)
 

@@ -75,6 +75,8 @@ import Explore from './Explore';
 import SimCards from './SimCards';
 import Laundry from './Laundry';
 
+import Account from './Account';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -160,6 +162,7 @@ class App extends React.Component {
             <Route exact path="/explore" element={<Explore/>}/>
             <Route exact path="/simCards" element={<SimCards/>}/>
             <Route exact path="/laundry" element={<Laundry/>}/>
+            <Route exact path="/account" element={<Account/>}/>
             <Route path="/eventDetails" element={<EventDetails/>} />
           </Routes>
         </BrowserRouter>

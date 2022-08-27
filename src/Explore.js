@@ -18,10 +18,7 @@ import singapore from './images/singapore.jpeg';
 import tokyo from './images/tokyo.jpeg';
 import toronto from './images/toronto.jpeg';
 import washingtonDC from './images/washingtonDC.jpg';
-import Login from './Login'
-import { Button, ToastBody } from "react-bootstrap";
 import Sidebar from './sidebar'
-import { getAllByPlaceholderText } from "@testing-library/react";
 
 function Explore() {
   
