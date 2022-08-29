@@ -12,16 +12,18 @@ const Account = (props) => {
         const url = "https://lostmindsbackend.vercel.app/users/" + email
         fetch(url, {
             method: 'GET'
-        })
-            .then(response => response.text())
+        }).then(response => response.text())
             .then(response => {
                 var resyJson = JSON.parse(response);
                 console.log(resyJson);
                 setFirstName(resyJson['doc'][0]['firstName']);
                 setLastName(resyJson['doc'][0]['lastName']);
-                setVenmo(resyJson['doc'][0]['venmo']);                                                
+                setVenmo(resyJson['doc'][0]['venmo']);
             })
             .catch(error => console.log('error', error));
+        
+            // fetch all orders for user
+
     }, []);
 
     return (

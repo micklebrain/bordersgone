@@ -642,6 +642,13 @@ body {
   font-size: 30px;
 }
 
+.cityTitle {
+  font-family: "Copperplate";
+  text-align: center;
+  text-decoration: none;
+  font-size: 75px;
+}
+
 /* .item1 {
   grid-row: 1 / span 2;
 } */

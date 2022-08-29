@@ -18,6 +18,11 @@ const SimCards = (props) => {
             <li>Yes</li>
             <li>Unifi/Bebas</li>
 
+            <h1>United States</h1>
+            <li>T-Mobile</li>
+            <li>Verizon</li>
+            <li>ATT</li>             
+
             <h1>Vietnam</h1>
             <li>Viettel</li>
             <li>MobiFone</li> 

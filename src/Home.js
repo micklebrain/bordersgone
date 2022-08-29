@@ -12,7 +12,7 @@ function Bars(props) {
   var today = new Date();
   if (today.getHours() < 8) {
     return <div>
-      <h2> Bars </h2>
+      <h1> Bars </h1>
       <li></li>
     </div>
   } else {
@@ -90,7 +90,7 @@ function Parks() {
 
 function Restuarants() {
   return <div>
-    <h1>Restuarants</h1>
+    <h1>Dine at a restuarant</h1>
     <li>Arno</li>
     <Button>Reserve table with wine bottle - $20</Button>
     <li>L'Amico</li>
@@ -104,6 +104,21 @@ function Restuarants() {
 //   console.log("Order ID: abc123");
 //   setButtonText('Payment request sent');
 // }
+
+function sendOrder() {
+  fetch("https://lostmindsbackend.vercel.app/addOrder", {    
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ 
+      email: 'micklebrain@gmail.com',
+      venmo: 'micklebrain',
+      amount: 75,
+      orderId: 'abc123',
+      status: 'pending'
+    }),
+  })
+    .then((res) => res.json())
+}
 
 function Movies() {
   var today = new Date();
@@ -123,9 +138,13 @@ function Movies() {
   };
 
   return <div>
-    <h1>Theaters</h1>
+    <h1>Catch a movie</h1>
     <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC 34th Street 14 @6pm</Link>
-    <Button onClick={() => { setButtonText('Payment request sent for Order ID: abc123'); }} id='ticketBuy'>{buttonText}</Button>
+    <Button onClick={() => {
+      setButtonText('Payment request sent for Order ID: abc123');
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} id='ticketBuy'>{buttonText}</Button>
     <li>AMC Empire 25 - Nope</li>
     <Button>Buy Ticket - $15</Button>
     <li>Rooftop Cinema Club Midtown - Nope</li>
@@ -148,28 +167,67 @@ function Casinos() {
   </div>
 }
 
+function Billards() {
+  return <div>
+    <h1>Shoot some billards</h1>
+    <li>Billards empire</li>
+    <Button>Reserve billards table - $20</Button>
+    <li>Billards connect</li>
+    <Button>Reserve billards table - $20</Button>
+  </div>
+}
+
 function Areas(area) {
+  var area = "New York City"
   if (area == "New York City") {
     return <div>
       <h1> Areas </h1>
-      <li>Brooklyn</li>
-      <li>Long Island</li>
-      <li>Manhattan</li>      
-      <li>Queens</li>      
+      <div class="grid-container">
+        <div class="item2"> <h3>Brooklyn</h3> </div>
+        <div class="item2"> <h3>Bronx</h3> </div>
+        <div class="item1"> <h3>Manhattan</h3> </div>
+        <div class="item1"> <h3>Long Island</h3> </div>
+        <div class="item1"> <h3>Queens</h3> </div>
+      </div>
     </div>
   } else {
     return <div>
-    <h1> Areas </h1>
-    <li>Hongdae</li>
-    <li>Gangnam</li>
-    <li>Itaewon</li>
-  </div>
+      <h1> Areas </h1>
+      <div class="grid-container">
+        <div class="item2"> <h3>Hongdae</h3> </div>
+        <div class="item1"> <h3>Gangnam</h3> </div>
+        <div class="item1"> <h3>Itaewon</h3> </div>
+      </div>
+    </div>
   }
+}
+
+function TimeOfDay() {
+  var today = new Date();
+  var hours = today.getHours();
+  var city = "New York City"
+  if (hours < 12) {
+    return <div>
+      <h1>Good Morning {city}</h1>
+    </div>
+  } else if (hours > 12 && hours < 20) {
+    return <div>
+      <h1>Good afternoon in {city}</h1>
+    </div>
+  } else {
+    return <div>
+      <h1>Nighttime in {city}</h1>
+    </div>
+  }
+}
+
+function formatHoursTo12(date) {
+  return date.getHours() % 12 || 12;
 }
 
 function Home() {
   var today = new Date();
-  var city = "new york city"
+  var city = "New York City"
 
   return (
     <div className="App">
@@ -186,23 +244,25 @@ function Home() {
         <option value="mercedes">Tokyo</option>
       </select>
 
-      <Link to="/newyorkcity">Manhattan - New York City</Link>
-      <h1> {today.getHours()}:{today.getMinutes()} </h1>
+      <Link to="/newyorkcity" class='cityTitle'> New York City </Link>
+      <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>
+      <TimeOfDay />
 
       <h1>Essentials</h1>
       <div class="grid-container">
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
-        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Taxi</h3> </div>
+        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
       </div>
 
-      <Areas area="New York City"/>
+      <Areas area="New York City" />
 
-      <h1>Fun</h1>
-      <Bars />
       <LunchTime />
       <Movies />
       <Restuarants />
+      <Billards />
+      {/* <Bars />
       <Pools />
       <DinnerSpots />
       <NightTime />
@@ -212,7 +272,7 @@ function Home() {
 
       <h3>Currency Exchange</h3>
       <h3>Love hotels</h3>
-      <h3>Apps</h3>
+      <h3>Apps</h3> */}
     </div>
   );
 }
