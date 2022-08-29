@@ -37,7 +37,7 @@ const Login = () => {
         }
     }
     return (
-        <Button onClick={handleGoogleLogin}>
+        <Button id="loginButton" onClick={handleGoogleLogin}>
             Login with Google
         </Button>
     )

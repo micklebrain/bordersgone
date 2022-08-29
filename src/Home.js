@@ -100,11 +100,6 @@ function Restuarants() {
   </div>
 }
 
-// function orderId() {
-//   console.log("Order ID: abc123");
-//   setButtonText('Payment request sent');
-// }
-
 function sendOrder() {
   fetch("https://lostmindsbackend.vercel.app/addOrder", {    
     method: "POST",
@@ -139,15 +134,15 @@ function Movies() {
 
   return <div>
     <h1>Catch a movie</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC 34th Street 14 @6pm</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC 34th Street 14 @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>{buttonText}</Button>
-    <li>AMC Empire 25 - Nope</li>
+    <li>Nope - AMC Empire 25 @10pm</li>
     <Button>Buy Ticket - $15</Button>
-    <li>Rooftop Cinema Club Midtown - Nope</li>
+    <li>Nope - Regal Union Square</li>
     <Button>Buy Ticket - $15</Button>
   </div>
 }
@@ -182,18 +177,18 @@ function Areas(area) {
   if (area == "New York City") {
     return <div>
       <h1> Areas </h1>
-      <div class="grid-container">
+      <div class="grid-container-area">
         <div class="item2"> <h3>Brooklyn</h3> </div>
         <div class="item2"> <h3>Bronx</h3> </div>
-        <div class="item1"> <h3>Manhattan</h3> </div>
         <div class="item1"> <h3>Long Island</h3> </div>
+        <div class="item1"> <h3>Manhattan</h3> </div>        
         <div class="item1"> <h3>Queens</h3> </div>
       </div>
     </div>
   } else {
     return <div>
       <h1> Areas </h1>
-      <div class="grid-container">
+      <div class="grid-container-area">
         <div class="item2"> <h3>Hongdae</h3> </div>
         <div class="item1"> <h3>Gangnam</h3> </div>
         <div class="item1"> <h3>Itaewon</h3> </div>
@@ -225,6 +220,11 @@ function formatHoursTo12(date) {
   return date.getHours() % 12 || 12;
 }
 
+// function orderId() {
+//   console.log("Order ID: abc123");
+//   setButtonText('Payment request sent');
+// }
+
 function Home() {
   var today = new Date();
   var city = "New York City"
@@ -234,15 +234,16 @@ function Home() {
       <Sidebar />
 
       <Login />
-      <label for="cars">What city are you in:</label>
+      {/* <label for="cars">What city are you in:</label>
 
       <select name="cars" id="cars">
+        <option value="audi">Choose a city</option>
         <option value="audi">New York City</option>
         <option value="volvo">Atlanta</option>
         <option value="saab">San Francisco</option>
         <option value="mercedes">Seoul</option>
         <option value="mercedes">Tokyo</option>
-      </select>
+      </select> */}
 
       <Link to="/newyorkcity" class='cityTitle'> New York City </Link>
       <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>

@@ -642,6 +642,21 @@ body {
   font-size: 30px;
 }
 
+.grid-container-area {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container-area > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
 .cityTitle {
   font-family: "Copperplate";
   text-align: center;
@@ -652,3 +667,8 @@ body {
 /* .item1 {
   grid-row: 1 / span 2;
 } */
+
+#loginButton {
+  margin-left: 20px;
+  margin-right: 20px;
+}
