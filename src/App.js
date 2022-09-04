@@ -66,6 +66,7 @@ import NYCWineBarArticle from './articles/NYCArticles/NYCWineBarArticle';
 import NewYorkCityArticle3 from './articles/NYCArticles/NewYorkCityArticle3';
 import SanFranciscoArticle from './articles/SanFranciscoArticles/SanFranciscoArticle';
 import Navbarmenu from './Navbarmenu';
+import CityNavbarmenu from './CityNavbarmenu';
 import Goodies from './goodies';
 import CustomItinerary from './customItinerary';
 import Itinerary from './itinerary'

@@ -90,22 +90,42 @@ function Parks() {
 }
 
 function Restuarants() {
+  var today = new Date();
+
+  const details = {
+    name: "AMC 34th Street 14 - Nope",
+    date: today.toLocaleDateString(),
+    description: "Caretakers at a California horse ranch encounter a mysterious force that affects human and animal behaviour. Best seats in middle of theater will be chosen automatically Tickets will be sent to email on account"
+  }
+
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    color: 'blue',
+    textAlign: 'center'
+  };
+
   return <div>
     <h1>Get reservations at fully book restuarants</h1>
-    <li>Arno @ 8pm</li>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Arno @ 8pm</Link>
+    <form action="/action_page.php">
+      <label for="points">Party of:</label>
+      <input type="number" id="points" name="points" step="1" />
+      <input type="submit" />
+    </form>
     <Button>Grab reservation</Button>
-    <li>L'Amico @ 8pm</li>
+    <Link to="/eventDetails" state={details} style={linkStyle}>L'Amico @ 8pm</Link>
     <Button>Grab reservation</Button>
-    <li>Trademark Bar + Kitchen @ 8pm</li>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Trademark Bar + Kitchen @ 8pm</Link>
     <Button>Grab reservation</Button>
   </div>
 }
 
 function sendOrder() {
-  fetch("https://lostmindsbackend.vercel.app/addOrder", {    
+  fetch("https://lostmindsbackend.vercel.app/addOrder", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ 
+    body: JSON.stringify({
       email: 'micklebrain@gmail.com',
       venmo: 'micklebrain',
       amount: 75,
@@ -141,9 +161,9 @@ function Movies() {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>{buttonText}</Button>
-    <li>Nope - AMC Empire 25 @10pm</li>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC Empire 25 @10pm</Link>
     <Button>Buy Ticket - $15</Button>
-    <li>Nope - Regal Union Square</li>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - Regal Union Square</Link>
     <Button>Buy Ticket - $15</Button>
   </div>
 }
@@ -173,26 +193,36 @@ function Billards() {
   </div>
 }
 
-function Areas(area) {
+function Areas(props) {
   var area = "New York City"
-  if (area == "New York City") {
+  console.log(props)
+  if (props.cityName == "New York City") {
     return <div>
-      <h1> Areas </h1>
+      <h1> Explore </h1>
       <div class="grid-container-area">
         <div class="item2"> <h3>Brooklyn</h3> </div>
         <div class="item2"> <h3>Bronx</h3> </div>
         <div class="item1"> <h3>Long Island</h3> </div>
-        <div class="item1"> <h3>Manhattan</h3> </div>        
+        <div class="item1"> <h3>Manhattan</h3> </div>
         <div class="item1"> <h3>Queens</h3> </div>
       </div>
     </div>
-  } else {
+  } else if (props.cityName == "Seoul") {
     return <div>
       <h1> Areas </h1>
       <div class="grid-container-area">
         <div class="item2"> <h3>Hongdae</h3> </div>
         <div class="item1"> <h3>Gangnam</h3> </div>
         <div class="item1"> <h3>Itaewon</h3> </div>
+      </div>
+    </div>
+  } else {
+    return <div>
+      <h1> Areas </h1>
+      <div class="grid-container-area">
+        <div class="item2"> <h3>District 1</h3> </div>
+        <div class="item1"> <h3>District 2</h3> </div>
+        <div class="item1"> <h3>District 3</h3> </div>
       </div>
     </div>
   }
@@ -204,15 +234,15 @@ function TimeOfDay() {
   var city = "New York City"
   if (hours < 12) {
     return <div>
-      <h1>Good Morning {city}</h1>
+      <h1>Good Morning</h1>
     </div>
   } else if (hours > 12 && hours < 20) {
     return <div>
-      <h1>Good afternoon in {city}</h1>
+      <h1>Good afternoon</h1>
     </div>
   } else {
     return <div>
-      <h1>Nighttime in {city}</h1>
+      <h1>Nighttime</h1>
     </div>
   }
 }
@@ -228,13 +258,16 @@ function formatHoursTo12(date) {
 
 function Home() {
   var today = new Date();
+  
   var city = "New York City"
+  const [cityName, setCityName] = useState('New York City');
 
   return (
     <div className="App">
       <Sidebar />
 
       <Login />
+
       {/* <label for="cars">What city are you in:</label>
 
       <select name="cars" id="cars">
@@ -246,11 +279,15 @@ function Home() {
         <option value="mercedes">Tokyo</option>
       </select> */}
 
-      <Link to="/newyorkcity" class='cityTitle'> New York City </Link>
+      <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
+      <Button onClick={() => { setCityName('New York City') }}>New York City</Button>
+      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>      
+
+      <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
       <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>
       <TimeOfDay />
 
-      <Areas area="New York City" />
+      <Areas cityName={cityName}/>
 
       <LunchTime />
       <Restuarants />

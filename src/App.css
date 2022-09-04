@@ -645,9 +645,9 @@ body {
 .grid-container-area {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 3px;
   background-color: #2196F3;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid-container-area > div {
