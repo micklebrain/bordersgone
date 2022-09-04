@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Login from './Login'
 import Sidebar from './sidebar'
 import { useState } from 'react';
+import ArticlePreview from "./ArticlePreview";
 
 import laundryIcon from './images/laundryIcon.png';
 import simCardIcon from './images/simCard.png';
@@ -253,7 +254,9 @@ function Home() {
 
       <LunchTime />
       <Restuarants />
-      <Movies />  
+      <Movies />
+
+      <ArticlePreview />
 
       <h1>Essentials</h1>
       <div class="grid-container-essentials">
