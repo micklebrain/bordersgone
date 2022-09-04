@@ -90,13 +90,13 @@ function Parks() {
 
 function Restuarants() {
   return <div>
-    <h1>Dine at a restuarant</h1>
-    <li>Arno</li>
-    <Button>Reserve table with wine bottle - $20</Button>
-    <li>L'Amico</li>
-    <Button>Reserve table with wine bottle - $20</Button>
-    <li>Trademark Bar + Kitchen</li>
-    <Button>Reserve table with wine bottle - $20</Button>
+    <h1>Get reservations at fully book restuarants</h1>
+    <li>Arno @ 8pm</li>
+    <Button>Grab reservation</Button>
+    <li>L'Amico @ 8pm</li>
+    <Button>Grab reservation</Button>
+    <li>Trademark Bar + Kitchen @ 8pm</li>
+    <Button>Grab reservation</Button>
   </div>
 }
 
@@ -249,21 +249,22 @@ function Home() {
       <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>
       <TimeOfDay />
 
+      <Areas area="New York City" />
+
+      <LunchTime />
+      <Restuarants />
+      <Movies />  
+
       <h1>Essentials</h1>
-      <div class="grid-container">
+      <div class="grid-container-essentials">
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
         <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
       </div>
 
-      <Areas area="New York City" />
-
-      <LunchTime />
-      <Movies />
-      <Restuarants />
-      <Billards />
       {/* <Bars />
+      <Billards /> 
       <Pools />
       <DinnerSpots />
       <NightTime />
