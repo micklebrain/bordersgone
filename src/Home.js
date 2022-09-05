@@ -101,23 +101,26 @@ function Restuarants() {
   const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
-    color: 'blue',
     textAlign: 'center'
   };
 
   return <div>
     <h1>Get reservations at fully book restuarants</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Arno @ 8pm</Link>
-    <form action="/action_page.php">
-      <label for="points">Party of:</label>
-      <input type="number" id="points" name="points" step="1" />
-      <input type="submit" />
-    </form>
-    <Button>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>L'Amico @ 8pm</Link>
-    <Button>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Trademark Bar + Kitchen @ 8pm</Link>
-    <Button>Grab reservation - $5</Button>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Arno @ 8pm for 2 people</Link>
+    <Button onClick={() => {
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} class='purchaseButton' id='ticketBuy'>Grab reservation - $5</Button>
+    <Link to="/eventDetails" state={details} style={linkStyle}>L'Amico @ 8pm for 2 people</Link>
+    <Button onClick={() => {
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} id='ticketBuy'>Grab reservation - $5</Button>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Trademark Bar + Kitchen @ 8pm for 2 people</Link>
+    <Button onClick={() => {
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} id='ticketBuy'>Grab reservation - $5</Button>
   </div>
 }
 
@@ -149,7 +152,6 @@ function Movies() {
   const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
-    color: 'blue',
     textAlign: 'center'
   };
 
@@ -162,9 +164,17 @@ function Movies() {
       sendOrder()
     }} id='ticketBuy'>{buttonText}</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC Empire 25 @10pm</Link>
-    <Button>Buy Ticket - $15</Button>
+    <Button onClick={() => {
+      setButtonText('Payment request sent for Order ID: abc123');
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} id='ticketBuy'>Buy Ticket - $15</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>Nope - Regal Union Square</Link>
-    <Button>Buy Ticket - $15</Button>
+    <Button onClick={() => {
+      setButtonText('Payment request sent for Order ID: abc123');
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} id='ticketBuy'>Buy Ticket - $15</Button>
   </div>
 }
 
