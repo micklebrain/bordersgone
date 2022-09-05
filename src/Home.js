@@ -113,11 +113,11 @@ function Restuarants() {
       <input type="number" id="points" name="points" step="1" />
       <input type="submit" />
     </form>
-    <Button>Grab reservation</Button>
+    <Button>Grab reservation - $5</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>L'Amico @ 8pm</Link>
-    <Button>Grab reservation</Button>
+    <Button>Grab reservation - $5</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>Trademark Bar + Kitchen @ 8pm</Link>
-    <Button>Grab reservation</Button>
+    <Button>Grab reservation - $5</Button>
   </div>
 }
 
@@ -209,7 +209,7 @@ function Areas(props) {
     </div>
   } else if (props.cityName == "Seoul") {
     return <div>
-      <h1> Areas </h1>
+      <h1> Explore </h1>
       <div class="grid-container-area">
         <div class="item2"> <h3>Hongdae</h3> </div>
         <div class="item1"> <h3>Gangnam</h3> </div>
@@ -218,7 +218,7 @@ function Areas(props) {
     </div>
   } else {
     return <div>
-      <h1> Areas </h1>
+      <h1> Explore </h1>
       <div class="grid-container-area">
         <div class="item2"> <h3>District 1</h3> </div>
         <div class="item1"> <h3>District 2</h3> </div>
