@@ -106,17 +106,17 @@ function Restuarants() {
 
   return <div>
     <h1>Get reservations at fully book restuarants</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Arno @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Hags @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} class='purchaseButton' id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>L'Amico @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Claud @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Trademark Bar + Kitchen @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Laser Wolf @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
