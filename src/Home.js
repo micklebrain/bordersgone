@@ -106,17 +106,17 @@ function Restuarants() {
 
   return <div>
     <h1>Get reservations at fully book restuarants</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Table for Hags @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Hags @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} class='purchaseButton' id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Claud @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Claud @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Laser Wolf @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Laser Wolf @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
@@ -268,7 +268,7 @@ function formatHoursTo12(date) {
 
 function Home() {
   var today = new Date();
-  
+
   var city = "New York City"
   const [cityName, setCityName] = useState('New York City');
 
@@ -291,13 +291,13 @@ function Home() {
 
       <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
       <Button onClick={() => { setCityName('New York City') }}>New York City</Button>
-      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>      
+      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
       <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>
       <TimeOfDay />
 
-      <Areas cityName={cityName}/>
+      <Areas cityName={cityName} />
 
       <LunchTime />
       <Restuarants />
@@ -310,7 +310,7 @@ function Home() {
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
-        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
+        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>        
       </div>
 
       {/* <Bars />
