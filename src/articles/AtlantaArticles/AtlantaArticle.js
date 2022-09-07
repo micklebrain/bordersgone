@@ -8,7 +8,7 @@ class AtlantaArticle extends React.Component {
         super(props);
 
         this.state = {
-            restaurantDetails: [],            
+            restaurantDetails: [],
         }
     }
 
@@ -41,14 +41,12 @@ class AtlantaArticle extends React.Component {
     }
 
     async componentDidMount() {
-
         this.getRestaurantDetails();
     }
 
     render() {
         const restaurantDetails = this.state.restaurantDetails
         const restaurantsList = restaurantDetails.map((restaurant) =>
-
             <div>
                 <Restaurant
                     address={restaurant.address}

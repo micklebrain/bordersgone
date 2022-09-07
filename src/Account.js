@@ -4,9 +4,10 @@ import { useSelector, useDispatch } from 'react-redux';
 const Account = (props) => {
     const email = useSelector((state) => state.events.email)
 
-    const [firstName, setFirstName] = useState([]);
-    const [lastName, setLastName] = useState([]);
-    const [venmo, setVenmo] = useState([]);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [venmo, setVenmo] = useState('');
+    const [orders, setOrders] = useState([]);
 
     useEffect(() => {
         const url = "https://lostmindsbackend.vercel.app/users/" + email
@@ -21,10 +22,29 @@ const Account = (props) => {
                 setVenmo(resyJson['doc'][0]['venmo']);
             })
             .catch(error => console.log('error', error));
-        
-            // fetch all orders for user
 
+        // fetch all orders for user
+        const ordersUrl = "https://lostmindsbackend.vercel.app/orders/" + email
+        fetch(ordersUrl, {
+            method: 'GET'
+        }).then(response => response.text())
+            .then(response => {
+                var resyJson = JSON.parse(response);
+                resyJson['doc'].forEach(order => {
+                    setOrders(arr => [...arr, order]);
+                });
+            })
+            .catch(error => console.log('error', error));
     }, []);
+
+    const Orders = () => {
+        var userOrders = []
+        orders.forEach(order => {
+            userOrders.push(<h2>{order.orderId}</h2>)
+            userOrders.push(<h2>{order.amount}</h2>)
+        })
+        return userOrders
+    }
 
     return (
         <div>
@@ -37,6 +57,8 @@ const Account = (props) => {
             <h1>Cash App</h1>
             <h1>Venmo</h1>
             <h2>{venmo}</h2>
+            <h1>Orders</h1>
+            {Orders}
         </div>
     );
 };

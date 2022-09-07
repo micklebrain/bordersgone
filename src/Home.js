@@ -105,7 +105,7 @@ function Restuarants() {
   };
 
   return <div>
-    <h1>Get reservations at fully book restuarants</h1>
+    <h1>Get reservations at popular restuarants</h1>
     <Link to="/eventDetails" state={details} style={linkStyle}>Table at Hags @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
@@ -144,7 +144,7 @@ function Movies() {
   const [buttonText, setButtonText] = useState('Buy ticket - $15');
 
   const details = {
-    name: "AMC 34th Street 14 - Nope",
+    name: "AMC 34th Street 14 for 2 people - Nope",
     date: today.toLocaleDateString(),
     description: "Caretakers at a California horse ranch encounter a mysterious force that affects human and animal behaviour. Best seats in middle of theater will be chosen automatically Tickets will be sent to email on account"
   }
@@ -157,19 +157,19 @@ function Movies() {
 
   return <div>
     <h1>Catch a movie</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC 34th Street 14 @10pm</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Random movie - AMC 34th Street 14 for 2 people @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>{buttonText}</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC Empire 25 @10pm</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC Empire 25 for 2 people @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Buy Ticket - $15</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - Regal Union Square</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Nope - Regal Union Square for 2 people @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
@@ -299,7 +299,7 @@ function Home() {
 
       <Areas cityName={cityName} />
 
-      <LunchTime />
+      {/* <LunchTime /> */}
       <Restuarants />
       <Movies />
 
