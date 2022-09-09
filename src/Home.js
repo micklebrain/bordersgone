@@ -261,6 +261,31 @@ function formatHoursTo12(date) {
   return date.getHours() % 12 || 12;
 }
 
+function EmpireStateBuilding() {
+  var today = new Date();
+
+  const details = {
+    name: "AMC 34th Street 14 - Nope",
+    date: today.toLocaleDateString(),
+    description: "Caretakers at a California horse ranch encounter a mysterious force that affects human and animal behaviour. Best seats in middle of theater will be chosen automatically Tickets will be sent to email on account"
+  }
+
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    textAlign: 'center'
+  };
+
+  return <div>
+    <h1>Get tickets to Empire State Building lookout</h1>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Empire State Building lookout for 2 people</Link>
+    <Button onClick={() => {
+      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+      sendOrder()
+    }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $50</Button>
+  </div>
+}
+
 // function orderId() {
 //   console.log("Order ID: abc123");
 //   setButtonText('Payment request sent');
@@ -302,6 +327,7 @@ function Home() {
       {/* <LunchTime /> */}
       <Restuarants />
       <Movies />
+      <EmpireStateBuilding />
 
       <ArticlePreview />
 
@@ -310,7 +336,7 @@ function Home() {
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
-        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>        
+        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
       </div>
 
       {/* <Bars />
