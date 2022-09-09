@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const Account = (props) => {
     const email = useSelector((state) => state.events.email)
-
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [venmo, setVenmo] = useState('');
@@ -40,6 +39,7 @@ const Account = (props) => {
     const Orders = () => {
         var userOrders = []
         orders.forEach(order => {
+            console.log('Order found');
             userOrders.push(<h2>{order.orderId}</h2>)
             userOrders.push(<h2>{order.amount}</h2>)
         })

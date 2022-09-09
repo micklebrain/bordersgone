@@ -111,12 +111,12 @@ function Restuarants() {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} class='purchaseButton' id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Claud @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table at 4 Charles Prime Rib @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Grab reservation - $5</Button>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Laser Wolf @ 8pm for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Table at Via Carota @ 8pm for 2 people</Link>
     <Button onClick={() => {
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
@@ -157,7 +157,7 @@ function Movies() {
 
   return <div>
     <h1>Catch a movie</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Random movie - AMC 34th Street 14 for 2 people @10pm</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Random movie - AMC 34th Street 14 for 2 people today</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
       window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
