@@ -325,9 +325,9 @@ function Home() {
       <Areas cityName={cityName} />
 
       {/* <LunchTime /> */}
+      <EmpireStateBuilding />
       <Restuarants />
       <Movies />
-      <EmpireStateBuilding />
 
       <ArticlePreview />
 
