@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import Login from './Login'
 import Sidebar from './sidebar'
 import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import ArticlePreview from "./ArticlePreview";
-
 import laundryIcon from './images/laundryIcon.png';
 import simCardIcon from './images/simCard.png';
 import taxiIcon from './images/taxiIcon.png';
+import empireStateView from './images/EmpireStateView.jpg';
 
 function Bars(props) {
   var today = new Date();
@@ -124,14 +125,15 @@ function Restuarants() {
   </div>
 }
 
-function sendOrder() {
+function sendOrder(email, amount, venmo) {
+  // const email = useSelector((state) => state.events.email)
   fetch("https://lostmindsbackend.vercel.app/addOrder", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      email: 'micklebrain@gmail.com',
-      venmo: 'micklebrain',
-      amount: 75,
+    body: JSON.stringify({      
+      email: email,
+      venmo: venmo,
+      amount: amount,
       orderId: 'abc123',
       status: 'pending'
     }),
@@ -204,8 +206,7 @@ function Billards() {
 }
 
 function Areas(props) {
-  var area = "New York City"
-  console.log(props)
+  var area = "New York City"  
   if (props.cityName == "New York City") {
     return <div>
       <h1> Explore </h1>
@@ -261,7 +262,7 @@ function formatHoursTo12(date) {
   return date.getHours() % 12 || 12;
 }
 
-function EmpireStateBuilding() {
+function EmpireStateBuilding(props) {
   var today = new Date();
 
   const details = {
@@ -278,11 +279,12 @@ function EmpireStateBuilding() {
 
   return <div>
     <h1>Get tickets to Empire State Building lookout</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>Empire State Building lookout for 2 people</Link>
+    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time today after 2 hours will be automatically assigned.</Link>    
+    <img src={empireStateView} alt="Atlanta" />
     <Button onClick={() => {
-      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
-      sendOrder()
-    }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $50</Button>
+      window.alert('Payment request sent has been sent. Check on your order status under orders in your account profile');
+      sendOrder(props.email, 55, 'micklebrain')
+    }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $55</Button>
   </div>
 }
 
@@ -291,11 +293,12 @@ function EmpireStateBuilding() {
 //   setButtonText('Payment request sent');
 // }
 
-function Home() {
+const Home = (props) => {
   var today = new Date();
 
   var city = "New York City"
   const [cityName, setCityName] = useState('New York City');
+  const email = useSelector((state) => state.events.email)
 
   return (
     <div className="App">
@@ -325,7 +328,7 @@ function Home() {
       <Areas cityName={cityName} />
 
       {/* <LunchTime /> */}
-      <EmpireStateBuilding />
+      <EmpireStateBuilding email={email}/>
       <Restuarants />
       <Movies />
 
