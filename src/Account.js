@@ -29,14 +29,16 @@ const Account = (props) => {
         }).then(response => response.text())
             .then(response => {
                 var resyJson = JSON.parse(response);
+                console.log(resyJson);
                 resyJson['doc'].forEach(order => {
+                    console.log('Order from api');
                     setOrders(arr => [...arr, order]);
                 });
-            })
-            .catch(error => console.log('error', error));
+            }).catch(error => console.log('error', error));
     }, []);
 
     const Orders = () => {
+        console.log('Pulling orders');
         var userOrders = []
         orders.forEach(order => {
             console.log('Order found');
@@ -58,7 +60,16 @@ const Account = (props) => {
             <h1>Venmo</h1>
             <h2>{venmo}</h2>
             <h1>Orders</h1>
-            {Orders}
+            <div>{orders.map(order =>
+                <div>{
+                    <div>
+                        <h2>{order.orderId}</h2>
+                        <h2>{order.amount}</h2>
+                        <h2>{order.status}</h2>
+                    </div>
+                }</div>
+
+            )}</div>
         </div>
     );
 };
