@@ -354,6 +354,9 @@ const Home = (props) => {
       <h3>Currency Exchange</h3>
       <h3>Love hotels</h3>
       <h3>Apps</h3> */}
+      
+      <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
+      <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
     </div>
   );
 }
