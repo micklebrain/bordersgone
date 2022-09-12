@@ -30,23 +30,11 @@ const Account = (props) => {
             .then(response => {
                 var resyJson = JSON.parse(response);
                 console.log(resyJson);
-                resyJson['doc'].forEach(order => {
-                    console.log('Order from api');
+                resyJson['doc'].forEach(order => {                    
                     setOrders(arr => [...arr, order]);
                 });
             }).catch(error => console.log('error', error));
     }, []);
-
-    const Orders = () => {
-        console.log('Pulling orders');
-        var userOrders = []
-        orders.forEach(order => {
-            console.log('Order found');
-            userOrders.push(<h2>{order.orderId}</h2>)
-            userOrders.push(<h2>{order.amount}</h2>)
-        })
-        return userOrders
-    }
 
     return (
         <div>
@@ -68,7 +56,6 @@ const Account = (props) => {
                         <h2>{order.status}</h2>
                     </div>
                 }</div>
-
             )}</div>
         </div>
     );

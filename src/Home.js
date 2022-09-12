@@ -127,18 +127,22 @@ function Restuarants() {
 
 function sendOrder(email, amount, venmo) {
   // const email = useSelector((state) => state.events.email)
-  fetch("https://lostmindsbackend.vercel.app/addOrder", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({      
-      email: email,
-      venmo: venmo,
-      amount: amount,
-      orderId: 'abc123',
-      status: 'pending'
-    }),
-  })
-    .then((res) => res.json())
+  if (email == null || email == '') {
+    window.alert('Must login');
+  } else {
+    fetch("https://lostmindsbackend.vercel.app/addOrder", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        venmo: venmo,
+        amount: amount,
+        orderId: 'abc123',
+        status: 'pending'
+      }),
+    }).then((res) => res.json())
+    window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
+  }
 }
 
 function Movies() {
@@ -162,19 +166,16 @@ function Movies() {
     <Link to="/eventDetails" state={details} style={linkStyle}>Random movie - AMC 34th Street 14 for 2 people today</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
-      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>{buttonText}</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>Nope - AMC Empire 25 for 2 people @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
-      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Buy Ticket - $15</Button>
     <Link to="/eventDetails" state={details} style={linkStyle}>Nope - Regal Union Square for 2 people @10pm</Link>
     <Button onClick={() => {
       setButtonText('Payment request sent for Order ID: abc123');
-      window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
       sendOrder()
     }} id='ticketBuy'>Buy Ticket - $15</Button>
   </div>
@@ -206,7 +207,7 @@ function Billards() {
 }
 
 function Areas(props) {
-  var area = "New York City"  
+  var area = "New York City"
   if (props.cityName == "New York City") {
     return <div>
       <h1> Explore </h1>
@@ -279,10 +280,9 @@ function EmpireStateBuilding(props) {
 
   return <div>
     <h1>Get tickets to Empire State Building lookout</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time today after 2 hours will be automatically assigned.</Link>    
+    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time today after 2 hours will be automatically assigned.</Link>
     <img src={empireStateView} alt="Atlanta" />
     <Button onClick={() => {
-      window.alert('Payment request sent has been sent. Check on your order status under orders in your account profile');
       sendOrder(props.email, 55, 'micklebrain')
     }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $55</Button>
   </div>
@@ -322,13 +322,12 @@ const Home = (props) => {
       <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
-      <h1> {formatHoursTo12(today)}:{today.getMinutes()} </h1>
       <TimeOfDay />
 
       <Areas cityName={cityName} />
 
       {/* <LunchTime /> */}
-      <EmpireStateBuilding email={email}/>
+      <EmpireStateBuilding email={email} />
       <Restuarants />
       <Movies />
 
@@ -354,7 +353,7 @@ const Home = (props) => {
       <h3>Currency Exchange</h3>
       <h3>Love hotels</h3>
       <h3>Apps</h3> */}
-      
+
       <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
       <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
     </div>
