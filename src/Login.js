@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import jwtDecode from 'jwt-decode'
-import { useDispatch } from 'react-redux'
 import { defineEmail } from './eventsSlice';
+import jwtDecode from 'jwt-decode'
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux'
 
 const Login = () => {
     const [disabled, setDisabled] = useState(false)
     const dispatch = useDispatch()
+    const email = useSelector((state) => state.events.email)
 
-    const handleResponse = (response) => {        
+    const handleResponse = (response) => {
         console.log(response);
         const token = response.credential
         const decodedToken = jwtDecode(token)
-        console.log(decodedToken);    
+        console.log(decodedToken);
         dispatch(defineEmail(decodedToken.email))
     }
     const handleGoogleLogin = () => {
@@ -23,24 +24,26 @@ const Login = () => {
                 itp_support: true,
                 callback: handleResponse
             })
-            window.google.accounts.id.prompt((notification) => {                
+            window.google.accounts.id.prompt((notification) => {
                 if (notification.isNotDisplayed()) {
                     console.log(JSON.stringify(notification));
                     throw new Error(String(notification))
                 }
-                if (notification.isSkippedMoment() || notification.isDismissedMoment()){
+                if (notification.isSkippedMoment() || notification.isDismissedMoment()) {
                     setDisabled(false)
                 }
             })
         } catch (error) {
-          console.log(error);
+            console.log(error);
         }
     }
-    return (
-        <Button id="loginButton" onClick={handleGoogleLogin}>
+    if (!email) {
+        return <Button id="loginButton" onClick={handleGoogleLogin}>
             Login with Google
         </Button>
-    )
+    } else {
+        return <h1>Hello {email}</h1>
+    }
 }
 
 export default Login;

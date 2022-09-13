@@ -125,8 +125,7 @@ function Restuarants() {
   </div>
 }
 
-function sendOrder(email, amount, venmo) {
-  // const email = useSelector((state) => state.events.email)
+function sendOrder(email, amount, venmo) {  
   if (email == null || email == '') {
     window.alert('Must login');
   } else {
@@ -281,7 +280,7 @@ function EmpireStateBuilding(props) {
   return <div>
     <h1>Get tickets to Empire State Building lookout</h1>
     <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time today after 2 hours will be automatically assigned.</Link>
-    <img src={empireStateView} alt="Atlanta" />
+    <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
     <Button onClick={() => {
       sendOrder(props.email, 55, 'micklebrain')
     }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $55</Button>

@@ -673,3 +673,11 @@ body {
 /* .item1 {
   grid-row: 1 / span 2;
 } */
+
+#loginButton {
+  margin-bottom: 20px;
+}
+
+.sellingImage {
+  width: 100%;
+}
