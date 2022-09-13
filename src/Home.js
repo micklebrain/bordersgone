@@ -266,9 +266,9 @@ function EmpireStateBuilding(props) {
   var today = new Date();
 
   const details = {
-    name: "AMC 34th Street 14 - Nope",
+    name: "Empire State Building lookout",
     date: today.toLocaleDateString(),
-    description: "Caretakers at a California horse ranch encounter a mysterious force that affects human and animal behaviour. Best seats in middle of theater will be chosen automatically Tickets will be sent to email on account"
+    description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York."
   }
 
   const linkStyle = {
@@ -278,12 +278,12 @@ function EmpireStateBuilding(props) {
   };
 
   return <div>
-    <h1>Get tickets to Empire State Building lookout</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time today after 2 hours will be automatically assigned.</Link>
+    <h1>Empire State Building lookout</h1>
+    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time after 2 hours will be automatically assigned.</Link>
     <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
     <Button onClick={() => {
       sendOrder(props.email, 55, 'micklebrain')
-    }} class='purchaseButton' id='ticketBuy'>Reserve tickets - $55</Button>
+    }} class='purchaseButton' id='ticketBuy'>Reserve 1 ticket - $55</Button>
   </div>
 }
 
