@@ -279,8 +279,8 @@ function EmpireStateBuilding(props) {
 
   return <div>
     <h1>Empire State Building lookout</h1>
-    <Link to="/eventDetails" state={details} style={linkStyle}>1 ticket to Empire State Building lookout. The next available time after 2 hours will be automatically assigned.</Link>
     <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
+    <Link to="/eventDetails" state={details} style={linkStyle}>The next available time after 2 hours will be automatically assigned.</Link>
     <Button onClick={() => {
       sendOrder(props.email, 55, 'micklebrain')
     }} class='purchaseButton' id='ticketBuy'>Reserve 1 ticket - $55</Button>
