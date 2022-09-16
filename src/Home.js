@@ -127,7 +127,7 @@ function Restuarants() {
 
 function sendOrder(email, amount, venmo) {  
   if (email == null || email == '') {
-    window.alert('Must login');
+    window.alert('Please login');
   } else {
     fetch("https://lostmindsbackend.vercel.app/addOrder", {
       method: "POST",
@@ -266,7 +266,7 @@ function EmpireStateBuilding(props) {
   var today = new Date();
 
   const details = {
-    name: "Empire State lookout",
+    name: "The Empire State Building",
     date: today.toLocaleDateString(),
     description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York.     The next available time after 2 hours will be automatically assigned."
   }
@@ -278,7 +278,7 @@ function EmpireStateBuilding(props) {
   };
 
   return <div>
-    <div class='ticketTitle'>Empire State lookout</div>
+    <div class='ticketTitle'>The Empire State Building</div>
     <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
     <div class='description'>Step onto New York’s most famous open-air observatory.Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>    
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
@@ -325,10 +325,10 @@ const Home = (props) => {
 
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
+      <ArticlePreview />
 
       {/* <Restuarants />
-      <Movies />
-      <ArticlePreview /> */}
+      <Movies />*/}
 
       {/* <h1>Essentials</h1>
       <div class="grid-container-essentials">

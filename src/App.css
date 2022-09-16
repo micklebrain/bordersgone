@@ -683,7 +683,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   margin: auto;
-  width: 70%;
+  width: 60%;
 }
 
 .sellingImage {
@@ -693,12 +693,12 @@ body {
 
 .description {
   text-align: center;
-  font-size: 2vw;  
+  font-size: 3vw;  
 }
 
 .ticketTitle {
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;

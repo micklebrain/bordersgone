@@ -40,7 +40,7 @@ const Account = (props) => {
     return (
         <div>
             <h3>Legal name</h3>
-            <h2>{firstName} {lastName}</h2>
+            <h3>{firstName} {lastName}</h3>
             <h3>Email address</h3>
             <h3>{email}</h3>    
             <h3>Venmo</h3>
