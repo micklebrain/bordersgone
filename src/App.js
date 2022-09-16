@@ -97,7 +97,7 @@ class App extends React.Component {
     return (
       <div>
         <BrowserRouter>
-          <Navbarmenu/>
+          {/* <Navbarmenu/> */}
           <Routes>
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/atlanta" element={<Atlanta/>} />

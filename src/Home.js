@@ -290,11 +290,6 @@ function EmpireStateBuilding(props) {
   </div>
 }
 
-// function orderId() {
-//   console.log("Order ID: abc123");
-//   setButtonText('Payment request sent');
-// }
-
 const Home = (props) => {
   var today = new Date();
 
