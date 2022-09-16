@@ -689,6 +689,7 @@ body {
 
 .description {
   text-align: center;
+  white-space: pre;
 }
 
 .ticketTitle {
