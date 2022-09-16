@@ -682,6 +682,8 @@ body {
 #loginButton {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin: auto;
+  width: 70%;
 }
 
 .sellingImage {

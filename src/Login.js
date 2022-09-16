@@ -38,9 +38,9 @@ const Login = () => {
         }
     }
     if (!email) {
-        return <Button id="loginButton" onClick={handleGoogleLogin}>
+        return <button id="loginButton" onClick={handleGoogleLogin}>
             Login with Google
-        </Button>
+        </button>
     } else {
         return <div class='helloUser'>Hello {email}</div>
     }
