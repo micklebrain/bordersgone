@@ -316,11 +316,11 @@ const Home = (props) => {
 
       {/* <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
       <Button onClick={() => { setCityName('New York City') }}>New York City</Button>
-      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>
+      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>*/}
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
-      <TimeOfDay />
-
+      {/* 
+      <TimeOfDay /> 
       <Areas cityName={cityName} /> */}
 
       {/* <LunchTime /> */}
