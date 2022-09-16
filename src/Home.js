@@ -266,7 +266,7 @@ function EmpireStateBuilding(props) {
   var today = new Date();
 
   const details = {
-    name: "Empire State Building lookout",
+    name: "Empire State lookout",
     date: today.toLocaleDateString(),
     description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York."
   }
@@ -278,12 +278,13 @@ function EmpireStateBuilding(props) {
   };
 
   return <div>
-    <h1>Empire State Building lookout</h1>
+    <div class='ticketTitle'>Empire State lookout</div>
     <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
     <Link to="/eventDetails" state={details} style={linkStyle}>The next available time after 2 hours will be automatically assigned.</Link>
-    <Button onClick={() => {
+    <div class='description'>1 ticket: $55</div>
+    <button class="purchaseButton" onClick={() => {
       sendOrder(props.email, 55, 'micklebrain')
-    }} class='purchaseButton' id='ticketBuy'>Reserve 1 ticket - $55</Button>
+    }}>Reserve</button>
   </div>
 }
 
@@ -301,7 +302,8 @@ const Home = (props) => {
 
   return (
     <div className="App">
-      <Sidebar />
+      
+      {/* <Sidebar /> */}
 
       <Login />
 
@@ -316,29 +318,29 @@ const Home = (props) => {
         <option value="mercedes">Tokyo</option>
       </select> */}
 
-      <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
+      {/* <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
       <Button onClick={() => { setCityName('New York City') }}>New York City</Button>
       <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
       <TimeOfDay />
 
-      <Areas cityName={cityName} />
+      <Areas cityName={cityName} /> */}
 
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
-      <Restuarants />
+
+      {/* <Restuarants />
       <Movies />
+      <ArticlePreview /> */}
 
-      <ArticlePreview />
-
-      <h1>Essentials</h1>
+      {/* <h1>Essentials</h1>
       <div class="grid-container-essentials">
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
         <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
         <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
-      </div>
+      </div> */}
 
       {/* <Bars />
       <Billards /> 

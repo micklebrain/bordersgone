@@ -456,12 +456,16 @@ form {
 
 .purchaseButton {
   color: white;
-  background-color: black;
+  width: 80%;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Buttons and links */
 button {
-  /* background: #5469d4; */
   background: black;
   font-family: Arial, sans-serif;
   color: #ffffff;
@@ -675,9 +679,23 @@ body {
 } */
 
 #loginButton {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .sellingImage {
   width: 100%;
 }
+
+.description {
+  text-align: center;
+}
+
+.ticketTitle {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
