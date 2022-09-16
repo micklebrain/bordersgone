@@ -686,16 +686,17 @@ body {
 
 .sellingImage {
   width: 100%;
+  max-width:100%
 }
 
 .description {
   text-align: center;
-  white-space: pre;
+  font-size: 2vw;  
 }
 
 .ticketTitle {
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-  font-size: 26px;
+  font-size: 10vw;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;

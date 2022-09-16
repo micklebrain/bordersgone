@@ -280,8 +280,7 @@ function EmpireStateBuilding(props) {
   return <div>
     <div class='ticketTitle'>Empire State lookout</div>
     <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
-    <div class='description'>Step onto New York’s most famous open-air observatory. </div>
-    <div class='description'>Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more. </div>
+    <div class='description'>Step onto New York’s most famous open-air observatory.Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>    
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
     <div class='description'>1 ticket: $55</div>
     <button class="purchaseButton" onClick={() => {
