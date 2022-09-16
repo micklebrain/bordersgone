@@ -702,3 +702,7 @@ body {
   margin-top: 10px;
 }
 
+.helloUser {  
+  font-size: 3vw;
+  text-align: center;
+}

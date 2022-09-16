@@ -30,6 +30,7 @@ const Account = (props) => {
             .then(response => {
                 var resyJson = JSON.parse(response);
                 console.log(resyJson);
+                setOrders([]);
                 resyJson['doc'].forEach(order => {                    
                     setOrders(arr => [...arr, order]);
                 });
@@ -51,9 +52,9 @@ const Account = (props) => {
             <div>{orders.map(order =>
                 <div>{
                     <div>
-                        <h2>{order.orderId}</h2>
-                        <h2>{order.amount}</h2>
-                        <h2>{order.status}</h2>
+                        <h2>order id: {order.orderId}</h2>
+                        <h2>total amount: ${order.amount}</h2>
+                        <h2>order status: {order.status}</h2>
                     </div>
                 }</div>
             )}</div>

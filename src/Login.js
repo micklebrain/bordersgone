@@ -42,7 +42,7 @@ const Login = () => {
             Login with Google
         </Button>
     } else {
-        return <h1>Hello {email}</h1>
+        return <div class='helloUser'>Hello {email}</div>
     }
 }
 

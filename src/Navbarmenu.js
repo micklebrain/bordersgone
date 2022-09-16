@@ -45,7 +45,7 @@ const Navbarmenu = () => {
                             <ul className={boxClass.join(' ')}>
                                 {/* <img src={travellogo} alt="logo" /> */}
                                 <li className="menu-item" > <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Borders gone </NavLink> </li>
-                                <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> CITIES <FiChevronDown /> </Link>
+                                {/* <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> CITIES <FiChevronDown /> </Link>
                                     <ul className={boxClassSubMenu.join(' ')} >
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/atlanta`}>Atlanta</NavLink> </li>
                                         <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/bogota`}>Bogota</NavLink> </li>
@@ -66,7 +66,7 @@ const Navbarmenu = () => {
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/ticketMarketplace`}>TICKET MARKETPLACE</NavLink> </li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/donate`}>DONATE </NavLink></li>
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/itinerary`}>Itinerary</NavLink> </li>
-                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/explore`}>Explore</NavLink> </li>
+                                <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/explore`}>Explore</NavLink> </li> */}
                                 <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/account`}>Account</NavLink> </li>
                             </ul>
                         </nav>
