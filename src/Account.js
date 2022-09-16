@@ -39,16 +39,14 @@ const Account = (props) => {
 
     return (
         <div>
-            <h1>Email</h1>
-            <h2>{email}</h2>
-            <h1>First Name</h1>
-            <h2>{firstName}</h2>
-            <h1>Last Name</h1>
-            <h2>{lastName}</h2>
-            <h1>Cash App</h1>
-            <h1>Venmo</h1>
-            <h2>{venmo}</h2>
-            <h1>Orders</h1>
+            <h3>Legal name</h3>
+            <h2>{firstName} {lastName}</h2>
+            <h3>Email address</h3>
+            <h3>{email}</h3>    
+            <h3>Venmo</h3>
+            <h3>{venmo}</h3>
+            {/* <h1>Cash App</h1> */}
+            <h3>Orders</h3>
             <div>{orders.map(order =>
                 <div>{
                     <div>
