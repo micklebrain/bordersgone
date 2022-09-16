@@ -386,9 +386,9 @@ a {
     clear: both;
   }
 
-  * {
+  /* * {
     box-sizing: content-box;
-  } 
+  }  */
 }
 
 /* split */
@@ -417,6 +417,7 @@ a {
 
 #root {
   display: flex;
+  margin: auto;
 } 
 
 body {
