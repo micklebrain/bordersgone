@@ -9,6 +9,7 @@ import laundryIcon from './images/laundryIcon.png';
 import simCardIcon from './images/simCard.png';
 import taxiIcon from './images/taxiIcon.png';
 import empireStateView from './images/EmpireStateView.jpg';
+import Modal from 'react-bootstrap/Modal';
 
 function Bars(props) {
   var today = new Date();
@@ -125,23 +126,19 @@ function Restuarants() {
   </div>
 }
 
-function sendOrder(email, amount, venmo) {  
-  if (email == null || email == '') {
-    window.alert('Please login');
-  } else {
-    fetch("https://lostmindsbackend.vercel.app/addOrder", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        email: email,
-        venmo: venmo,
-        amount: amount,
-        orderId: 'abc123',
-        status: 'pending'
-      }),
-    }).then((res) => res.json())
-    window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
-  }
+function sendOrder(email, amount, venmo) {
+  fetch("https://lostmindsbackend.vercel.app/addOrder", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      email: email,
+      venmo: venmo,
+      amount: amount,
+      orderId: 'abc123',
+      status: 'pending'
+    }),
+  }).then((res) => res.json())
+  window.alert('Payment request sent for Order ID: abc123. Check on your order status under orders in your account profile');
 }
 
 function Movies() {
@@ -262,13 +259,18 @@ function formatHoursTo12(date) {
   return date.getHours() % 12 || 12;
 }
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  sendOrder(e.target.email.value, 55, e.target.username.value);
+}
+
 function EmpireStateBuilding(props) {
   var today = new Date();
 
   const details = {
     name: "The Empire State Building",
     date: today.toLocaleDateString(),
-    description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York.     The next available time after 2 hours will be automatically assigned."
+    description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York. The next available time after 2 hours will be automatically assigned."
   }
 
   const linkStyle = {
@@ -277,16 +279,28 @@ function EmpireStateBuilding(props) {
     textAlign: 'center'
   };
 
+  const [hidden, setHidden] = useState(true);
+
   return <div>
     <div class='ticketTitle'>The Empire State Building</div>
-    <img src={empireStateView} alt="Atlanta" class='sellingImage'/>
-    <div class='description'>Step onto New York’s most famous open-air observatory.Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>    
+    <img src={empireStateView} alt="Atlanta" class='sellingImage' />
+    <div class='description'>Step onto New York’s most famous open-air observatory. Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
     <div class='description'>1 ticket: $55</div>
-    <button class="purchaseButton" onClick={() => {
-      sendOrder(props.email, 55, 'micklebrain')
-    }}>Reserve</button>
+
+    {/* <button id='purchaseTicketButton' class="purchaseButton" onClick={() => {
+      if (props.email == null || props.email == '') {
+        window.alert('Please login');
+      } else {
+        sendOrder(props.email, 55, 'micklebrain')
+      }
+    }}>Reserve</button> */}
+
   </div>
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 
 const Home = (props) => {
@@ -295,6 +309,41 @@ const Home = (props) => {
   var city = "New York City"
   const [cityName, setCityName] = useState('New York City');
   const email = useSelector((state) => state.events.email)
+
+  let purchaseOption;
+  if (email) {
+    purchaseOption = <div>
+      <button id='purchaseTicketButton' class="purchaseButton" onClick={() => {
+        sendOrder(props.email, 55, 'micklebrain')
+      }}>Reserve</button>
+    </div>
+  } else {
+    purchaseOption = <div class= "orderForm">
+      <form onSubmit={e => { handleSubmit(e) }}>
+        <label>Email: </label>
+        <br />
+        <input
+          name='email'
+          type='text'
+          required
+        />
+        <br />
+        <label>Venmo \ Cashapp username:</label>
+        <br />
+        <input
+          name='username'
+          type='text'
+          required
+        />
+        <br />
+        <input
+          className='submitButton'
+          type='submit'
+          value='Reserve'
+        />
+      </form>
+    </div>
+  }
 
   return (
     <div className="App">
@@ -319,12 +368,14 @@ const Home = (props) => {
       <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>*/}
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
+
       {/* 
       <TimeOfDay /> 
       <Areas cityName={cityName} /> */}
 
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
+      {purchaseOption}
       <ArticlePreview />
 
       {/* <Restuarants />
