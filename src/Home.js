@@ -282,11 +282,46 @@ function EmpireStateBuilding(props) {
   const [hidden, setHidden] = useState(true);
 
   return <div>
-    <div class='ticketTitle'>The Empire State Building</div>
+    <div class='ticketTitle'>The Empire State Building Observation Deck</div>
     <img src={empireStateView} alt="Atlanta" class='sellingImage' />
     <div class='description'>Step onto New York’s most famous open-air observatory. Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
     <div class='description'>1 ticket: $55</div>
+
+    {/* <button id='purchaseTicketButton' class="purchaseButton" onClick={() => {
+      if (props.email == null || props.email == '') {
+        window.alert('Please login');
+      } else {
+        sendOrder(props.email, 55, 'micklebrain')
+      }
+    }}>Reserve</button> */}
+
+  </div>
+}
+
+function SummitOneVanderbilt(props) {
+  var today = new Date();
+
+  const details = {
+    name: "Summit One Vanderbilt",
+    date: today.toLocaleDateString(),
+    description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York. The next available time after 2 hours will be automatically assigned."
+  }
+
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    textAlign: 'center'
+  };
+
+  const [hidden, setHidden] = useState(true);
+
+  return <div>
+    <div class='ticketTitle'>Summit One Vanderbilt NYC observation deck</div>
+    <img src={empireStateView} alt="Atlanta" class='sellingImage' />
+    <div class='description'>Your experience at SUMMIT is unique to you: challenging, inspiring, thrilling. We invite you to extend the horizon of your imagination, and reconsider what is possible.</div>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
+    <div class='description'>1 ticket: $65</div>
 
     {/* <button id='purchaseTicketButton' class="purchaseButton" onClick={() => {
       if (props.email == null || props.email == '') {
@@ -324,7 +359,7 @@ const Home = (props) => {
         <br />
         <input
           name='email'
-          type='text'
+          type='email'
           required
         />
         <br />
@@ -375,6 +410,8 @@ const Home = (props) => {
 
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
+      {purchaseOption}
+      <SummitOneVanderbilt email={email} />
       {purchaseOption}
       <ArticlePreview />
 
