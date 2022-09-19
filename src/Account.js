@@ -31,31 +31,42 @@ const Account = (props) => {
                 var resyJson = JSON.parse(response);
                 console.log(resyJson);
                 setOrders([]);
-                resyJson['doc'].forEach(order => {                    
+                resyJson['doc'].forEach(order => {
                     setOrders(arr => [...arr, order]);
                 });
             }).catch(error => console.log('error', error));
     }, []);
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <div>
-            <h3>Legal name</h3>
-            <h3>{firstName} {lastName}</h3>
-            <h3>Email address</h3>
-            <h3>{email}</h3>    
-            <h3>Venmo</h3>
-            <h3>{venmo}</h3>
-            {/* <h1>Cash App</h1> */}
-            <h3>Orders</h3>
-            <div>{orders.map(order =>
-                <div>{
-                    <div>
-                        <h2>order id: {order.orderId}</h2>
-                        <h2>total amount: ${order.amount}</h2>
-                        <h2>order status: {order.status}</h2>
-                    </div>
-                }</div>
-            )}</div>
+            <form onSubmit={e => { handleSubmit(e) }}>
+                <label for="legalName">Legal name:</label>
+                <input type="text" id="legalName" name="legalName" value={firstName + ' ' + lastName} />
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" value={email} />
+                <label for="venmoUsername">Venmo username:</label>
+                <input type="text" id="venmoUsername" name="venmoUsername" value={venmo} />
+                {/* <h1>Cash App</h1> */}
+                <h3>Orders</h3>
+                <div>{orders.map(order =>
+                    <div>{
+                        <div>
+                            <h2>order id: {order.orderId}</h2>
+                            <h2>total amount: ${order.amount}</h2>
+                            <h2>order status: {order.status}</h2>
+                        </div>
+                    }</div>
+                )}</div>
+                <input
+                    className='submitButton'
+                    type='submit'
+                    value='Submit Changes'
+                />
+            </form>
         </div>
     );
 };
