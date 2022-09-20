@@ -305,7 +305,7 @@ function SummitOneVanderbilt(props) {
   const details = {
     name: "Summit One Vanderbilt",
     date: today.toLocaleDateString(),
-    description: "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. The building was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from \"Empire State\", the nickname of the state of New York. The next available time after 2 hours will be automatically assigned."
+    description: "General admission to New York’s most transformational experience."
   }
 
   const linkStyle = {

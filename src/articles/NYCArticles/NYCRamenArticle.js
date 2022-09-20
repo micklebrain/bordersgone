@@ -9,18 +9,16 @@ class NYCRamenArticle extends React.Component {
         }
     }
 
-    render() {            
-        return (            
+    render() {
+        return (
             <div>
                 <h1> NYC Ramen guide </h1>
-                <ul>
-                    <li>Ajisen</li>
-                    <li>Ichiran</li>
-                    <li>Ramen Goku</li>
-                    <li>Tenho Ramen</li>                  
-                    <li>Zen Ramen & Sushi</li>
-                </ul> 
-        </div>)
+                <li>Ajisen</li>
+                <li>Ichiran</li>
+                <li>Ramen Goku</li>
+                <li>Tenho Ramen</li>
+                <li>Zen Ramen & Sushi</li>
+            </div>)
     }
 }
 
