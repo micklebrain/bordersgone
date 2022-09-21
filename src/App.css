@@ -687,8 +687,9 @@ body {
 }
 
 .sellingImage {
-  width: 100%;
-  max-width:100%
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 90%;  
 }
 
 .description {

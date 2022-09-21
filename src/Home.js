@@ -411,9 +411,9 @@ const Home = (props) => {
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
       {purchaseOption}
-      <SummitOneVanderbilt email={email} />
-      {purchaseOption}
       <ArticlePreview />
+      <SummitOneVanderbilt email={email} />
+      {purchaseOption}      
 
       {/* <Restuarants />
       <Movies />*/}
