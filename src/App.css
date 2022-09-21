@@ -725,7 +725,6 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  height: 100%;
 }
 
 input[type=email], select {
@@ -736,7 +735,6 @@ input[type=email], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  height: 100%;
 }
 
 input[type=submit] {
@@ -748,7 +746,6 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  height: 100%;
 }
 
 input[type=submit]:hover {
