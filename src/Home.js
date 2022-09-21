@@ -9,6 +9,8 @@ import laundryIcon from './images/laundryIcon.png';
 import simCardIcon from './images/simCard.png';
 import taxiIcon from './images/taxiIcon.png';
 import empireStateView from './images/EmpireStateView.jpg';
+import summitOneVanderbilt from './images/SummitOneVanderbilt.jpeg';
+import hopOnHopOff from './images/hopOnHopOff.jpeg';
 import Modal from 'react-bootstrap/Modal';
 
 function Bars(props) {
@@ -318,7 +320,7 @@ function SummitOneVanderbilt(props) {
 
   return <div>
     <div class='ticketTitle'>Summit One Vanderbilt NYC observation deck</div>
-    <img src={empireStateView} alt="Atlanta" class='sellingImage' />
+    <img src={summitOneVanderbilt} alt="Atlanta" class='sellingImage' />
     <div class='description'>Your experience at SUMMIT is unique to you: challenging, inspiring, thrilling. We invite you to extend the horizon of your imagination, and reconsider what is possible.</div>
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
     <div class='description'>1 ticket: $65</div>
@@ -331,6 +333,32 @@ function SummitOneVanderbilt(props) {
       }
     }}>Reserve</button> */}
 
+  </div>
+}
+
+function BusTours(props) {
+  var today = new Date();
+
+  const details = {
+    name: "Double decker city bus tour",
+    date: today.toLocaleDateString(),
+    description: "Bus Tours."
+  }
+
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    textAlign: 'center'
+  };
+
+  const [hidden, setHidden] = useState(true);
+
+  return <div>
+    <div class='ticketTitle'>Double decker city bus tour</div>
+    <img src={hopOnHopOff} alt="Atlanta" class='sellingImage' />
+    <div class='description'>In simple terms, hop-on, hop-off means you can jump on and off our New York bus tour at any of our designated stops, as many times as you wish.</div>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
+    <div class='description'>1 ticket: $60</div>
   </div>
 }
 
@@ -410,10 +438,12 @@ const Home = (props) => {
 
       {/* <LunchTime /> */}
       <EmpireStateBuilding email={email} />
+      {purchaseOption}      
+      <SummitOneVanderbilt email={email} />
+      {purchaseOption}
+      <BusTours email={email} />
       {purchaseOption}
       <ArticlePreview />
-      <SummitOneVanderbilt email={email} />
-      {purchaseOption}      
 
       {/* <Restuarants />
       <Movies />*/}

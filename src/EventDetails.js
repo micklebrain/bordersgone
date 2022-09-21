@@ -9,7 +9,7 @@ const EventDetails = (props) => {
         <div>
             <h1>{data.name}</h1>
             {/* <h1>{data.date}</h1> */}
-            <h1>{data.description}</h1>
+            <div class="description">{data.description}</div>
         </div>
     );
 };
