@@ -13,7 +13,7 @@ class NYCRamenArticle extends React.Component {
         return (
             <div>
                 <h1>NYC Ramen guide</h1>
-                <li>Ajisen</li>
+                <li>Ajisen</li>                
                 <li>Ichiran</li>
                 <li>Ramen Goku</li>
                 <li>Tenho Ramen</li>
