@@ -8,6 +8,7 @@ import ArticlePreview from "./ArticlePreview";
 import laundryIcon from './images/laundryIcon.png';
 import simCardIcon from './images/simCard.png';
 import taxiIcon from './images/taxiIcon.png';
+import manhattan from './images/manhattan.png';
 import empireStateView from './images/EmpireStateView.jpg';
 import summitOneVanderbilt from './images/SummitOneVanderbilt.jpeg';
 import hopOnHopOff from './images/hopOnHopOff.jpeg';
@@ -444,7 +445,7 @@ const Home = (props) => {
     <ArticlePreview />
   </div>
 
-  var bangkok = <div> <KingPowerMahanakhon/> {purchaseOption} </div>
+  var bangkok = <div> <KingPowerMahanakhon /> {purchaseOption} </div>
 
   const [currentCity, setCurrentCity] = useState(NYC);
 
@@ -476,13 +477,23 @@ const Home = (props) => {
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
 
-      {/* <EmpireStateBuilding email={email} />
-      {purchaseOption}
-      <SummitOneVanderbilt email={email} />
-      {purchaseOption}
-      <BusTours email={email} />
-      {purchaseOption}
-      <ArticlePreview /> */}
+      {/* <h1>Essentials</h1>
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
+        <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
+        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
+      </div> */}
+
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Brooklyn</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={manhattan} alt="Atlanta" /> </Link> <h3>Manhattan</h3> </div>
+      </div>
+
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Dumbo</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Flatbush</h3> </div>
+      </div>
 
       {currentCity}
 
@@ -494,14 +505,6 @@ const Home = (props) => {
 
       {/* <Restuarants />
       <Movies />*/}
-
-      {/* <h1>Essentials</h1>
-      <div class="grid-container-essentials">
-        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
-        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
-        <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
-        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
-      </div> */}
 
       {/* <Bars />
       <Billards /> 
