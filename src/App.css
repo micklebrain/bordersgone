@@ -751,3 +751,8 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: red;
 }
+
+.cityName { 
+  background: none;
+  color: black;
+}

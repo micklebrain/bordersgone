@@ -381,7 +381,7 @@ const Home = (props) => {
       }}>Reserve</button>
     </div>
   } else {
-    purchaseOption = <div class= "orderForm">
+    purchaseOption = <div class="orderForm">
       <form onSubmit={e => { handleSubmit(e) }}>
         <label>Email: </label>
         <br />
@@ -408,6 +408,26 @@ const Home = (props) => {
     </div>
   }
 
+  var NYC = <div>
+    <EmpireStateBuilding email={email} />
+    {purchaseOption}
+    <SummitOneVanderbilt email={email} />
+    {purchaseOption}
+    <BusTours email={email} />
+    {purchaseOption}
+    <ArticlePreview />
+  </div>
+
+  var bangkok = <div> Bangkok <div>King Power Mahanakhon</div> </div>
+
+  const [currentCity, setCurrentCity] = useState(NYC);
+
+  // if (city = "New York City") {
+  //   setCurrentCity(NYC);
+  // } else {
+  //   setCurrentCity(bangkok);
+  // }
+
   return (
     <div className="App">
 
@@ -430,18 +450,21 @@ const Home = (props) => {
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
 
+      {/* <EmpireStateBuilding email={email} />
+      {purchaseOption}
+      <SummitOneVanderbilt email={email} />
+      {purchaseOption}
+      <BusTours email={email} />
+      {purchaseOption}
+      <ArticlePreview /> */}
+
+      {currentCity}
+
       {/* 
       <TimeOfDay /> 
       <Areas cityName={cityName} /> */}
 
       {/* <LunchTime /> */}
-      <EmpireStateBuilding email={email} />
-      {purchaseOption}      
-      <SummitOneVanderbilt email={email} />
-      {purchaseOption}
-      <BusTours email={email} />
-      {purchaseOption}
-      <ArticlePreview />
 
       {/* <Restuarants />
       <Movies />*/}
@@ -468,6 +491,9 @@ const Home = (props) => {
       <h3>Apps</h3> */}
 
       <Login />
+
+      <Button class="cityName" onClick={() => { setCityName('Bangkok'); setCurrentCity(bangkok); }}>Bangkok</Button>
+      <Button class="cityName" onClick={() => { setCityName('New York City'); setCurrentCity(NYC); }}>New York</Button>
 
       <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
       <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
