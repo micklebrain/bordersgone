@@ -336,6 +336,32 @@ function SummitOneVanderbilt(props) {
   </div>
 }
 
+function KingPowerMahanakhon(props) {
+  var today = new Date();
+
+  const details = {
+    name: "King Power Mahanakhon",
+    date: today.toLocaleDateString(),
+    description: "General admission to New York’s most transformational experience."
+  }
+
+  const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    textAlign: 'center'
+  };
+
+  const [hidden, setHidden] = useState(true);
+
+  return <div>
+    <div class='ticketTitle'>King Power Mahanakhon Skywalk</div>
+    <img src={summitOneVanderbilt} alt="Atlanta" class='sellingImage' />
+    <div class='description'>Your experience at SUMMIT is unique to you: challenging, inspiring, thrilling. We invite you to extend the horizon of your imagination, and reconsider what is possible.</div>
+    <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
+    <div class='description'>1 ticket: $40</div>
+  </div>
+}
+
 function BusTours(props) {
   var today = new Date();
 
@@ -418,7 +444,7 @@ const Home = (props) => {
     <ArticlePreview />
   </div>
 
-  var bangkok = <div> Bangkok <div>King Power Mahanakhon</div> </div>
+  var bangkok = <div> <KingPowerMahanakhon/> {purchaseOption} </div>
 
   const [currentCity, setCurrentCity] = useState(NYC);
 
@@ -492,8 +518,8 @@ const Home = (props) => {
 
       <Login />
 
-      <Button class="cityName" onClick={() => { setCityName('Bangkok'); setCurrentCity(bangkok); }}>Bangkok</Button>
-      <Button class="cityName" onClick={() => { setCityName('New York City'); setCurrentCity(NYC); }}>New York</Button>
+      <button class="cityName" onClick={() => { setCityName('Bangkok'); setCurrentCity(bangkok); }}>Bangkok</button>
+      <button class="cityName" onClick={() => { setCityName('New York City'); setCurrentCity(NYC); }}>New York</button>
 
       <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
       <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
