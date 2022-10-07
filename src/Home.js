@@ -12,7 +12,9 @@ import manhattan from './images/manhattan.png';
 import empireStateView from './images/EmpireStateView.jpg';
 import summitOneVanderbilt from './images/SummitOneVanderbilt.jpeg';
 import hopOnHopOff from './images/hopOnHopOff.jpeg';
-import Modal from 'react-bootstrap/Modal';
+import Modal from "./Modal";
+import useModal from './useModal';
+// import Modal from 'react-bootstrap/Modal';
 
 function Bars(props) {
   var today = new Date();
@@ -398,7 +400,9 @@ const Home = (props) => {
 
   var city = "New York City"
   const [cityName, setCityName] = useState('New York City');
-  const email = useSelector((state) => state.events.email)
+  const email = useSelector((state) => state.events.email);
+
+  const { isShowing, toggle } = useModal();
 
   let purchaseOption;
   if (email) {
@@ -408,31 +412,35 @@ const Home = (props) => {
       }}>Reserve</button>
     </div>
   } else {
-    purchaseOption = <div class="orderForm">
-      <form onSubmit={e => { handleSubmit(e) }}>
-        <label>Email: </label>
-        <br />
-        <input
-          name='email'
-          type='email'
-          required
-        />
-        <br />
-        <label>Venmo \ Cashapp username:</label>
-        <br />
-        <input
-          name='username'
-          type='text'
-          required
-        />
-        <br />
-        <input
-          className='submitButton'
-          type='submit'
-          value='Reserve'
-        />
-      </form>
+    purchaseOption = <div>
+      <button className="submitButton" onClick={toggle}>Reserve</button>
     </div>
+    // <div class="orderForm">
+    //   <form onSubmit={e => { handleSubmit(e) }}>
+    //     <label>Email: </label>
+    //     <br />
+    //     <input
+    //       name='email'
+    //       type='email'
+    //       required
+    //     />
+    //     <br />
+    //     <label>Venmo \ Cashapp username:</label>
+    //     <br />
+    //     <input
+    //       name='username'
+    //       type='text'
+    //       required
+    //     />
+    //     <br />
+    //     <input
+    //       className='submitButton'
+    //       type='submit'
+    //       value='Reserve'
+    //     />       
+    //   </form>
+    // </div>
+
   }
 
   var NYC = <div>
@@ -495,7 +503,16 @@ const Home = (props) => {
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Flatbush</h3> </div>
       </div>
 
+      <div>Check in: </div>
+      <div>Check out: </div>
+
       {currentCity}
+
+      <button className="button-default" onClick={toggle}>Show Modal</button>
+      <Modal
+        isShowing={isShowing}
+        hide={toggle}
+      />
 
       {/* 
       <TimeOfDay /> 
