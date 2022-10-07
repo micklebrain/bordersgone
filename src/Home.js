@@ -451,6 +451,12 @@ const Home = (props) => {
     <BusTours email={email} />
     {purchaseOption}
     <ArticlePreview />
+    <h1>NYC Ramen guide</h1>
+    <li>Ajisen</li>
+    <li>Ichiran</li>
+    <li>Ramen Goku</li>
+    <li>Tenho Ramen</li>
+    <li>Zen Ramen & Sushi</li>
   </div>
 
   var bangkok = <div> <KingPowerMahanakhon /> {purchaseOption} </div>
@@ -485,6 +491,11 @@ const Home = (props) => {
 
       <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
 
+      <Modal
+        isShowing={isShowing}
+        hide={toggle}
+      />
+
       {/* <h1>Essentials</h1>
       <div class="grid-container-essentials">
         <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
@@ -507,12 +518,6 @@ const Home = (props) => {
       <div>Check out: </div>
 
       {currentCity}
-
-      <button className="button-default" onClick={toggle}>Show Modal</button>
-      <Modal
-        isShowing={isShowing}
-        hide={toggle}
-      />
 
       {/* 
       <TimeOfDay /> 
