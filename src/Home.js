@@ -451,12 +451,6 @@ const Home = (props) => {
     <BusTours email={email} />
     {purchaseOption}
     <ArticlePreview />
-    <h1>NYC Ramen guide</h1>
-    <li>Ajisen</li>
-    <li>Ichiran</li>
-    <li>Ramen Goku</li>
-    <li>Tenho Ramen</li>
-    <li>Zen Ramen & Sushi</li>
   </div>
 
   var bangkok = <div> <KingPowerMahanakhon /> {purchaseOption} </div>
