@@ -6,13 +6,23 @@ import speakeasy from './images/speakeasy.jpeg';
 const ArticlePreview = (props) => {
     return (
         <div>
-            <Link to="/newyorkcity/NYCRamenArticle" class="articlePreview"> <img class="articleImage" src={ramen} alt="NYC Ramen guide" /> </Link> <div> <div class="articleTitle">NYC Ramen Guide</div> <div>last updated Jan 27, 2022 </div> </div>            
+            <img class="articleImage" src={ramen} alt="NYC Ramen guide" /> <div> <div class="articleTitle">NYC Ramen Guide</div> </div>
             <li>Ajisen</li>
             <li>Ichiran</li>
             <li>Ramen Goku</li>
             <li>Tenho Ramen</li>
             <li>Zen Ramen & Sushi</li>
-            <Link to="/newyorkcity/NYCSpeakeasiesArticle" class="articlePreview"> <img class="articleImage" src={speakeasy} alt="NYC speakeasies guide" /> </Link> <div> <div class="articleTitle">NYC speakeasies guide</div> <div>last updated Jan 27, 2022 </div> </div>
+            <div>last updated Jan 27, 2022 </div>
+            <img class="articleImage" src={speakeasy} alt="NYC speakeasies guide" /> <div> <div class="articleTitle">NYC speakeasies guide</div> </div>
+            <li>Angel Share</li>
+            <li>Attaboy</li>
+            <li>Keys & Heels</li>
+            <li>Little Branch</li>
+            <li>Nothing Really Matters</li>
+            <li>PDT</li>
+            <li>Thyme Bar</li>
+            <li>The Woo Woo NYC</li>
+            <div>last updated Jan 27, 2022 </div>
         </div>
     );
 };

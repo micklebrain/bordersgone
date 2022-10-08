@@ -9,8 +9,8 @@ class NYCSpeakeasiesArticle extends React.Component {
         }
     }
 
-    render() {            
-        return (            
+    render() {
+        return (
             <div>
                 <h1>NYC speakeasy Guide</h1>
                 <li>Angel Share</li>
@@ -21,7 +21,7 @@ class NYCSpeakeasiesArticle extends React.Component {
                 <li>PDT</li>
                 <li>Thyme Bar</li>
                 <li>The Woo Woo NYC</li>
-        </div>)
+            </div>)
     }
 }
 
