@@ -813,3 +813,9 @@ input[type=submit]:hover {
 }
 
 /* Modal */
+
+.submitButton { 
+  background-color: red;
+  width: 80%;
+  margin: auto;
+}
