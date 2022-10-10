@@ -292,7 +292,6 @@ function EmpireStateBuilding(props) {
     <div class='description'>Step onto New York’s most famous open-air observatory. Take advantage of 360° views & see all of NYC including the Brooklyn Bridge, Central Park, the Statue of Liberty and so much more.</div>
     <Link to="/eventDetails" state={details} style={linkStyle}>Details</Link>
     <div class='description'>1 ticket: $55</div>
-
     {/* <button id='purchaseTicketButton' class="purchaseButton" onClick={() => {
       if (props.email == null || props.email == '') {
         window.alert('Please login');
