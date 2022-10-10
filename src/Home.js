@@ -457,12 +457,6 @@ const Home = (props) => {
 
   const [currentCity, setCurrentCity] = useState(NYC);
 
-  // if (city = "New York City") {
-  //   setCurrentCity(NYC);
-  // } else {
-  //   setCurrentCity(bangkok);
-  // }
-
   return (
     <div className="App">
 
@@ -508,17 +502,15 @@ const Home = (props) => {
         <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Flatbush</h3> </div>
       </div>
 
-      <div>Check in: </div>
-      <div>Check out: </div>
+      {/* <div>Check in: </div>
+      <div>Check out: </div> */}
 
       {currentCity}
 
       {/* 
       <TimeOfDay /> 
       <Areas cityName={cityName} /> */}
-
       {/* <LunchTime /> */}
-
       {/* <Restuarants />
       <Movies />*/}
 
@@ -539,6 +531,7 @@ const Home = (props) => {
 
       <button class="cityName" onClick={() => { setCityName('Bangkok'); setCurrentCity(bangkok); }}>Bangkok</button>
       <button class="cityName" onClick={() => { setCityName('New York City'); setCurrentCity(NYC); }}>New York</button>
+      <button class="cityName" onClick={() => { setCityName('Tokyo'); setCurrentCity(NYC); }}>Tokyo</button>
 
       <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
       <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
