@@ -117,6 +117,7 @@ class App extends React.Component {
             <Route exact path="/bangkok" element={<Bangkok/>} />
             <Route exact path="/toronto" element={<Toronto/>} />
             <Route exact path="/seoul" element={<Seoul/>} />
+            <Route exact path="/tokyo" element={<Seoul/>} />
             <Route exact path="/washingtonDC" element={<WashingtonDC/>} />
             <Route exact path="/hotels" element={<Hotels/>} />
             <Route exact path="/speakeasies" element={<Speakeasy/>} />
