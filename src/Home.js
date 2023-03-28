@@ -458,6 +458,7 @@ const Home = (props) => {
 
   return (
     <div className="App">
+      <h1>Bordersgone</h1>
       <Link to="/tokyo" class='button-30'>Tokyo</Link>
       <Link to="/seoul" class='button-30'>Seoul</Link>
       <Link to="/newyorkcity" class='button-30'>New York City</Link>
