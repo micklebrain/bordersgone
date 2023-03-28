@@ -12,6 +12,8 @@ import {
 
 import TicketMarketplace from './TicketMarketplace';
 
+import Tester from './tester';
+
 import Atlanta from './cities/Atlanta';
 import Bangkok from './cities/Bangkok';
 import Bogota from './cities/Bogota';
@@ -27,6 +29,7 @@ import Philadelphia from './cities/Philadelphia';
 import SanFrancisco from './cities/SanFrancisco';
 import Seattle from './cities/Seattle';
 import Seoul from './cities/Seoul';
+import Tokyo from './cities/Tokyo';
 import Singapore from './cities/Singapore';
 import Toronto from './cities/Toronto';
 import WashingtonDC from './cities/WashingtonDC';
@@ -100,6 +103,7 @@ class App extends React.Component {
           <Navbarmenu/>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/test" element={<Tester/>}/>
             <Route exact path="/atlanta" element={<Atlanta/>} />
             <Route exact path="/bogota" element={<Bogota/>} />
             <Route exact path="/boston" element={<Boston/>} />
@@ -117,7 +121,7 @@ class App extends React.Component {
             <Route exact path="/bangkok" element={<Bangkok/>} />
             <Route exact path="/toronto" element={<Toronto/>} />
             <Route exact path="/seoul" element={<Seoul/>} />
-            <Route exact path="/tokyo" element={<Seoul/>} />
+            <Route exact path="/tokyo" element={<Tokyo/>} />
             <Route exact path="/washingtonDC" element={<WashingtonDC/>} />
             <Route exact path="/hotels" element={<Hotels/>} />
             <Route exact path="/speakeasies" element={<Speakeasy/>} />

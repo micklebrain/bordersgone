@@ -394,7 +394,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-const Home = (props) => {
+const Concept = (props) => {
   var today = new Date();
 
   var city = "New York City"
@@ -458,11 +458,85 @@ const Home = (props) => {
 
   return (
     <div className="App">
-      <Link to="/tokyo" class='button-30'> Tokyo </Link>
-      <Link to="/tokyo" class='button-30'> Seoul </Link>
-      <Link to="/tokyo" class='button-30'> New York City </Link>
+
+      {/* <Sidebar /> */}
+
+      {/* <label for="cars">What city are you in:</label>
+
+      <select name="cars" id="cars">
+        <option value="audi">Choose a city</option>
+        <option value="audi">New York City</option>
+        <option value="volvo">Atlanta</option>
+        <option value="saab">San Francisco</option>
+        <option value="mercedes">Seoul</option>
+        <option value="mercedes">Tokyo</option>
+      </select> */}
+
+      {/* <Button onClick={() => { setCityName('Ho Chi Minh') }}>Ho Chi Minh</Button>
+      <Button onClick={() => { setCityName('New York City') }}>New York City</Button>
+      <Button onClick={() => { setCityName('Seoul') }}>Seoul</Button>*/}
+
+      <Link to="/newyorkcity" class='cityTitle'> {cityName} </Link>
+
+
+      <Modal
+        isShowing={isShowing}
+        hide={toggle}
+      />
+
+      {/* <h1>Essentials</h1>
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Sim cards</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Transportation</h3> </div>
+        <div class="item1"> <Link to="/laundry"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>Laundry</h3> </div>
+        <div class="item1"> <Link to="/internationalAirports"> <img class='icon' src={laundryIcon} alt="Atlanta" /> </Link> <h3>International Airports</h3> </div>
+      </div> */}
+
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Brooklyn</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={manhattan} alt="Atlanta" /> </Link> <h3>Manhattan</h3> </div>
+      </div>
+
+      <div class="grid-container-essentials">
+        <div class="item2"> <Link to="/simCards"> <img class='icon' src={simCardIcon} alt="Atlanta" /> </Link> <h3>Dumbo</h3> </div>
+        <div class="item1"> <Link to="/taxis"> <img class='icon' src={taxiIcon} alt="Atlanta" /> </Link> <h3>Flatbush</h3> </div>
+      </div>
+
+      {/* <div>Check in: </div>
+      <div>Check out: </div> */}
+
+      {currentCity}
+
+      {/* 
+      <TimeOfDay /> 
+      <Areas cityName={cityName} /> */}
+      {/* <LunchTime /> */}
+      {/* <Restuarants />
+      <Movies />*/}
+
+      {/* <Bars />
+      <Billards /> 
+      <Pools />
+      <DinnerSpots />
+      <NightTime />
+      <Racing />
+      <Casinos />
+      <Parks />
+
+      <h3>Currency Exchange</h3>
+      <h3>Love hotels</h3>
+      <h3>Apps</h3> */}
+
+      <Login />
+
+      <button class="cityName" onClick={() => { setCityName('Tokyo'); setCurrentCity(NYC); }}>Tokyo</button>
+      <button class="cityName" onClick={() => { setCityName('New York City'); setCurrentCity(NYC); }}>New York</button>
+      <button class="cityName" onClick={() => { setCityName('Bangkok'); setCurrentCity(bangkok); }}>Bangkok</button>
+
+      <a href="https://www.youtube.com/channel/UCnHk9dMwgufCYW2SVo2MCog" target="_blank">Youtube Channel</a>
+      <a href="https://www.tiktok.com/@bordersgone?lang=en" target="_blank">Tiktok Channel</a>
     </div>
   );
 }
 
-export default Home;
+export default Concept;
