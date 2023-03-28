@@ -458,9 +458,9 @@ const Home = (props) => {
 
   return (
     <div className="App">
-      <Link to="/tokyo" class='button-30'> Tokyo </Link>
-      <Link to="/tokyo" class='button-30'> Seoul </Link>
-      <Link to="/tokyo" class='button-30'> New York City </Link>
+      <Link to="/tokyo" class='button-30'>Tokyo</Link>
+      <Link to="/tokyo" class='button-30'>Seoul</Link>
+      <Link to="/tokyo" class='button-30'>New York City</Link>
     </div>
   );
 }
