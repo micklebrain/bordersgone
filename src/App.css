@@ -758,6 +758,10 @@ input[type=submit]:hover {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Modal */
 
 .modal-overlay {

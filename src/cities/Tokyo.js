@@ -33,20 +33,14 @@ export function Tokyo() {
     const dispatch = useDispatch()
     const email = useSelector((state) => state.events.email)
 
-    return (<div class="articleContainer">
+    return (
+    // <div class="articleContainer">
+    <div>
+        <Link to="/">Bordersgone</Link>
         <h1>Tokyo</h1>
-        
-        <p>Delivery</p>                
-        <a href="https://ubereats.com/" target="_blank">
-          Ubereats
-        </a>
-        <a href="https://wolt.com/" target="_blank">
-          Wolt
-        </a>
-
-        <p>Pickup</p>
-
-        <p>Reserve</p>
+        <a href="https://ubereats.com/" target="_blank">Ubereats [delivery] [pickup]</a>
+        <a href="https://wolt.com/" target="_blank">Wolt [delivery]</a>
+        <a href="https://cookpad-mart.com/" target="_blank">Cookpad [pickup]</a>        
     </div>)
 }
 
