@@ -38,9 +38,9 @@ export function Tokyo() {
     <div>
         <Link to="/">Bordersgone</Link>
         <h1>Tokyo</h1>
-        <a href="https://ubereats.com/" target="_blank">Ubereats [delivery] [pickup]</a>
-        <a href="https://wolt.com/" target="_blank">Wolt [delivery]</a>
-        <a href="https://cookpad-mart.com/" target="_blank">Cookpad [pickup]</a>        
+        <a href="https://ubereats.com/" target="_blank"> <b> Ubereats </b> [delivery] [pickup] [food]</a>
+        <a href="https://wolt.com/" target="_blank"><b> Wolt </b> [delivery] [food]</a>
+        <a href="https://cookpad-mart.com/" target="_blank"><b> Cookpad </b> [pickup] [groceries]</a>        
     </div>)
 }
 
