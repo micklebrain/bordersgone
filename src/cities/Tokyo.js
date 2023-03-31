@@ -30,19 +30,25 @@ import { addEvent } from '../eventsSlice'
 
 export function Tokyo() {
 
-    const dispatch = useDispatch()
-    const email = useSelector((state) => state.events.email)
+  const dispatch = useDispatch()
+  const email = useSelector((state) => state.events.email)
 
-    return (
+  return (
     // <div class="articleContainer">
     <div>
-        <Link to="/">Bordersgone</Link>
-        <h1>Tokyo</h1>
-        <a href="https://www.booking.com" target="_blank"><b> Bookings </b>[housing]</a>
-        <a href="https://ubereats.com" target="_blank"> <b> Ubereats </b>[delivery] [pickup] [food]</a>
-        <a href="https://wolt.com" target="_blank"><b> Wolt </b>[delivery] [food]</a>
-        <a href="https://cookpad-mart.com" target="_blank"><b> Cookpad </b>[pickup] [groceries]</a>
-        <a href="https://www.hellocycling.jp" target="_blank"><b> Hello Cycling </b>[cyling][transporation]</a>        
+      <Link to="/">Bordersgone</Link>
+      <h1>Tokyo</h1>
+      <h1> 🎎👋 </h1>
+      <h2> Need a place to stay? </h2>
+      <a href="https://www.booking.com" target="_blank"><b> Bookings </b>[housing]</a>
+
+      <h2> Need an item? </h2>
+      <a href="https://ubereats.com" target="_blank"><b>Ubereats</b> [delivery] [pickup] [food]</a>
+      <a href="https://wolt.com" target="_blank"><b>Wolt</b> [delivery] [food]</a>
+      <a href="https://cookpad-mart.com" target="_blank"><b>Cookpad</b>[pickup] [groceries]</a>
+
+      <h2> Need to go somewhere? </h2>
+      <a href="https://www.hellocycling.jp" target="_blank"><b>Hello Cycling</b> [cyling][transporation]</a>
     </div>)
 }
 
